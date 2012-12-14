@@ -17,6 +17,10 @@ hr {
     border-color: rgb(153,153,153);
 }
 
+.content {
+    padding-top:90px;
+}
+
 .project {
     margin-top:20px;
     color: rgb(153,153,153);
