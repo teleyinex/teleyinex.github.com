@@ -81,18 +81,33 @@
         </div>
     </div>
     <div class="row">
-        <div class="span4">
-            <img src="static/images/project/forest.jpg" class="img-polaroid"/>
-        </div>
         <div class="span8">
             <p>ForestWatchers.net is a citizen cyberscience project where volunteers from all over the world can help in assessing deforestation from satellite images.
-The project currently have two running web applications:</p>
+The project uses the open source <a href="http://daniellombrana.es/pybossa.html">PyBossa</a> framework and has currently two running web applications:</p>
 <ul>
-    <li><strong>Best Tile</strong>. Volunteers help selecting the less cloudy image for the same are from satellite images.</li>
-    <li><strong>Deforested Areas</strong>. Volunteers help to identify deforested areas (even in indigenous or federal conservational areas) by drawing polygons.</li>
+<li><strong>Best Tile</strong>. Volunteers help selecting the less cloudy image for the same are from satellite images.</li>
+<li><strong>Deforested Areas</strong>. Volunteers help to identify deforested areas (even in indigenous or federal protected areas) by drawing polygons.</li>
 </ul>
+<h2>Best Tile</h2>
+<p>This application was developed to help the researchers to clean satellite images from clouds. Basically, the application shows pictures of the same area but taken on different days, so the users can actually select the best tile, or in other words, the tile with less clouds.</p>
+<p><a target="_blank" class="btn" href="http://forestwatchers.net/pybossa/app/besttile"><i class="icon-cog"></i> Check the application</a>
+<a target="_blank" class="btn" href="https://github.com/ForestWatchers/timeline"><i class="icon-github"></i> Source Code</a></p>
+<h2>Deforested Areas</h2>
+<p>This application builds on top of the previous one, using the cleaned images, to allow the users to mark deforested areas by drawing polygons on top of the deforested areas. This application shows also information in different layers regarding:</p>
+<ul>
+<li><strong>Indigenous areas</strong></li>
+<li><strong>Federal protected areas</strong></li>
+<li><strong>Hydrography</strong></li>
+</ul>
+<p><a target="_blank" class="btn" href="http://forestwatchers.net/pybossa/app/deforestedareas"><i class="icon-cog"></i> Check the application</a>
+<a target="_blank" class="btn" href="https://github.com/ForestWatchers/deforestation"><i class="icon-github"></i> Source Code</a></p>
+<h3>Video</h3>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/syyJ_bEbAtI?rel=0" frameborder="0" allowfullscreen></iframe>
 
-<p><a href="http://forestwatchers.net" class="btn btn-large btn-primary"><i class="icon-globe"></i> Check the project!</a></p>
+<p><a target="_blank" href="http://forestwatchers.net" class="btn btn-large btn-primary"><i class="icon-globe"></i> Check the project!</a></p>
+        </div>
+        <div class="span4">
+            <img src="static/images/project/forest.jpg" class="img-polaroid"/>
         </div>
     </div>
     <div class="row-fluid project">
