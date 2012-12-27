@@ -288,3 +288,19 @@ footer {
 
 }
 
+.thumbnail-caption {
+    position: absolute;
+    margin-top: 145px;
+    z-index:99;
+    background-color: white;
+    background: 
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.8);
+}
+
+.thumbnail-caption a {
+    color: rgb(153,153,153);
+}
