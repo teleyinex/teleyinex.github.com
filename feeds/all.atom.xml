@@ -8,11 +8,11 @@ The project uses the open source &lt;a href="http://daniellombrana.es/pybossa.ht
 &lt;li&gt;&lt;strong&gt;Best Tile&lt;/strong&gt;. Volunteers help selecting the less cloudy image for the same are from satellite images.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Deforested Areas&lt;/strong&gt;. Volunteers help to identify deforested areas (even in indigenous or federal protected areas) by drawing polygons.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Best Tile&lt;/h2&gt;
+&lt;h2 id="best-tile"&gt;Best Tile&lt;/h2&gt;
 &lt;p&gt;This application was developed to help the researchers to clean satellite images from clouds. Basically, the application shows pictures of the same area but taken on different days, so the users can actually select the best tile, or in other words, the tile with less clouds.&lt;/p&gt;
 &lt;p&gt;&lt;a target="_blank" class="btn" href="http://forestwatchers.net/pybossa/app/besttile"&gt;&lt;i class="icon-cog"&gt;&lt;/i&gt; Check the application&lt;/a&gt;
 &lt;a target="_blank" class="btn" href="https://github.com/ForestWatchers/timeline"&gt;&lt;i class="icon-github"&gt;&lt;/i&gt; Source Code&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Deforested Areas&lt;/h2&gt;
+&lt;h2 id="deforested-areas"&gt;Deforested Areas&lt;/h2&gt;
 &lt;p&gt;This application builds on top of the previous one, using the cleaned images, to allow the users to mark deforested areas by drawing polygons on top of the deforested areas. This application shows also information in different layers regarding:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Indigenous areas&lt;/strong&gt;&lt;/li&gt;
@@ -21,7 +21,7 @@ The project uses the open source &lt;a href="http://daniellombrana.es/pybossa.ht
 &lt;/ul&gt;
 &lt;p&gt;&lt;a target="_blank" class="btn" href="http://forestwatchers.net/pybossa/app/deforestedareas"&gt;&lt;i class="icon-cog"&gt;&lt;/i&gt; Check the application&lt;/a&gt;
 &lt;a target="_blank" class="btn" href="https://github.com/ForestWatchers/deforestation"&gt;&lt;i class="icon-github"&gt;&lt;/i&gt; Source Code&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Video&lt;/h3&gt;
+&lt;h3 id="video"&gt;Video&lt;/h3&gt;
 &lt;iframe width="560" height="315" src="http://www.youtube.com/embed/syyJ_bEbAtI?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a target="_blank" href="http://forestwatchers.net" class="btn btn-large btn-primary"&gt;&lt;i class="icon-globe"&gt;&lt;/i&gt; Check the project!&lt;/a&gt;&lt;/p&gt;</summary><category term="volunteer"></category><category term="thinking"></category><category term="PyBossa"></category></entry><entry><title>PyBossa</title><link href="http://daniellombrana.es/pybossa.html" rel="alternate"></link><updated>2011-11-01T00:00:00+01:00</updated><author><name>Daniel Lombraña González</name></author><id>tag:daniellombrana.es,2011-11-01:pybossa.html</id><summary type="html">&lt;p&gt;PyBossa is an open-source framework that allows professional and amateur scientists to run web applications (that can be deployed in &lt;a href="http://crowdcrafting.org"&gt;Crowdcrafting.org&lt;/a&gt;) for solving problems where the human minds are required.&lt;/p&gt;
@@ -47,20 +47,20 @@ The project uses the open source &lt;a href="http://daniellombrana.es/pybossa.ht
 &lt;li&gt;&lt;a href="http://arstechnica.com/science/news/2011/08/virtual-particles-cern-updates-lhchome.ars"&gt;Ars Technica&lt;/a&gt;, &lt;/li&gt;
 &lt;li&gt;&lt;a href="http://lhcathome2.cern.ch/media"&gt;etc&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Web tools for the project&lt;/h2&gt;
+&lt;h2 id="web-tools-for-the-project"&gt;Web tools for the project&lt;/h2&gt;
 &lt;p&gt;This project has been extended with several web tools that will help the volunteers to get more feedback from the project.&lt;/p&gt;
-&lt;h3&gt;Top users and Billionaires club&lt;/h3&gt;
+&lt;h3 id="top-users-and-billionaires-club"&gt;Top users and Billionaires club&lt;/h3&gt;
 &lt;p&gt;The project provides an alternative &lt;em&gt;credit&lt;/em&gt; system for the volunteers based on the simulations carried out within the volunteer's computers. This metric has been used to create a list with the &lt;a href="http://www.citizencyberscience.net/t4t-webapp/stats/"&gt;top 20 users&lt;/a&gt; of the project, listing who is contributing more of their time to the project.&lt;/p&gt;
 &lt;p&gt;Based on this ranking system, a &lt;a href="http://www.citizencyberscience.net/t4t-webapp/stats/club.html"&gt;Billionaires Club&lt;/a&gt; was created as a time line adding the users that have simulated more than 1 Billion events thanks to their contributions.&lt;/p&gt;
 &lt;p&gt;&lt;a target="_blank" class="btn" href="https://github.com/citizen-cyberscience-centre/t4t-stats"&gt;&lt;i class="icon-github"&gt;&lt;/i&gt; Source Code&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Mozilla Firefox Add-on&lt;/h3&gt;
+&lt;h3 id="mozilla-firefox-add-on"&gt;Mozilla Firefox Add-on&lt;/h3&gt;
 &lt;p&gt;In order to help the volunteers to monitor their contributions, a &lt;a href="https://addons.mozilla.org/firefox/addon/test4theory-stats-checker"&gt;Firefox Addon&lt;/a&gt; has been created. This add-on allows the users to get their latest contributions to the project via the MCPLOTs API.&lt;/p&gt;
 &lt;p&gt;&lt;a target="_blank" class="btn" href="https://github.com/citizen-cyberscience-centre/t4t-firefox-addon"&gt;&lt;i class="icon-github"&gt;&lt;/i&gt; Source Code&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Mozilla Firefox Marketplace Application&lt;/h3&gt;
+&lt;h3 id="mozilla-firefox-marketplace-application"&gt;Mozilla Firefox Marketplace Application&lt;/h3&gt;
 &lt;p&gt;This app stills in the review mode but can be fully tested in the &lt;a href="http://nightly.mozilla.org/"&gt;Android Firefox Nightly version&lt;/a&gt;. The web application allows the users to monitor from their Android tablet or smartphone their contributions to the project. This application uses also the MCPLOTs API and it works also in the desktop version (even in Chrome).&lt;/p&gt;
 &lt;p&gt;&lt;a target="_blank" class="btn" href="http://daniellombrana.es/t4t-app/"&gt;&lt;i class="icon-cog"&gt;&lt;/i&gt; Demo application&lt;/a&gt;
 &lt;a target="_blank" class="btn" href="http://github.com/teleyinex/t4t-app/"&gt;&lt;i class="icon-github"&gt;&lt;/i&gt; Source Code&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Test4Theory simulations Web Graphical User Interface&lt;/h3&gt;
+&lt;h3 id="test4theory-simulations-web-graphical-user-interface"&gt;Test4Theory simulations Web Graphical User Interface&lt;/h3&gt;
 &lt;p&gt;The project runs all the simulations within the Virtual Machine, so showing the progress to the users using the standard BOINC screensaver, it is not possible unless a server is run in the Virtual Machine. For this purpose, a web server was installed in the Virtual Machine and a simple web application is served and shows the progress and simulations carried out by Virtual Machine in any modern web browser. &lt;/p&gt;
 &lt;p&gt;&lt;a target="_blank" class="btn" href="http://www.citizencyberscience.net/t4t-webapp/"&gt;&lt;i class="icon-cog"&gt;&lt;/i&gt; Demo application&lt;/a&gt;
 &lt;a target="_blank" class="btn" href="https://github.com/citizen-cyberscience-centre/t4t-webapp"&gt;&lt;i class="icon-github"&gt;&lt;/i&gt; Source Code&lt;/a&gt;&lt;/p&gt;
