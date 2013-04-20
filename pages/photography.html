@@ -58,6 +58,7 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li><a href="../index.html">Projects</a></li>
+                            <li><a href="../pages/photography.html">Photography</a></li>
                             <li><a href="../pages/about.html">About</a></li>
                             <li><a href="../pages/contact.html">Contact</a></li>
                         </ul>
@@ -73,12 +74,14 @@
     <div class="span12">
         <h1>Photography</h1>
         <p>One of my hobbies is photography. I take pictures of almost everything, nature, people, places, etc.</p>
-        <p>As an amateur one of my biggests successes with photography was to get one of my photos selected to be part 
+        <p>As an amateur one of my <a href="http://www.flickr.com/photos/teleyinex/2945647308/in/set-72157618769763161">biggests successes</a> with photography was to get one of my photos selected to be part 
         of the first <a href="http://www.ubuntu.com">Ubuntu</a> OS contest for wallpapers and included in the default wallpaper package of the distribution, that will be downloaded by hundreds of people.</p>
-        <a href="http://www.flickr.com/photos/teleyinex/2945647308/in/set-72157618769763161"><img src="http://farm4.staticflickr.com/3208/2945647308_f048cc1633_z.jpg" class="img-polaroid"/></a>
         <p>All my photos are released with a Creative Commons license (<a href="http://creativecommons.org/licenses/by-sa/2.0/">Attribution-ShareAlike 2.0 Generic</a>), so feel free to use them!</p>
     </div>
-    <div id="photos" class="span12">
+    <div class="span12">
+        <img id="spinner" src="../static/images/spinner.gif"/>
+        <ul id="photos" class="thumbnails">
+        </ul>
     </div>
 </div>
 </div>
@@ -97,8 +100,20 @@
     });
 
     xhr.done(function(photos){
-       console.log(photos); 
-       // TODO: Show the photos :-)
+       for(var i=0;i<photos.photoset.photo.length;i++){ 
+            var owner = photos.photoset.owner;
+            var photo = photos.photoset.photo[i];
+            var li = $("<li/>", {'class': 'span2'});
+            var a = $("<a/>");
+            var img = $("<img/>", {'class': 'img-polaroid'});
+            var url = "http://farm" + photo['farm'] + ".staticflickr.com/" + photo['server']+ "/" + photo['id']+"_"+photo['secret']+"_q.jpg";
+            img.attr("src", url);
+            a.attr("href", "http://flickr.com/photos/" + owner + "/" + photo['id']);
+            a.append(img);
+            li.append(a);
+            $("#photos").append(li);
+       }
+       $("#spinner").hide();
     });
 })();
 </script>
