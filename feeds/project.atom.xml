@@ -1,5 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Lombraña González</title><link href="http://daniellombrana.es/" rel="alternate"></link><link href="http://daniellombrana.es/feeds/project.atom.xml" rel="self"></link><id>http://daniellombrana.es/</id><updated>2012-12-05T00:00:00+01:00</updated><entry><title>Philippines Typhoon</title><link href="http://daniellombrana.es/philippinestyphoon.html" rel="alternate"></link><updated>2012-12-05T00:00:00+01:00</updated><author><name>Daniel Lombraña González</name></author><id>tag:daniellombrana.es,2012-12-05:philippinestyphoon.html</id><summary type="html">&lt;p&gt;This &lt;a href="http://daniellombrana.es/pybossa.html"&gt;PyBossa&lt;/a&gt; application was created in response to the &lt;a href="https://en.wikipedia.org/wiki/Typhoon_Bopha_%282012%29"&gt;Typhoon Pablo&lt;/a&gt; in the Philippines. The goal was to help the &lt;a href="http://irevolution.net/2012/12/05/digital-response-to-typhoon-philippines/"&gt;Digital Humanitarian Network&lt;/a&gt; to analyze the posted tweets about the typhoon in order to identify pictures and/or videos of the damage.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Lombraña González</title><link href="http://daniellombrana.es/" rel="alternate"></link><link href="http://daniellombrana.es/feeds/project.atom.xml" rel="self"></link><id>http://daniellombrana.es/</id><updated>2013-04-09T00:00:00+02:00</updated><entry><title>EpiCollect + PyBossa</title><link href="http://daniellombrana.es/epicollectpybossa.html" rel="alternate"></link><updated>2013-04-09T00:00:00+02:00</updated><author><name>Daniel Lombraña González</name></author><id>tag:daniellombrana.es,2013-04-09:epicollectpybossa.html</id><summary type="html">&lt;p&gt;This &lt;a href="http://crowdcrafting.org/app/airquality/"&gt;application&lt;/a&gt; is a template that shows how an application can involve &lt;strong&gt;volunteer sensing&lt;/strong&gt; and &lt;strong&gt;volunteer thinking&lt;/strong&gt; in the &lt;a href="http://crowdcrafting.org"&gt;CrowdCrafting.org&lt;/a&gt; platform.&lt;/p&gt;
+&lt;p&gt;The application uses the &lt;strong&gt;volunteer sensing&lt;/strong&gt; platform &lt;a href="http://plus.epicollect.net"&gt;EpiCollect&lt;/a&gt; developed by &lt;a href="http://www.imperial.ac.uk/"&gt;Imperial College London&lt;/a&gt; that provides a web application for the generation of forms and freely hosted project websites (using Google's AppEngine) for many kinds of mobile data collection projects. &lt;/p&gt;
+&lt;p&gt;In order to make easier the use of the data obtained with EpiCollect, I added a &lt;a href="http://dev.pybossa.com"&gt;PyBossa&lt;/a&gt; task importer that allows you to import the obtained data directly to your PyBossa application.&lt;/p&gt;
+&lt;p&gt;As a result of this integration, we have created a PyBossa application that allows you to "estimate the quality of the air" using lichens as biomarkers. The estimation involves the data acquisition and also the measurement of the area covered by the lichen. The data acquisition is carried out with the EpiCollect framework while the data analysis is done in the PyBossa application where the user will categorize the type of lichen and measure the size covered by it.&lt;/p&gt;
+&lt;p&gt;Lichens are composite organisms consisting of a fungus (the mycobiont) and a photosynthetic partner (the photobiont or phycobiont) growing together in a symbiotic relationship. The photobiont is usually either a green alga (commonly Trebouxia) or cyanobacterium (commonly Nostoc). The morphology, physiology and biochemistry of lichens are very different from those of the isolated fungus and alga in culture. Lichens occur in some of the most extreme environments on Earth—arctic tundra, hot deserts, rocky coasts, and toxic slag heaps. However, they are also abundant as epiphytes on leaves and branches in rain forests and temperate woodland, on bare rock, including walls and gravestones, and on exposed soil surfaces (e.g., Collema) in otherwise mesic habitats. The roofs of many buildings have lichens growing on them. Lichens are widespread and may be long-lived; however, many are also vulnerable to environmental disturbance, and may be useful to scientists in assessing the effects of &lt;a href="http://www.nature.com/nature/journal/v289/n5795/abs/289289a0.html"&gt;air pollution&lt;/a&gt;, ozone depletion, and metal contamination.&lt;/p&gt;
+
+&lt;p&gt;Lichens are informally classified by growth form into:&lt;/p&gt;
+
+&lt;div class="row-fluid"&gt;
+&lt;div class="span12"&gt;
+&lt;ul class="thumbnails"&gt;
+    &lt;li class="span4"&gt;
+        &lt;div class="thumbnail"&gt;
+            &lt;img src="http://farm1.staticflickr.com/47/134314157_b17f465dfc.jpg"&gt;
+        &lt;h3&gt;Crusty&lt;/h3&gt;
+        &lt;p&gt;&lt;a href="http://www.flickr.com/photos/benetd/134314157/"&gt;&lt;i class="icon-picture"&gt;&lt;/i&gt; by benet2006&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="span4"&gt;
+        &lt;div class="thumbnail"&gt;
+            &lt;img src="http://farm3.staticflickr.com/2607/3986134065_faebf320c6.jpg"&gt;
+            &lt;h3&gt;Leaflike&lt;/h3&gt;
+            &lt;p&gt;&lt;a href="http://www.flickr.com/photos/zquirell/3986134065/"&gt;&lt;i class="icon-picture"&gt;&lt;/i&gt; by Boriss Lariushin&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="span4"&gt;
+        &lt;div class="thumbnail"&gt;
+            &lt;img src="http://farm4.staticflickr.com/3294/2451758194_ea0bbfdcc9.jpg"&gt;
+            &lt;h3&gt;Shrubby&lt;/h3&gt;
+            &lt;p&gt;&lt;a href="http://www.flickr.com/photos/7147684@N03/2451758194/"&gt;&lt;i class="icon-picture"&gt;&lt;/i&gt; by Jason Hollinger&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Lichens as pollution indicators&lt;/h2&gt;
+
+&lt;p&gt;Lichens are sensitive to air pollution, specially the air's acidity. Therefore, the presence or absence can be used to see how clean the air is. Shrubby and leafy lichens only survive in clean air, and when an area is really polluted you will not find anyone.&lt;/p&gt;
+
+&lt;p&gt;The goal of this application is to help to analyze, classify and measure the size of the lichens in order to study the quality of air in different areas of the cities.&lt;/p&gt;
+
+&lt;p&gt;Look for lichens on walls, stones and trees take pictures with your phone and submit the data using this &lt;a href="http://plus.epicollet.net/lichens"&gt;EpiCollect Plus Lichens project&lt;/a&gt;. Then, you can help in measuring the size of the lichen in this web application!&lt;/p&gt;
+
+&lt;p&gt;Based on the size of the lichen we will estimate the pollution according to this table (extracted from an &lt;a href="http://www.epa.gov/airnow/workshop_teachers/dont_take_a_lichen_for_pollution.pdf"&gt;article&lt;/a&gt; published by the &lt;a href="http://www.epa.gov/"&gt;United States Enviromental Protection Agency&lt;/a&gt;):&lt;/p&gt;
+
+&lt;table class="table table-striped"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Size (Square Milimeters)&lt;/th&gt;
+            &lt;th&gt;Air Quality&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;100 - 120&lt;/td&gt;
+            &lt;td&gt;Excellent&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;70 - 90&lt;/td&gt;
+            &lt;td&gt;Good&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;40 - 60&lt;/td&gt;
+            &lt;td&gt;Fair&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;0 - 30&lt;/td&gt;
+            &lt;td&gt;Poor&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;a target="_blank" class="btn" href="http://crowdcrafting.org/app/airquality/"&gt;&lt;i class="icon-cog"&gt;&lt;/i&gt; Check the application&lt;/a&gt;
+&lt;a target="_blank" class="btn" href="https://github.com/PyBossa/app-epicollec"&gt;&lt;i class="icon-github"&gt;&lt;/i&gt; Source Code&lt;/a&gt;&lt;/p&gt;</summary><category term="html5"></category><category term="javascript"></category></entry><entry><title>Philippines Typhoon</title><link href="http://daniellombrana.es/philippinestyphoon.html" rel="alternate"></link><updated>2012-12-05T00:00:00+01:00</updated><author><name>Daniel Lombraña González</name></author><id>tag:daniellombrana.es,2012-12-05:philippinestyphoon.html</id><summary type="html">&lt;p&gt;This &lt;a href="http://daniellombrana.es/pybossa.html"&gt;PyBossa&lt;/a&gt; application was created in response to the &lt;a href="https://en.wikipedia.org/wiki/Typhoon_Bopha_%282012%29"&gt;Typhoon Pablo&lt;/a&gt; in the Philippines. The goal was to help the &lt;a href="http://irevolution.net/2012/12/05/digital-response-to-typhoon-philippines/"&gt;Digital Humanitarian Network&lt;/a&gt; to analyze the posted tweets about the typhoon in order to identify pictures and/or videos of the damage.&lt;/p&gt;
 &lt;p&gt;The application loads a tweet (from CSV dataset) and presents a simple interface where the users have to analyze if the tweet has one or more links with a pictureo and/or a video of the damage caused by the typhoon. &lt;/p&gt;
 &lt;p&gt;If the tweet has enough information about the location of the damage, a web map is shown to the user, so he can actually mark the position of the damage based on the information from the tweet.&lt;/p&gt;
 &lt;p&gt;&lt;a target="_blank" class="btn" href="http://crowdcrafting.org/app/philippinestyphoon"&gt;&lt;i class="icon-cog"&gt;&lt;/i&gt; Check the application&lt;/a&gt;
