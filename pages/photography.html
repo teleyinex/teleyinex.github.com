@@ -92,8 +92,8 @@
 (function(){
     var xhr = $.ajax({
         url: "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&",
+        dataType: "json",
         data: {"api_key": "3a3eaf0da1caa6463ab4ce99d76dd6ff",
-               "dataType": "json",
                "photoset_id":  "72157618769763161",
                "format": "json",
                "nojsoncallback" :1}
