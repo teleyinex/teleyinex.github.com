@@ -41,6 +41,7 @@
         <script src="../theme/js/jquery-1.8.3.min.js"></script>
         <script src="../theme/js/bootstrap.min.js"></script>
         <script src="../theme/js/holder.js"></script>
+        <script src="../theme/js/jquery.dotdotdot.min.js"></script>
     </head>
 
     <body>
@@ -79,6 +80,46 @@
             <h1>Blog Entries</h1>
             <div class="row-fluid">
                 <ul class="cards">
+                                <li>
+                <div class="span6 card">
+                    <a href="2013/08/06/cernsummerwebfest2013.html"><img src="../static/images/blog/cernsummerwebfest2013.jpg"></img></a>
+                    <h3><a href="2013/08/06/cernsummerwebfest2013.html">2nd CERN Summer Webfest</a></h3>
+                    <div class="excerpt">
+                    <p><p>The second <a href="http://www.citizencyberscience.net/cern-webfest/index.htm">CERN Summer Student Webfest</a> has been an amazing event. Physicists, designers, computer scientists and engineers worked together in a 48 hours marathon to create a set of amazing <a href="http://www.citizencyberscience.net/wiki/index.php?title=Projects">projects</a> involving physics and modern web technologies.</p>
+<p>This year, students worked in data visualizations for the most popular scientists at CERN, an antimatter CrowdCrafting.org application, games for teaching and learning physics using different type of games: simulators, puzzles, strategy, etc., reproducible science, and more many more!</p>
+<p>The first day, the students pitched several projects and ideas. Most of the students proposed a <a href="http://www.citizencyberscience.net/wiki/index.php?title=Projects#Gaming">game</a> based solution for teaching and learning physics, becoming this category the most popular with 8 games! There were other categories:</p>
+<ul>
+<li><a href="http://www.citizencyberscience.net/wiki/index.php?title=Projects#Tools_for_Science">Tools for science</a></li>
+<li><a href="http://www.citizencyberscience.net/wiki/index.php?title=Projects#Physics.2FStandard_Model">Physics/Standard model</a></li>
+<li><a href="http://www.citizencyberscience.net/wiki/index.php?title=Projects#Data_Visualization">Data Visualization</a></li>
+<li><a href="http://www.citizencyberscience.net/wiki/index.php?title=Projects#Education">Education</a></li>
+</ul>
+<p><strong>This year we have introduced a series of tutorials</strong> where the students could learn new technologies, techniques, etc. Additionally, we invited them to also propose to give some of the tutorials, making the webfest a very alive event where not only the organizers take part but also the participants suggesting and creating new elements in it.</p>
+<p>The tutorials were really interesting:</p>
+<ul>
+<li><a href="http://www.citizencyberscience.net/wiki/index.php?title=Making_Website_and_Media_using_Mozilla_Webmaker_and_Popcorn_Maker">Making Website and Media using Mozilla Webmaker and Popcorn Maker</a>, by Michael Kohler (Mozilla).</li>
+<li><a href="http://www.citizencyberscience.net/wiki/index.php?title=Introduction_to_Crowdcrafting/Pybossa">Introduction to CrowdCrafting/PyBossa</a>, by Daniel Lombraña González (Citizen Cyberscience Centre).</li>
+<li><a href="http://www.citizencyberscience.net/wiki/index.php?title=Facemesh_Clone_--_Web_Programming_Workshop">Facemesh Clone -- Web Programming Workshop</a> by S.p. Mohanty a CERN Summer Student.</li>
+<li><a href="http://www.citizencyberscience.net/wiki/index.php?title=Hardware_Programming_and_Arduino">Hardware Programming and Arduino</a> by James Devine (CERN).</li>
+<li><a href="http://www.citizencyberscience.net/wiki/index.php?title=Communicating_Your_Science">Communicating Your Science</a> by Julie Gould (The Movile Collective)</li>
+<li><a href="http://www.citizencyberscience.net/wiki/index.php?title=Masterclass_on_particle_physics_--_Measuring_lifetime_of_D0_particle">Masterclass on particle physics -- Measuring lifetime of D0 particle</a> by Andrey Ustyuzhanin (CERN).</li>
+</ul>
+<p>As in the previous year, the atmosphere was amazing. The students participated in the tutorials (when they were not really busy working on their projects), chat and about everything: code, code, code and work ;-)</p>
+<p>On Sunday afternoon, the final pitches about the projects were made and the winner was announced: <a href="http://www.citizencyberscience.net/wiki/index.php?title=Mother_Hunt">Mother Hunt</a>. In this game you are an end state particle that explores CERN to try to reconstruct his family history of decay mothers and ancestors. </p>
+<p>The team created a 3D world using some of the available models at CERN, making a very interesting and immersing game in the CERN scenario. They created a short story line that could be played in one computer, and they are hoping to release the software, so more people could play it and learn physics.</p>
+<p><img alt="CERN in 3D" src="http://i.imgur.com/fyxppic.png" /></p>
+<p>The other two final chosen projects were:</p>
+<ul>
+<li><a href="http://www.citizencyberscience.net/wiki/index.php?title=Reproducible_Science_--_improving_scientific_research_to_the_next_level_of_clearness_%26_reproducibility">Reproducible Science</a>: an IPython module for ROOT that allows any scientist using the ROOT software to share and improve their research on the web.</li>
+<li><a href="http://www.citizencyberscience.net/wiki/index.php?title=Popular_Physics_in_History">Popular Physics in History</a> a web tool that analyzes the most popular scientists at CERN querying back end services like CERN Document Server and INSPIRE High Energy Physics Library.</li>
+</ul>
+<p>The event was a success, and we hope that all the students had a lot of fun participating and developing their projects. We will be update this entry with more photos and videos, as soon as they are available.</p></p>
+                </div>
+                    <div class="readmore">
+                        <a href="2013/08/06/cernsummerwebfest2013.html">Read more</a>
+                    </div>
+                </div>
+                </li>
                                 <li>
                 <div class="span6 card">
                     <a href="2013/07/31/icelandic-conviction-rates-crowdcrafting.html"><img src="../static/images/blog/justice.jpg"></img></a>
@@ -247,6 +288,14 @@ The project The Quake Catcher Network presented their results an approach in dif
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $(".excerpt").dotdotdot({
+            watch: true
+        // configuration goes here
+        });
+    });
+</script>
 
         <!-- FOOTER -->
         <footer>

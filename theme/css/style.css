@@ -343,8 +343,8 @@ footer {
 }
 
 .card > h3, p {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .card > h3 {
@@ -365,7 +365,8 @@ footer {
 
 .excerpt {
     margin-top: -10px;
-    height: 110px;
+    overflow: hidden;
+    height: 115px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
