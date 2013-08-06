@@ -74,7 +74,12 @@
 
         </div><!-- /.container -->
 
-        <div class="container">
+         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+ <!--[if lte IE 8]>
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+ <![endif]-->
+<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+<div class="container">
     <div class="row">
         <div class="span12">
             <h1>Blog Entries</h1>
@@ -115,8 +120,53 @@
 </ul>
 <p>The event was a success, and we hope that all the students had a lot of fun participating and developing their projects. We will be update this entry with more photos and videos, as soon as they are available.</p></p>
                 </div>
+                <div id="map-cernsummerwebfest2013" style="height:100px;">
+                    </div>
                     <div class="readmore">
                         <a href="2013/08/06/cernsummerwebfest2013.html">Read more</a>
+                    </div>
+                </div>
+                </li>
+                                <li>
+                <div class="span6 card">
+                    <a href="2013/08/06/mapping-antimatter-crowdcrafting.html"><img src="../static/images/blog/antimatter.jpg"></img></a>
+                    <h3><a href="2013/08/06/mapping-antimatter-crowdcrafting.html">Mapping Antimatter tracks with CrowdCrafting.org</a></h3>
+                    <div class="excerpt">
+                    <p><p>This last weekend, CERN hosted a very special event: <a href="http://www.citizencyberscience.net/wiki/index.php?title=Main_Page">the 2nd CERN Summer Student Webfest</a> organized by the <a href="http://www.citizencyberscience.net/">Citizen Cyberscience Centre</a>.</p>
+<p><img alt="CERN Summer Student Webfest logo" src="http://www.citizencyberscience.net/wiki/images/1/1b/Cernwebfest.png" /></p>
+<p>The Webfest invites CERN summer students to participate in a 48 hours marathon hacking new applications, tools, games, etc. about physics. This year, I participated and worked in a very interesting one: <a href="http://crowdcrafting.org/app/antimatter/">The Antimatter project</a></p>
+<p>With a team of around 8 persons, we divided the work in different areas and learned about the project and the goals for the CrowdCrafting application.</p>
+<p>Michael Doser from CERN and the spokesperson from the <a href="http://aegis.web.cern.ch/aegis/">AEgIS experiment</a>, is studying antimatter.</p>
+<p><wiki/index.php?title=Main_Pageiframe width="640" height="360" src="//www.youtube-nocookie.com/embed/8PXSQjjsPUo?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>But, <strong>what is antimatter?</strong> The observable Universe is composed almost entirely of matter but we can produce stuff called antimatter in the lab. Antimatter is material composed of antiparticles. So for example, a positron (the antiparticle of an electron) combines with an antiproton to form an antihydrogen atom.</p>
+<p>Antiparticles have the same mass as normal matter particles but the opposite charge. When an antiparticle collides with an ordinary matter particle they both obliterate to emit radiation and some other particles - this is called annihilation.</p>
+<p>Because of Einstein's weak equivalence principle (gravity doesn't depend on composition) antiparticles should interact gravitationally just like particles of ordinary matter - and that's what scientist's expect to observe - but if they don't then Einstein was wrong...</p>
+<h2 id="whats-the-experiment">What's the experiment?</h2>
+<p>The Antihydrogen Experiment: Gravity, Interferometry, Spectroscopy (AEgIS) experiment at CERN shoot antihydrogen atoms horizontally, whereupon they fly (and drop) until they hit a wall made of matter - any matter will do, silicon, silver, paper,... - and annihilate there</p>
+<p>On hitting the wall, the antihydrogen annihilates with a nucleus of the wall to produce mostly pions and some other particles - which we'll call starburst.</p>
+<p>The starburst travel through a special gel called an emulsion and we can see its tracks. If we trace these tracks to their point of origin then we know exactly where annihilation occurred.</p>
+<p>Then as we know the starting position of the antiparticles, the distance they travelled to the point of annihilation and how much they dropped - we can work out how far the antiparticle fell during its journey.</p>
+<p>Then we can figure out how antimatter interacts gravitationally.</p>
+<p><img alt="AEgIS Experiment Installation" src="http://i.imgur.com/uVVjKzD.jpg" /></p>
+<p>Michael Doser gave us access to a set of 99 areas photographed with a microscope, that allows us to see tracks and the starbursts. Each of the areas have 40 pictures. These pictures cover the same area but at a differen depth.</p>
+<p>As we discussed about the project, we decided to create a "movie style" task, where the CrowdCrafting application will be playing in a loop all the images for the same area. Then, we will allow the volunteers to map the tracks using their mouse as in any image software. The coordinates of the tracks, starting and ending points, will be saved, and we will use those points to render in real time a 3D model of the tracks thanks to WebGL.</p>
+<p>We divided the work between different groups, and we worked together in the different areas:
+<em> Creating of tasks based on the data
+</em> 2D movie style using HTML5 canvas feature
+<em> 3D model of tracks using HTML5 WebGL
+</em> Physics description of the problem and tutorial.</p>
+<p>For the 2D Canvas solution we decided to use the popular <a href="http://www.kineticjs.com/">Kinetic.JS</a> library. This library is very versatile as you can not only render images in the 2D canvas, but also paint lines. </p>
+<p>For the 3D model we decided to use the popular <a href="http://threejs.org/">Three.JS library</a>. We created a 3D area using the Tron colors palette to draw the reported tracks by the users.</p>
+<p>Then, we have another group that worked really hard in explaining the physics of the experiment and the tutorial. We even created a <a href="https://juanracasti.makes.org/popcorn/1adt">Mozilla Webmaker project</a> about it.</p>
+<p>At the end of Sunday we had a fully operational prototype that allows you to actually track antimatter in CrowdCrafting:</p>
+<p><img alt="Screenshot" src="https://github-camo.global.ssl.fastly.net/9a7c3a33b5470bf0c42f19f74a7443adf0e116ef/687474703a2f2f692e696d6775722e636f6d2f716b32393067352e706e67" /></p>
+<p>From here I would like to thank to all the team members because the actually loved the project and push it to the next level. This efforts will help other CrowdCrafting/PyBossa developers to use the new HTML5 Canvas and WebGL features developed for this application, as the source code is already available in Github and can be used as a template for any CrowdCrafting/PyBossa application.</p>
+<p>NOTE: <a href="http://home.web.cern.ch/sites/home.web.cern.ch/files/styles/medium/public/image/experiment/2013/01/alpha.jpg?itok=ZPb7wNsC">Image courtesy of CERN</a></p></p>
+                </div>
+                <div id="map-mapping-antimatter-crowdcrafting" style="height:100px;">
+                    </div>
+                    <div class="readmore">
+                        <a href="2013/08/06/mapping-antimatter-crowdcrafting.html">Read more</a>
                     </div>
                 </div>
                 </li>
@@ -152,6 +202,8 @@ the time to scrape the rulings, set up the tasks on CrowdCrafting.org and displa
 the <a href="http://gogn.in/heradsdomar/">results on his blog</a>. Amazing!</p>
 <p><strong>Note</strong>: <a href="http://www.flickr.com/photos/21804434@N02/6250645786/in/photostream/">Entry photo by mira66</a> (CC BY-NC-SA 2.0).</p></p>
                 </div>
+                <div id="map-icelandic-conviction-rates-crowdcrafting" style="height:100px;">
+                    </div>
                     <div class="readmore">
                         <a href="2013/07/31/icelandic-conviction-rates-crowdcrafting.html">Read more</a>
                     </div>
@@ -222,6 +274,8 @@ the <a href="http://gogn.in/heradsdomar/">results on his blog</a>. Amazing!</p>
 <p>If you want to see more photos from the event <a href="https://plus.google.com/photos/105984938874365438913/albums/5772543786574640449" target="_blank">check the album</a> I've created with pictures from almost all the participants!</p>
 <p>The event was co-organized by the <a href="http://www.citizencyberscience.net/">Citizen Cyberscience Centre</a> and the <a href="http://p2pu.org/">Peer 2 Peer University</a>, and sponsored by the <a href="http://www.mozilla.org/foundation/">Mozilla Fondation</a>  and the <a href="http://www.shuttleworthfoundation.org/">Shuttleworth Fondation</a>.</p></p>
                 </div>
+                <div id="map-cernsummerwebfest2012" style="height:100px;">
+                    </div>
                     <div class="readmore">
                         <a href="2012/08/09/cernsummerwebfest2012.html">Read more</a>
                     </div>
@@ -278,6 +332,8 @@ The project The Quake Catcher Network presented their results an approach in dif
     </li>
 </ul></p>
                 </div>
+                <div id="map-earthquakes-citizen-science" style="height:100px;">
+                    </div>
                     <div class="readmore">
                         <a href="2012/02/26/earthquakes-citizen-science.html">Read more</a>
                     </div>
@@ -294,6 +350,116 @@ The project The Quake Catcher Network presented their results an approach in dif
             watch: true
         // configuration goes here
         });
+    });
+</script>
+<script>
+    var url = 'http://nominatim.openstreetmap.org/search?q=CERN, Geneva, Switzerland&format=json';
+
+    $.getJSON(url, function(output) {
+        if (output.length >= 1) {
+            var lon = output[0].lon;
+            var lat = output[0].lat;
+            var zoom = 17;
+            var map = L.map('map-cernsummerwebfest2013', { zoomControl: false, dragging: false, scrollWheelZoom: false}).setView([lat, lon], zoom);
+            // create the tile layer with correct attribution
+            var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var osmAttrib='Map data © OpenStreetMap contributors';
+            var osm = new L.TileLayer(osmUrl, {minZoom: zoom, maxZoom: zoom, attribution: osmAttrib});       
+
+            // start the map in South-East England
+            map.setView(new L.LatLng(lat, lon), zoom);
+            map.addLayer(osm);
+
+            var marker = L.marker([lat, lon]).addTo(map);
+        }
+    });
+</script>
+<script>
+    var url = 'http://nominatim.openstreetmap.org/search?q=CERN, Geneva, Switzerland&format=json';
+
+    $.getJSON(url, function(output) {
+        if (output.length >= 1) {
+            var lon = output[0].lon;
+            var lat = output[0].lat;
+            var zoom = 17;
+            var map = L.map('map-mapping-antimatter-crowdcrafting', { zoomControl: false, dragging: false, scrollWheelZoom: false}).setView([lat, lon], zoom);
+            // create the tile layer with correct attribution
+            var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var osmAttrib='Map data © OpenStreetMap contributors';
+            var osm = new L.TileLayer(osmUrl, {minZoom: zoom, maxZoom: zoom, attribution: osmAttrib});       
+
+            // start the map in South-East England
+            map.setView(new L.LatLng(lat, lon), zoom);
+            map.addLayer(osm);
+
+            var marker = L.marker([lat, lon]).addTo(map);
+        }
+    });
+</script>
+<script>
+    var url = 'http://nominatim.openstreetmap.org/search?q=Adalstraeti, Reykjavik, Iceland&format=json';
+
+    $.getJSON(url, function(output) {
+        if (output.length >= 1) {
+            var lon = output[0].lon;
+            var lat = output[0].lat;
+            var zoom = 17;
+            var map = L.map('map-icelandic-conviction-rates-crowdcrafting', { zoomControl: false, dragging: false, scrollWheelZoom: false}).setView([lat, lon], zoom);
+            // create the tile layer with correct attribution
+            var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var osmAttrib='Map data © OpenStreetMap contributors';
+            var osm = new L.TileLayer(osmUrl, {minZoom: zoom, maxZoom: zoom, attribution: osmAttrib});       
+
+            // start the map in South-East England
+            map.setView(new L.LatLng(lat, lon), zoom);
+            map.addLayer(osm);
+
+            var marker = L.marker([lat, lon]).addTo(map);
+        }
+    });
+</script>
+<script>
+    var url = 'http://nominatim.openstreetmap.org/search?q=CERN, Geneva, Switzerland&format=json';
+
+    $.getJSON(url, function(output) {
+        if (output.length >= 1) {
+            var lon = output[0].lon;
+            var lat = output[0].lat;
+            var zoom = 17;
+            var map = L.map('map-cernsummerwebfest2012', { zoomControl: false, dragging: false, scrollWheelZoom: false}).setView([lat, lon], zoom);
+            // create the tile layer with correct attribution
+            var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var osmAttrib='Map data © OpenStreetMap contributors';
+            var osm = new L.TileLayer(osmUrl, {minZoom: zoom, maxZoom: zoom, attribution: osmAttrib});       
+
+            // start the map in South-East England
+            map.setView(new L.LatLng(lat, lon), zoom);
+            map.addLayer(osm);
+
+            var marker = L.marker([lat, lon]).addTo(map);
+        }
+    });
+</script>
+<script>
+    var url = 'http://nominatim.openstreetmap.org/search?q=Academia Sinica, Taipei&format=json';
+
+    $.getJSON(url, function(output) {
+        if (output.length >= 1) {
+            var lon = output[0].lon;
+            var lat = output[0].lat;
+            var zoom = 17;
+            var map = L.map('map-earthquakes-citizen-science', { zoomControl: false, dragging: false, scrollWheelZoom: false}).setView([lat, lon], zoom);
+            // create the tile layer with correct attribution
+            var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var osmAttrib='Map data © OpenStreetMap contributors';
+            var osm = new L.TileLayer(osmUrl, {minZoom: zoom, maxZoom: zoom, attribution: osmAttrib});       
+
+            // start the map in South-East England
+            map.setView(new L.LatLng(lat, lon), zoom);
+            map.addLayer(osm);
+
+            var marker = L.marker([lat, lon]).addTo(map);
+        }
     });
 </script>
 
