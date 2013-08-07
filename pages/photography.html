@@ -109,7 +109,7 @@
        for(var i=0;i<photos.photoset.photo.length;i++){ 
             var owner = photos.photoset.owner;
             var photo = photos.photoset.photo[i];
-            var li = $("<li/>", {'class': 'span2'});
+            var li = $("<li/>", {'class': 'span4'});
             var a = $("<a/>");
             var img = $("<img/>", {'class': 'img-polaroid'});
             var url = "http://farm" + photo['farm'] + ".staticflickr.com/" + photo['server']+ "/" + photo['id']+"_"+photo['secret']+"_q.jpg";
@@ -144,4 +144,5 @@
         }(window.jQuery)
     </script>
 </body>
+<!-- Page built using Pelican http://docs.getpelican.com -->
 </html>
