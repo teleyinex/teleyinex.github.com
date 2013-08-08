@@ -433,6 +433,10 @@ footer {
     line-height: 22px;
 }
 
+.entry > p {
+    padding-left: 0px;
+}
+
 #twitter {
     position: relative;
 }
