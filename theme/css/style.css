@@ -342,12 +342,14 @@ footer {
     width: 100%;
 }
 
-.card > h3, p {
+.excerpt > p {
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .card > h3 {
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 5px;
     overflow: hidden;
     height: 40px;
@@ -453,3 +455,7 @@ footer {
     color: white;
 }
 
+.rss-subscribe {
+    padding-top:10px;
+    text-align: center;
+}
