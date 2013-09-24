@@ -3,7 +3,9 @@
 &lt;p&gt;The application loads a PDF file, using the &lt;a href="http://mozilla.github.io/pdf.js/"&gt;Mozilla PDF.JS library&lt;/a&gt;, allowing the users to render the PDF files without having to use any external pluging. Everything is rendered by the web browser.&lt;/p&gt;
 &lt;p&gt;Then, the application asks the user if there is a table, and how many columns has. Based on the answer, a new table will be created automatically where the user will be able to start transcribing the data cells.&lt;/p&gt;
 &lt;p&gt;The next video shows how simple it is to extract the data and save it in a structured format:
-&lt;iframe width="640" height="480" src="//www.youtube.com/embed/yfnJHALzlZc?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;div class="videoWrapper"&gt;
+    &lt;iframe src="//www.youtube.com/embed/yfnJHALzlZc?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a target="_blank" class="btn" href="http://crowdcrafting.org/app/pdftabletranscribe"&gt;&lt;i class="icon-cog"&gt;&lt;/i&gt; Check the application&lt;/a&gt;
 &lt;a target="_blank" class="btn" href="https://github.com/PyBossa/app-pdf-table-transcribe"&gt;&lt;i class="icon-github"&gt;&lt;/i&gt; Source Code&lt;/a&gt;&lt;/p&gt;</summary><category term="volunteer thinking"></category><category term="PyBossa"></category></entry><entry><title>Antimatter</title><link href="http://daniellombrana.es/antimatter.html" rel="alternate"></link><updated>2013-08-03T00:00:00+02:00</updated><author><name>Daniel Lombraña González</name></author><id>tag:daniellombrana.es,2013-08-03:antimatter.html</id><summary type="html">&lt;p&gt;This &lt;a href="http://daniellombrana.es/pybossa.html"&gt;PyBossa&lt;/a&gt; application was created as a prototype for the &lt;a href="http://daniellombrana.es/blog/2013/08/06/cernsummerwebfest2013.html"&gt;2nd CERN Summer Webfest&lt;/a&gt; at CERN with 8 summer students. &lt;/p&gt;
 &lt;p&gt;The &lt;a href="http://aegis.web.cern.ch/aegis/"&gt;AEgIS experiment at CERN&lt;/a&gt; shoots antihydrogen atoms horizontally - whereupon they fly and fall - at a wall made of matter. On hitting the wall the antihydrogen annihilates with a matter nucleus in the wall to produce a burst of mostly pions and some heavier particles. These particles travel through a special gel called an emulsion which makes their tracks visible. Pions leave thin tracks while heavier particles leave much fatter tracks.&lt;/p&gt;
@@ -122,7 +124,9 @@ The project uses the open source &lt;a href="http://daniellombrana.es/pybossa.ht
 &lt;p&gt;&lt;a target="_blank" class="btn" href="http://forestwatchers.net/pybossa/app/deforestedareas"&gt;&lt;i class="icon-cog"&gt;&lt;/i&gt; Check the application&lt;/a&gt;
 &lt;a target="_blank" class="btn" href="https://github.com/ForestWatchers/deforestation"&gt;&lt;i class="icon-github"&gt;&lt;/i&gt; Source Code&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="video"&gt;Video&lt;/h3&gt;
-&lt;iframe width="560" height="315" src="http://www.youtube.com/embed/syyJ_bEbAtI?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class="videoWrapper"&gt;
+    &lt;iframe src="http://www.youtube.com/embed/syyJ_bEbAtI?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;a target="_blank" href="http://forestwatchers.net" class="btn btn-large btn-primary"&gt;&lt;i class="icon-globe"&gt;&lt;/i&gt; Check the project!&lt;/a&gt;&lt;/p&gt;</summary><category term="volunteer"></category><category term="thinking"></category><category term="PyBossa"></category></entry><entry><title>PyBossa</title><link href="http://daniellombrana.es/pybossa.html" rel="alternate"></link><updated>2011-11-01T00:00:00+01:00</updated><author><name>Daniel Lombraña González</name></author><id>tag:daniellombrana.es,2011-11-01:pybossa.html</id><summary type="html">&lt;p&gt;PyBossa is an open-source framework that allows professional and amateur scientists to run web applications (that can be deployed in &lt;a href="http://crowdcrafting.org"&gt;Crowdcrafting.org&lt;/a&gt;) for solving problems where the human minds are required.&lt;/p&gt;
 &lt;p&gt;The source code is hosted in &lt;a href="http://github.com/PyBossa"&gt;Github&lt;/a&gt; and it is possible to fork it and run your own instance without problems. The project provides three application templates:&lt;/p&gt;
@@ -136,7 +140,9 @@ The project uses the open source &lt;a href="http://daniellombrana.es/pybossa.ht
 people to learn more about science, and in particular about &lt;a href="http://cern.ch"&gt;CERN&lt;/a&gt;, the LHC and particle physics.&lt;/p&gt;
 &lt;p&gt;The event was hosted during two days of really active &lt;a href="http://hr-recruit.web.cern.ch/hr-recruit/summies/default%20page/"&gt;CERN summer students&lt;/a&gt; that worked in really amazing projects.&lt;/p&gt;
 &lt;p&gt;The following video shows a summary of all the projects explained by the students.&lt;/p&gt;
-&lt;iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/cky9OFcoIsI?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class="videoWrapper"&gt;
+    &lt;iframe src="https://www.youtube-nocookie.com/embed/cky9OFcoIsI?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;p&gt;In the event I participated as a coordinator and organizer, and as I love to develop new applications, I created one with the collaboration of the amazing artist and designer Andre Pierre Olivier. He helped me to improve the design and aesthetics of the application.&lt;/p&gt;
 &lt;p&gt;The &lt;a href="http://cernsummerwebfest.github.io/LHC-HTML5-Dashboard/"&gt;demo&lt;/a&gt; shows how it will be possible to create a modern dashboard for the LHC experiments. The &lt;a href="http://lhcdashboard.web.cern.ch/lhcdashboard/"&gt;current CERN dashboard&lt;/a&gt; renders a static PNG image that it is updated by a back-end server. The proposal of the &lt;a href="http://cernsummerwebfest.github.io/LHC-HTML5-Dashboard/"&gt;demo&lt;/a&gt; is to use HTML5 and JavaScript to render in real time the data that the LHC experiment is showing in the dashboard.&lt;/p&gt;
