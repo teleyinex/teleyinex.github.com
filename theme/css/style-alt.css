@@ -179,21 +179,19 @@ footer {
   font-size: 18px;
   font-weight: bold;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-}
-@media (min-width: 320px) {
-  .navbar .brand {
-    font-size: 14px;
+  /*  @media (min-width: 320px) {
+    font-size: (@font-size - 4);
   }
-}
-@media (min-width: 360px) {
-  .navbar .brand {
-    font-size: 16px;
+
+  @media (min-width: 360px) {
+    font-size: (@font-size - 2);
   }
-}
-@media (min-width: 768px) {
-  .navbar .brand {
-    font-size: 18px;
+
+  @media (min-width: 768px) {
+    font-size: @font-size;
   }
+*/
+
 }
 /* Navbar links: increase padding for taller navbar */
 .navbar .nav > li > a {
