@@ -194,22 +194,15 @@ footer {
   padding: 14px 20px 16px;
   /* Increase vertical padding to match navbar links */
 
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+  color: #e6e6e6;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-  /*  @media (min-width: 320px) {
-    font-size: (@font-size - 4);
+}
+@media (max-width: 320px) {
+  .navbar .brand {
+    font-size: 28px;
   }
-
-  @media (min-width: 360px) {
-    font-size: (@font-size - 2);
-  }
-
-  @media (min-width: 768px) {
-    font-size: @font-size;
-  }
-*/
-
 }
 /* Navbar links: increase padding for taller navbar */
 .navbar .nav > li > a {
