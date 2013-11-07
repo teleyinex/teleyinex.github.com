@@ -539,3 +539,19 @@ footer {
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+.tag-list {
+  list-style: none;
+}
+.tag-list li:before {
+  font-family: 'FontAwesome';
+  content: '\f02b';
+  margin: 0 5px 0 -15px;
+}
+.angle-list {
+  list-style: none;
+}
+.angle-list li:before {
+  font-family: 'FontAwesome';
+  content: '\f101';
+  margin: 0 5px 0 -15px;
+}
