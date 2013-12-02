@@ -1,5 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Lombraña González</title><link href="http://daniellombrana.es/" rel="alternate"></link><link href="http://daniellombrana.es/feeds/misc.atom.xml" rel="self"></link><id>http://daniellombrana.es/</id><updated>2013-11-26T00:00:00+01:00</updated><entry><title>Adding a load balanced &amp; high-availability cache to PyBossa</title><link href="http://daniellombrana.es/2013/11/26/pybossa-cache.html" rel="alternate"></link><updated>2013-11-26T00:00:00+01:00</updated><author><name>Daniel Lombraña</name></author><id>tag:daniellombrana.es,2013-11-26:2013/11/26/pybossa-cache.html</id><summary type="html">&lt;p&gt;In the last days I have been working really hard to add a new cache system to PyBossa.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Lombraña González</title><link href="http://daniellombrana.es/" rel="alternate"></link><link href="http://daniellombrana.es/feeds/misc.atom.xml" rel="self"></link><id>http://daniellombrana.es/</id><updated>2013-12-02T00:00:00+01:00</updated><entry><title>Citizen Science hackfest in Madrid</title><link href="http://daniellombrana.es/2013/12/02/cienciaciudadana.html" rel="alternate"></link><updated>2013-12-02T00:00:00+01:00</updated><author><name>Daniel Lombraña</name></author><id>tag:daniellombrana.es,2013-12-02:2013/12/02/cienciaciudadana.html</id><summary type="html">&lt;p&gt;The 29 and 30 of November of 2013 I organized with the support of &lt;a href="http://fecyt.es/"&gt;FECYT&lt;/a&gt;, &lt;a href="http://obrasocial.lacaixa.es/nuestroscentros/caixaforummadrid/caixaforummadrid_es.html"&gt;La Caixa Forum&lt;/a&gt; and
+&lt;a href="http://medialab-prado.es"&gt;Medialab-Prado&lt;/a&gt; the second &lt;a href="http://medialab-prado.es/article/encuentrodecienciaciudadana"&gt;citizen science hackfest&lt;/a&gt; in Madrid, Spain.&lt;/p&gt;
+&lt;p&gt;The event this time had the participation of two respected experts in the field of Citizen Science:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Francois Grey, from &lt;a href="http://citizencyberscience.net"&gt;Citizen Cyberscience Centre&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;Shannon Dosemagen, from &lt;a href="http://publiclab.org/"&gt;Public Labs&lt;/a&gt;, and&lt;/li&gt;
+&lt;li&gt;Fermín Serrano, from &lt;a href="http://ibercivis.es/"&gt;Ibercivis Foundation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The hackfest started with a morning session with talks from all the experts in a dedicated session
+for the FECYT ComCiRed event at Medialab-Prado. &lt;/p&gt;
+&lt;p&gt;Francois Grey introduced the past,
+present and future of citizen science. &lt;/p&gt;
+&lt;p&gt;Shannon explained how her team create open hardware tools
+for measuring the world (balloon mapping tools, spectrometers, infrared cameras, etc.) representing
+the &lt;em&gt;volunteer sensing&lt;/em&gt; area. &lt;/p&gt;
+&lt;p&gt;Then, Fermín Serrano presented the Ibercivis Foundation and its work
+in Spain regarding &lt;em&gt;volunteer computing&lt;/em&gt; with several research projects. &lt;/p&gt;
+&lt;p&gt;I closed the session
+talking about &lt;em&gt;volunteer thinking&lt;/em&gt; showing how &lt;a href="http://crowdcrafting.org"&gt;Crowdcrafting&lt;/a&gt; can
+be used by citizens or researchers to create citizen science projects in minutes.&lt;/p&gt;
+&lt;p&gt;After lunch, we meet again and presented the proposed projects to work during the 30th of November
+at Medialab-Prado. The Saturday started with a short briefing for the day, explaining the &lt;a href="https://etherpad.mozilla.org/cienciaciudadana"&gt;micro-workshops&lt;/a&gt;
+that we will be having along the day:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Balloon Mapping: mapping your surroundings,&lt;/li&gt;
+&lt;li&gt;EpiCollect+: gathering data with your phone,&lt;/li&gt;
+&lt;li&gt;Crowdcrafting: creating your own citizen science project in minutes, and&lt;/li&gt;
+&lt;li&gt;DIY Spectrometer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="balloon-mapping"&gt;Balloon Mapping&lt;/h2&gt;
+&lt;p&gt;We started with the balloon mapping workshop. Shannon explained step by step how to 
+build the balloon mapping using one of the kits they shell (but that you can build yourself if you want).&lt;/p&gt;
+&lt;iframe width="560" height="315" style="max-width:100%;min-width:200px;" src="https://mixbit.com/embed/119uFaWsCf3DVXsxoWYFg3" frameborder="0" scrolling="no" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;We had a very good weather in terms of wind: the balloon was really stable as well as the
+camera, however it was really cold!&lt;/p&gt;
+&lt;ul class="thumbnails"&gt;
+    &lt;li class="span6"&gt;&lt;a class="thumbnail" href="http://www.flickr.com/photos/teleyinex/11170358894/"&gt;&lt;img src="http://farm4.staticflickr.com/3828/11170358894_71a24eceba_n.jpg"&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="span6"&gt;&lt;a class="thumbnail" href="http://www.flickr.com/photos/teleyinex/11170361244/"&gt;&lt;img src="http://farm6.staticflickr.com/5521/11170361244_5450e88ff0_n.jpg"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="thumbnails"&gt;
+    &lt;li class="span6"&gt;&lt;a class="thumbnail" href="http://www.flickr.com/photos/teleyinex/11170298505/"&gt;&lt;img src="http://farm8.staticflickr.com/7423/11170298505_2132d78c77_n.jpg"&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="span6"&gt;&lt;a class="thumbnail" href="http://www.flickr.com/photos/teleyinex/11170337646/"&gt;&lt;img src="http://farm3.staticflickr.com/2855/11170337646_1992357961_n.jpg"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="thumbnails"&gt;
+    &lt;li class="span6"&gt;&lt;a class="thumbnail" href="http://www.flickr.com/photos/teleyinex/11170369864/"&gt;&lt;img src="http://farm6.staticflickr.com/5535/11170369864_77c8c93fb3_n.jpg"&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="span6"&gt;&lt;a class="thumbnail" href="http://www.flickr.com/photos/teleyinex/11170326676/"&gt;&lt;img src="http://farm6.staticflickr.com/5523/11170326676_8654a3f170_n.jpg"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="epicollect"&gt;EpiCollect+&lt;/h2&gt;
+&lt;p&gt;Then, we had the &lt;a href="http://plus.epicollect.net/"&gt;EpiCollect+&lt;/a&gt; workshop. We worked in creating an Odour Collect project
+that basically asks volunteers to quantify or calify the odours that you can find in the
+city. All you need to participate, is to install the EpiCollect+ application in your Android
+phone (iOS coming soon!) and join the &lt;a href="http://plus.epicollect.net/OdourCollect/"&gt;project&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We also worked in adding more data samples for the &lt;a href="http://crowdcrafting.org/app/airquality/"&gt;Crowdcrafting Lichens project&lt;/a&gt;
+with the participants of the events. We went to park El Retiro, split in teams, and take
+several samples with our phones. The result: &lt;a href="http://plus.epicollect.net/lichens/Lichens"&gt;almost 50 new samples from Madrid city&lt;/a&gt; that
+can be directly analyzed in the &lt;a href="http://crowdcrafting.org/app/airquality/"&gt;Crowdcrafting project&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="crowdcrafting"&gt;Crowdcrafting&lt;/h2&gt;
+&lt;p&gt;Then we moved to the Crowdcrafting workshop, were I teached and showed how you can create a
+citizen science project using the available templates, and more impotantly, how you can import
+the data from the previous two workshops into a Crowdcrafting application, and analyze the data
+with the help of the volunteers.&lt;/p&gt;
+&lt;p&gt;For example, after taking the pictures of the balloon mapping workshop, a group of the participants
+ortho-referenced the pictures for creating the following map:&lt;/p&gt;
+&lt;iframe style="border:none;" width="500" height="375" src="http://archive.publiclab.org/leaflet/?tms=http://mapknitter.org/tms/plant-wall-in-madrid/&amp;lat=40.4110814393&amp;lon=-3.6931872467"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;That was imported into a &lt;a href="http://crowdcrafting.org/app/balloonmappingmadrid/"&gt;Crowdcrafting application&lt;/a&gt;, using this &lt;a href="http://github.com/PyBossa/app-mapknitter"&gt;template&lt;/a&gt;. 
+The result, people can help you to count the number of participants in the workshop really easily. &lt;/p&gt;
+&lt;p&gt;The template provides also an example for measuring areas within the map, and this was the clue to 
+propose to the &lt;a href="http://mieldebarrio.wordpress.com/"&gt;Medialab-Prado Urban Bees Keepers&lt;/a&gt; to use this
+technique to map the roofs of the city, and quantify which ones are good or not (sometimes they cannot
+access the roofs) and also to measure how many square meters are available to place several hives.&lt;/p&gt;
+&lt;h2 id="diy-spectrometer"&gt;DIY Spectrometer&lt;/h2&gt;
+&lt;p&gt;We ended the hackfest with the last workshop: build your own spectrometer. This time, we had the collaboration
+of the Medialab-Prado Origami team, as this spectrometer is built using a sheet of paper. In the following
+video you can see how we built several spectrometers and play with them.&lt;/p&gt;
+&lt;iframe width="560" height="315" style="max-width:100%;min-width:200px;" src="https://mixbit.com/embed/_37DiF9IzVhbfd908kPeKzi" frameborder="0" scrolling="no" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;As you can see, we learned a lot, we produced several prototypes along the day, and
+above all: &lt;em&gt;we had a lot of fun while learning&lt;/em&gt;. If you want to participate in the next
+citizen science hackfest in Madrid, keep an eye in the &lt;a href="http://medialab-prado.es"&gt;Medialab-Prado website&lt;/a&gt;,
+my site and/or &lt;a href="http://twitter.com/teleyinex"&gt;Twitter account&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;PS: I would like to give a &lt;strong&gt;big thank you&lt;/strong&gt; to FECYT, La Caixa Forum and Medialab-Prado
+for supporting the event, to Francois, Shanon and Fermín for coming to Madrid and present their
+work in citizen science, and also to all the participants: without you this would not be possible! THANKS!!!&lt;/p&gt;</summary><category term="citizen"></category><category term="science"></category><category term="spectrometer"></category><category term="balloonmapping"></category><category term="epicollect"></category><category term="crowdcrafting"></category><category term="PyBossa"></category></entry><entry><title>Adding a load balanced &amp; high-availability cache to PyBossa</title><link href="http://daniellombrana.es/2013/11/26/pybossa-cache.html" rel="alternate"></link><updated>2013-11-26T00:00:00+01:00</updated><author><name>Daniel Lombraña</name></author><id>tag:daniellombrana.es,2013-11-26:2013/11/26/pybossa-cache.html</id><summary type="html">&lt;p&gt;In the last days I have been working really hard to add a new cache system to PyBossa.&lt;/p&gt;
 &lt;p&gt;Up to now, &lt;a href="http://daniellombrana.es/pybossa.html"&gt;PyBossa&lt;/a&gt; has been using &lt;a href="http://pythonhosted.org/Flask-Cache/"&gt;Flask-Cache&lt;/a&gt;, an extension for the &lt;a href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; micro-framework
 that allows you to use several types of caching backends (i.e. &lt;a href="http://memcached.org/"&gt;memcached&lt;/a&gt; or &lt;a href="http://redis.io"&gt;Redis&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://crowdcrafting.org/"&gt;Crowdcrafting&lt;/a&gt; was using memcached, as it is a robust solution and it is really well documented.
@@ -156,7 +243,7 @@ which would be pretty handy (mental note, write a blog post about it).&lt;/p&gt;
     &lt;li&gt;&lt;a href="http://www.citizencyberscience.net/wiki/index.php?title=Reproducible_Science_--_improving_scientific_research_to_the_next_level_of_clearness_%26_reproducibility"&gt;Reproducible Science&lt;/a&gt;: an IPython module for ROOT that allows any scientist using the ROOT software to share and improve their research on the web.&lt;/li&gt;
     &lt;li&gt;&lt;a href="http://www.citizencyberscience.net/wiki/index.php?title=Popular_Physics_in_History"&gt;Popular Physics in History&lt;/a&gt; a web tool that analyzes the most popular scientists at CERN querying back end services like CERN Document Server and INSPIRE High Energy Physics Library.&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;The event was a success, and we hope that all the students had a lot of fun participating and developing their projects. We will be update this entry with more photos and videos, as soon as they are available.&lt;/p&gt;</summary><category term="CERN"></category><category term="Webfest"></category><category term="science"></category><category term="physics"></category><category term="science"></category></entry><entry><title>Mapping Antimatter tracks with CrowdCrafting.org</title><link href="http://daniellombrana.es/2013/08/06/mapping-antimatter-crowdcrafting.html" rel="alternate"></link><updated>2013-08-06T00:00:00+02:00</updated><author><name>Daniel Lombraña</name></author><id>tag:daniellombrana.es,2013-08-06:2013/08/06/mapping-antimatter-crowdcrafting.html</id><summary type="html">&lt;p&gt;This last weekend, CERN hosted a very special event: &lt;a href="http://www.citizencyberscience.net/wiki/index.php?title=Main_Page"&gt;the 2nd CERN Summer Student Webfest&lt;/a&gt; organized by the &lt;a href="http://www.citizencyberscience.net/"&gt;Citizen Cyberscience Centre&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The event was a success, and we hope that all the students had a lot of fun participating and developing their projects. We will be update this entry with more photos and videos, as soon as they are available.&lt;/p&gt;</summary><category term="CERN"></category><category term="Webfest"></category><category term="physics"></category><category term="science"></category></entry><entry><title>Mapping Antimatter tracks with CrowdCrafting.org</title><link href="http://daniellombrana.es/2013/08/06/mapping-antimatter-crowdcrafting.html" rel="alternate"></link><updated>2013-08-06T00:00:00+02:00</updated><author><name>Daniel Lombraña</name></author><id>tag:daniellombrana.es,2013-08-06:2013/08/06/mapping-antimatter-crowdcrafting.html</id><summary type="html">&lt;p&gt;This last weekend, CERN hosted a very special event: &lt;a href="http://www.citizencyberscience.net/wiki/index.php?title=Main_Page"&gt;the 2nd CERN Summer Student Webfest&lt;/a&gt; organized by the &lt;a href="http://www.citizencyberscience.net/"&gt;Citizen Cyberscience Centre&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="CERN Summer Student Webfest logo" src="http://www.citizencyberscience.net/wiki/images/1/1b/Cernwebfest.png" /&gt;&lt;/p&gt;
 &lt;p&gt;The Webfest invites CERN summer students to participate in a 48 hours marathon hacking new applications, tools, games, etc. about physics. This year, I participated and worked in a very interesting one: &lt;a href="http://crowdcrafting.org/app/antimatter/"&gt;The Antimatter project&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;With a team of around 8 persons, we divided the work in different areas and learned about the project and the goals for the CrowdCrafting application.&lt;/p&gt;
@@ -280,7 +367,7 @@ the &lt;a href="http://gogn.in/heradsdomar/"&gt;results on his blog&lt;/a&gt;. A
 &lt;p&gt;Another interesting outcome from the event was that only a few designers joined, but they were key persons to the success of all the projects, as they actually helped in every project (special mention to Andre-Pierre Olivier for his help in almost every project!).&lt;/p&gt;
 &lt;p&gt;The source code of the projects is available in &lt;a href="https://github.com/CERNSummerWebfest" target="_blank"&gt;Github&lt;/a&gt;, so if you want to know what we actually did during those 48 hours, go to Github and enjoy it!&lt;/p&gt;
 &lt;p&gt;If you want to see more photos from the event &lt;a href="https://plus.google.com/photos/105984938874365438913/albums/5772543786574640449" target="_blank"&gt;check the album&lt;/a&gt; I've created with pictures from almost all the participants!&lt;/p&gt;
-&lt;p&gt;The event was co-organized by the &lt;a href="http://www.citizencyberscience.net/"&gt;Citizen Cyberscience Centre&lt;/a&gt; and the &lt;a href="http://p2pu.org/"&gt;Peer 2 Peer University&lt;/a&gt;, and sponsored by the &lt;a href="http://www.mozilla.org/foundation/"&gt;Mozilla Fondation&lt;/a&gt;  and the &lt;a href="http://www.shuttleworthfoundation.org/"&gt;Shuttleworth Fondation&lt;/a&gt;.&lt;/p&gt;</summary><category term="CERN"></category><category term="Webfest"></category><category term="science"></category><category term="hackfest"></category><category term="science"></category><category term="physics"></category></entry><entry><title>Earthquakes &amp; citizen scientists</title><link href="http://daniellombrana.es/2012/02/26/earthquakes-citizen-science.html" rel="alternate"></link><updated>2012-02-26T00:00:00+01:00</updated><author><name>Daniel Lombraña</name></author><id>tag:daniellombrana.es,2012-02-26:2012/02/26/earthquakes-citizen-science.html</id><summary type="html">&lt;p&gt;The Asia@Home workshop started focused on earthquakes and volunteers to track them. 
+&lt;p&gt;The event was co-organized by the &lt;a href="http://www.citizencyberscience.net/"&gt;Citizen Cyberscience Centre&lt;/a&gt; and the &lt;a href="http://p2pu.org/"&gt;Peer 2 Peer University&lt;/a&gt;, and sponsored by the &lt;a href="http://www.mozilla.org/foundation/"&gt;Mozilla Fondation&lt;/a&gt;  and the &lt;a href="http://www.shuttleworthfoundation.org/"&gt;Shuttleworth Fondation&lt;/a&gt;.&lt;/p&gt;</summary><category term="CERN"></category><category term="Webfest"></category><category term="hackfest"></category><category term="science"></category><category term="physics"></category></entry><entry><title>Earthquakes &amp; citizen scientists</title><link href="http://daniellombrana.es/2012/02/26/earthquakes-citizen-science.html" rel="alternate"></link><updated>2012-02-26T00:00:00+01:00</updated><author><name>Daniel Lombraña</name></author><id>tag:daniellombrana.es,2012-02-26:2012/02/26/earthquakes-citizen-science.html</id><summary type="html">&lt;p&gt;The Asia@Home workshop started focused on earthquakes and volunteers to track them. 
 The project The Quake Catcher Network presented their results an approach in different parts of the world (Chile, Christchurch, California, etc.) and a collaboration with Taiwan for monitoring earthquakes.&lt;/p&gt;
 &lt;ul class="thumbnails"&gt;
     &lt;li class="span6"&gt;

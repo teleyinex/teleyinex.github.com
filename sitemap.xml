@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://daniellombrana.es/index.html</loc>
-<lastmod>2013-11-26T14:15:11-00:00</lastmod>
+<lastmod>2013-12-02T14:11:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
 <loc>http://daniellombrana.es/pages/about.html</loc>
-<lastmod>2013-11-26T14:15:11-00:00</lastmod>
+<lastmod>2013-12-02T14:11:45-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>http://daniellombrana.es/pages/contact.html</loc>
-<lastmod>2013-11-26T14:15:11-00:00</lastmod>
+<lastmod>2013-12-02T14:11:45-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>http://daniellombrana.es/pages/photography.html</loc>
-<lastmod>2013-11-26T14:15:11-00:00</lastmod>
+<lastmod>2013-12-02T14:11:45-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -92,6 +92,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <lastmod>2010-10-01T00:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
+</url>
+
+<url>
+<loc>http://daniellombrana.es/2013/12/02/cienciaciudadana.html</loc>
+<lastmod>2013-12-02T00:00:00-00:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 
 <url>
