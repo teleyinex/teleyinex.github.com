@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+                <meta charset="utf-8">
+        <title>Daniel Lombraña González - Blog - Sharing your PyBossa application analysis with Enki</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sharing your PyBossa application analysis with Enki">
+        <meta name="AUTHOR" content="Daniel Lombraña González">
+
+        <!-- Le styles -->
+        <link href="../../../../theme/css/bootstrap.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.css" rel="stylesheet">
+        <link href="../../../../theme/css/style-alt.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36769710-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+                        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../../../../theme/js/jquery-1.8.3.min.js"></script>
+        <script src="../../../../theme/js/bootstrap.min.js"></script>
+        <script src="../../../../theme/js/holder.js"></script>
+        <script src="../../../../theme/js/jquery.dotdotdot.min.js"></script>
+        <script src="../../../../theme/js/picturefill.js"></script>
+    </head>
+
+    <body>
+        <!-- NAVBAR
+    ================================================== -->
+        <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+        <div class="container navbar-wrapper">
+
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand brand-title" href="../../../..">Daniel Lombraña</a>
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li ><a href="../../../../index.html">Projects</a></li>
+                            <li  class="active" ><a href="../../../../blog/index.html">Blog</a></li>
+                            <li ><a href="../../../../pages/photography.html">Photography</a></li>
+                            <li ><a href="../../../../pages/about.html">About</a></li>
+                            <li ><a href="../../../../pages/contact.html">Contact</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+
+        </div><!-- /.container -->
+
+        <div class="container content">
+    <div class="row">
+        <div class="span12">
+            <h1>Sharing your PyBossa application analysis with Enki</h1>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="entry span8">
+            <p>Up to now if you have created your own application in your <a href="http://daniellombrana.es/pybossa.html">PyBossa server</a> or
+in <a href="http://crowdcrafting.org">Crowdcrafting</a> you have to create your own library or script to download the results
+from the server and process them.</p>
+<p>PyBossa provides links for every application to download the tasks and task runs in a CSV file or in JSON (if you want
+to hack around it more easily), however doing the analysis usually involved some work that could be tedious.</p>
+<p>In order to solve this problem, I decided to creat a very simple to use Python package that downloads all the completed tasks
+and its associated answers and gives you the right tools for doing the analysis without having to write none of the usual tests.</p>
+<p>The result: <a href="http://github.com/PyBossa/enki">Enki</a></p>
+<h2 id="enki">Enki</h2>
+<p>Enki is a very simple package that uses the <a href="http://github.com/PyBossa/pybossa-client">PyBossa-Client</a> and <a href="http://pandas.pydata.org/">Pandas</a>
+package to achieve the following two items:</p>
+<ul>
+<li>Get all the tasks and task_runs,</li>
+<li>Analyze them using the amazing Pandas framework.</li>
+</ul>
+<p>Enki is so simple to use, that all you have to do to analyze your app is the following:</p>
+<div class="codehilite"><pre>    <span class="o">&gt;&gt;&gt;</span> <span class="n">import</span> <span class="n">enki</span>
+    <span class="o">&gt;&gt;&gt;</span> <span class="n">e</span> <span class="o">=</span> <span class="n">enki</span><span class="p">.</span><span class="n">Enki</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="err">&#39;</span><span class="n">private</span><span class="err">&#39;</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//server&#39;, app_short_name=&#39;your-app-slug&#39;)</span>
+    <span class="o">&gt;&gt;&gt;</span> <span class="n">e</span><span class="p">.</span><span class="n">get_all</span><span class="p">()</span>
+</pre></div>
+
+
+<p>Once all the tasks and task_runs have been downloaded, Enki will create automatically for you a list of data frames for the tasks,
+and a dictionary where the keys are the tasks IDs and the values are data frames of the associated task runs.</p>
+<p>Then, if your application was for example asking if you see a human face in a picture, and the available answers are: Yes, No and I do not know,
+getting the most voted answer is as simple as this:</p>
+<div class="codehilite"><pre>    <span class="o">&gt;&gt;&gt;</span> <span class="n">task</span> <span class="o">=</span> <span class="n">e</span><span class="p">.</span><span class="n">tasks</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="o">&gt;&gt;&gt;</span> <span class="n">e</span><span class="p">.</span><span class="n">task_runs_df</span><span class="p">[</span><span class="n">task</span><span class="p">.</span><span class="n">id</span><span class="p">][</span><span class="err">&#39;</span><span class="n">info</span><span class="err">&#39;</span><span class="p">].</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+
+<p>As Enki uses Pandas software, the describe function will detect if it is dealing with strings, or with numbers. In the latter case you
+will get the mean, avg, std, etc. as a result of the output. Handy, right?</p>
+<h2 id="ipython-enki-sharing-the-analysis">Ipython + Enki = sharing the analysis</h2>
+<p>Therefore, Enki is the right tool for doing the analysis of any of your PyBossa applications. However, I wanted to provide a more
+interesting tool. I wanted to easily share the analysis in order to embrace <strong>open science</strong>, so other researchers and citizens could
+replicate my analysis and let me know if I made a mistake.</p>
+<p>For these reasons, as Pandas is integrated with Ipython you can create a notebook and share it with the rest of the world using
+the <a href="http://nbviewer.ipython.org">Ipython Notebook viewer</a>.</p>
+<p>This integration is <strong>amazing</strong>. Now you can not only share your study, you can also get feedback and patches on your notebook,
+tweet about it, and improve it over time because you can save the notebook as a <a href="https://gist.github.com/">Github Gist</a>.</p>
+<p>In order to show how awesome is this feature, I have created a simple notebook to analyze the <a href="http://crowdcrafting.org/app/vimeo/">Crowdcrafting Video Pattern Recognition application</a>.</p>
+<p>The Gist is available <a href="https://gist.github.com/teleyinex/7991086">here</a>, and you can directly view it <a href="http://nbviewer.ipython.org/gist/teleyinex/7991086">here</a>.</p>
+<iframe class="hidden-phone" src="http://nbviewer.ipython.org/gist/teleyinex/7991086" style="width:100%; height:500px;">
+</iframe>
+
+<p>Thus, if you have a Crowdcrafting application and you need to analyze it, start using <a href="http://github.com/PyBossa/enki">Enki</a>.</p>
+<p><strong>NOTE</strong>: The picture used for this entry is from <a href="http://en.wikipedia.org/wiki/File:Chaos_Monster_and_Sun_God.png">Georgelazenby</a></p>
+<p><strong>NOTE 2</strong>: <a href="http://en.wikipedia.org/wiki/Enki">Enki is the name of a Sumerian god of the intelligence</a>.</p>
+        </div>
+        <div class="span4">
+            <div class="column-right">
+                <h3>Written by</h3>
+                <p class="lead">Daniel Lombraña</p>
+                <img class="img-polaroid" src="../../../../static/images/blog/avatar.jpeg"/>
+                </p>
+                <p>
+                <a href="http://www.shuttleworthfoundation.org/fellows/daniel-lombrana/"><img src="../../../../static/images/blog/shuttleworth-fellow.png"/></a>
+                <p class="date">
+                <i class="icon-time"></i> Published: 2013-12-16
+                </p>
+                <h4>Share this post</h4>
+                <div id="twitter" >
+                    <a href="https://twitter.com/share?url=http://daniellombrana.es/2013/12/16/pybossa-enki.html">
+                    <img class="img-circle" src="holder.js/60x60/text: /social"/>
+                    <div class="twitter-circle">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                    </a>
+                </div>
+                <p class="tags">
+                                This entry was tagged with 
+                <ul class="tag-list">
+                     
+                    <li><a href="../../../../tag/enki.html">enki </a></li>
+                 
+                    <li><a href="../../../../tag/science.html">science </a></li>
+                 
+                    <li><a href="../../../../tag/analysis.html">analysis </a></li>
+                 
+                    <li><a href="../../../../tag/sharing.html">sharing </a></li>
+                 
+                    <li><a href="../../../../tag/open-science.html">open science </a></li>
+                 
+                    <li><a href="../../../../tag/crowdcrafting.html">crowdcrafting </a></li>
+                 
+                    <li><a href="../../../../tag/pybossa.html">pybossa </a></li>
+                                </ul>
+                                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="row hidden-phone">
+        <div class="span12">
+            <h4>Share it</h4>
+        </div>
+    </div>
+    <div class="row hidden-phone">
+        <div id="twitter" class="span4">
+            <a href="https://twitter.com/share?url=http://daniellombrana.es/2013/12/16/pybossa-enki.html">
+            <img class="img-circle" src="holder.js/60x60/text: /social"/>
+            <div class="twitter-circle">
+                <i class="fa fa-twitter"></i>
+            </div>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'daniellombrana'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+    <div id="disqus_thread"></div>
+</div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'daniellombrana'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <!--<p class="pull-right"><a href="#">Back to top</a></p>-->
+            <p><a href="http://www.shuttleworthfoundation.org/fellows/daniel-lombrana/"><img src="../../../../static/images/blog/shuttleworth-fellow.png"/></a></p>
+            <p>&copy; 2013 <a href="../../../../pages/contact.html">Daniel Lombraña</a></p>
+        </footer>
+
+    </div><!-- /.container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <script>
+        !function ($) {
+            $(function(){
+                // carousel demo
+                $('#myCarousel').carousel()
+            })
+        }(window.jQuery)
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#name").dotdotdot({
+                watch: true
+            // configuration goes here
+            });
+        });
+    </script>
+</body>
+<!-- Page built using Pelican http://docs.getpelican.com -->
+</html>

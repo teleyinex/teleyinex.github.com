@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Lombraña González</title><link href="http://daniellombrana.es/" rel="alternate"></link><link href="http://daniellombrana.es/feeds/misc.atom.xml" rel="self"></link><id>http://daniellombrana.es/</id><updated>2013-12-02T00:00:00+01:00</updated><entry><title>Citizen Science hackfest in Madrid</title><link href="http://daniellombrana.es/2013/12/02/cienciaciudadana.html" rel="alternate"></link><updated>2013-12-02T00:00:00+01:00</updated><author><name>Daniel Lombraña</name></author><id>tag:daniellombrana.es,2013-12-02:2013/12/02/cienciaciudadana.html</id><summary type="html">&lt;p&gt;The 29 and 30 of November of 2013 I organized with the support of &lt;a href="http://fecyt.es/"&gt;FECYT&lt;/a&gt;, &lt;a href="http://obrasocial.lacaixa.es/nuestroscentros/caixaforummadrid/caixaforummadrid_es.html"&gt;La Caixa Forum&lt;/a&gt; and
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Lombraña González</title><link href="http://daniellombrana.es/" rel="alternate"></link><link href="http://daniellombrana.es/feeds/misc.atom.xml" rel="self"></link><id>http://daniellombrana.es/</id><updated>2013-12-16T00:00:00+01:00</updated><entry><title>Sharing your PyBossa application analysis with Enki</title><link href="http://daniellombrana.es/2013/12/16/pybossa-enki.html" rel="alternate"></link><updated>2013-12-16T00:00:00+01:00</updated><author><name>Daniel Lombraña</name></author><id>tag:daniellombrana.es,2013-12-16:2013/12/16/pybossa-enki.html</id><summary type="html">&lt;p&gt;Up to now if you have created your own application in your &lt;a href="http://daniellombrana.es/pybossa.html"&gt;PyBossa server&lt;/a&gt; or
+in &lt;a href="http://crowdcrafting.org"&gt;Crowdcrafting&lt;/a&gt; you have to create your own library or script to download the results
+from the server and process them.&lt;/p&gt;
+&lt;p&gt;PyBossa provides links for every application to download the tasks and task runs in a CSV file or in JSON (if you want
+to hack around it more easily), however doing the analysis usually involved some work that could be tedious.&lt;/p&gt;
+&lt;p&gt;In order to solve this problem, I decided to creat a very simple to use Python package that downloads all the completed tasks
+and its associated answers and gives you the right tools for doing the analysis without having to write none of the usual tests.&lt;/p&gt;
+&lt;p&gt;The result: &lt;a href="http://github.com/PyBossa/enki"&gt;Enki&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="enki"&gt;Enki&lt;/h2&gt;
+&lt;p&gt;Enki is a very simple package that uses the &lt;a href="http://github.com/PyBossa/pybossa-client"&gt;PyBossa-Client&lt;/a&gt; and &lt;a href="http://pandas.pydata.org/"&gt;Pandas&lt;/a&gt;
+package to achieve the following two items:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Get all the tasks and task_runs,&lt;/li&gt;
+&lt;li&gt;Analyze them using the amazing Pandas framework.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Enki is so simple to use, that all you have to do to analyze your app is the following:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;import&lt;/span&gt; &lt;span class="n"&gt;enki&lt;/span&gt;
+    &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;enki&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Enki&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;api_key&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;private&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;endpoint&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//server&amp;#39;, app_short_name=&amp;#39;your-app-slug&amp;#39;)&lt;/span&gt;
+    &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_all&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Once all the tasks and task_runs have been downloaded, Enki will create automatically for you a list of data frames for the tasks,
+and a dictionary where the keys are the tasks IDs and the values are data frames of the associated task runs.&lt;/p&gt;
+&lt;p&gt;Then, if your application was for example asking if you see a human face in a picture, and the available answers are: Yes, No and I do not know,
+getting the most voted answer is as simple as this:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tasks&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;task_runs_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;task&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="n"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As Enki uses Pandas software, the describe function will detect if it is dealing with strings, or with numbers. In the latter case you
+will get the mean, avg, std, etc. as a result of the output. Handy, right?&lt;/p&gt;
+&lt;h2 id="ipython-enki-sharing-the-analysis"&gt;Ipython + Enki = sharing the analysis&lt;/h2&gt;
+&lt;p&gt;Therefore, Enki is the right tool for doing the analysis of any of your PyBossa applications. However, I wanted to provide a more
+interesting tool. I wanted to easily share the analysis in order to embrace &lt;strong&gt;open science&lt;/strong&gt;, so other researchers and citizens could
+replicate my analysis and let me know if I made a mistake.&lt;/p&gt;
+&lt;p&gt;For these reasons, as Pandas is integrated with Ipython you can create a notebook and share it with the rest of the world using
+the &lt;a href="http://nbviewer.ipython.org"&gt;Ipython Notebook viewer&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This integration is &lt;strong&gt;amazing&lt;/strong&gt;. Now you can not only share your study, you can also get feedback and patches on your notebook,
+tweet about it, and improve it over time because you can save the notebook as a &lt;a href="https://gist.github.com/"&gt;Github Gist&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In order to show how awesome is this feature, I have created a simple notebook to analyze the &lt;a href="http://crowdcrafting.org/app/vimeo/"&gt;Crowdcrafting Video Pattern Recognition application&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Gist is available &lt;a href="https://gist.github.com/teleyinex/7991086"&gt;here&lt;/a&gt;, and you can directly view it &lt;a href="http://nbviewer.ipython.org/gist/teleyinex/7991086"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;iframe class="hidden-phone" src="http://nbviewer.ipython.org/gist/teleyinex/7991086" style="width:100%; height:500px;"&gt;
+&lt;/iframe&gt;
+
+&lt;p&gt;Thus, if you have a Crowdcrafting application and you need to analyze it, start using &lt;a href="http://github.com/PyBossa/enki"&gt;Enki&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: The picture used for this entry is from &lt;a href="http://en.wikipedia.org/wiki/File:Chaos_Monster_and_Sun_God.png"&gt;Georgelazenby&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE 2&lt;/strong&gt;: &lt;a href="http://en.wikipedia.org/wiki/Enki"&gt;Enki is the name of a Sumerian god of the intelligence&lt;/a&gt;.&lt;/p&gt;</summary><category term="enki"></category><category term="science"></category><category term="analysis"></category><category term="sharing"></category><category term="open science"></category><category term="crowdcrafting"></category><category term="PyBossa"></category></entry><entry><title>Citizen Science hackfest in Madrid</title><link href="http://daniellombrana.es/2013/12/02/cienciaciudadana.html" rel="alternate"></link><updated>2013-12-02T00:00:00+01:00</updated><author><name>Daniel Lombraña</name></author><id>tag:daniellombrana.es,2013-12-02:2013/12/02/cienciaciudadana.html</id><summary type="html">&lt;p&gt;The 29 and 30 of November of 2013 I organized with the support of &lt;a href="http://fecyt.es/"&gt;FECYT&lt;/a&gt;, &lt;a href="http://obrasocial.lacaixa.es/nuestroscentros/caixaforummadrid/caixaforummadrid_es.html"&gt;La Caixa Forum&lt;/a&gt; and
 &lt;a href="http://medialab-prado.es"&gt;Medialab-Prado&lt;/a&gt; the second &lt;a href="http://medialab-prado.es/article/encuentrodecienciaciudadana"&gt;citizen science hackfest&lt;/a&gt; in Madrid, Spain.&lt;/p&gt;
 &lt;p&gt;The event this time had the participation of two respected experts in the field of Citizen Science:&lt;/p&gt;
 &lt;ul&gt;

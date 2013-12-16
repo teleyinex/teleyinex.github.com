@@ -89,6 +89,73 @@
                 <ul class="cards">
                                 <li>
                 <div class="span6 card">
+                    <a href="2013/12/16/pybossa-enki.html">
+                        <span data-picture data-alt="Sharing your PyBossa application analysis with Enki">
+                            <span data-src="../static/images/blog/enki_320.jpg"></span>
+                            <span data-src="../static/images/blog/enki.jpg"     data-media="(min-width: 768px)"></span>
+                        </span>
+                    </a>
+                    <h3><a href="2013/12/16/pybossa-enki.html">Sharing your PyBossa application analysis with Enki</a></h3>
+                    <div class="excerpt">
+                    <p><div><p>Up to now if you have created your own application in your <a href="http://daniellombrana.es/pybossa.html">PyBossa server</a> or
+in <a href="http://crowdcrafting.org">Crowdcrafting</a> you have to create your own library or script to download the results
+from the server and process them.</p>
+<p>PyBossa provides links for every application to download the tasks and task runs in a CSV file or in JSON (if you want
+to hack around it more easily), however doing the analysis usually involved some work that could be tedious.</p>
+<p>In order to solve this problem, I decided to creat a very simple to use Python package that downloads all the completed tasks
+and its associated answers and gives you the right tools for doing the analysis without having to write none of the usual tests.</p>
+<p>The result: <a href="http://github.com/PyBossa/enki">Enki</a></p>
+<h2 id="enki">Enki</h2>
+<p>Enki is a very simple package that uses the <a href="http://github.com/PyBossa/pybossa-client">PyBossa-Client</a> and <a href="http://pandas.pydata.org/">Pandas</a>
+package to achieve the following two items:</p>
+<ul>
+<li>Get all the tasks and task_runs,</li>
+<li>Analyze them using the amazing Pandas framework.</li>
+</ul>
+<p>Enki is so simple to use, that all you have to do to analyze your app is the following:</p>
+<div class="codehilite"><pre>    <span class="o">&gt;&gt;&gt;</span> <span class="n">import</span> <span class="n">enki</span>
+    <span class="o">&gt;&gt;&gt;</span> <span class="n">e</span> <span class="o">=</span> <span class="n">enki</span><span class="p">.</span><span class="n">Enki</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="err">'</span><span class="n">private</span><span class="err">'</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="err">'</span><span class="n">http</span><span class="o">:</span><span class="c1">//server', app_short_name='your-app-slug')</span>
+    <span class="o">&gt;&gt;&gt;</span> <span class="n">e</span><span class="p">.</span><span class="n">get_all</span><span class="p">()</span>
+</pre></div>
+
+
+<p>Once all the tasks and task_runs have been downloaded, Enki will create automatically for you a list of data frames for the tasks,
+and a dictionary where the keys are the tasks IDs and the values are data frames of the associated task runs.</p>
+<p>Then, if your application was for example asking if you see a human face in a picture, and the available answers are: Yes, No and I do not know,
+getting the most voted answer is as simple as this:</p>
+<div class="codehilite"><pre>    <span class="o">&gt;&gt;&gt;</span> <span class="n">task</span> <span class="o">=</span> <span class="n">e</span><span class="p">.</span><span class="n">tasks</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="o">&gt;&gt;&gt;</span> <span class="n">e</span><span class="p">.</span><span class="n">task_runs_df</span><span class="p">[</span><span class="n">task</span><span class="p">.</span><span class="n">id</span><span class="p">][</span><span class="err">'</span><span class="n">info</span><span class="err">'</span><span class="p">].</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+
+<p>As Enki uses Pandas software, the describe function will detect if it is dealing with strings, or with numbers. In the latter case you
+will get the mean, avg, std, etc. as a result of the output. Handy, right?</p>
+<h2 id="ipython-enki-sharing-the-analysis">Ipython + Enki = sharing the analysis</h2>
+<p>Therefore, Enki is the right tool for doing the analysis of any of your PyBossa applications. However, I wanted to provide a more
+interesting tool. I wanted to easily share the analysis in order to embrace <strong>open science</strong>, so other researchers and citizens could
+replicate my analysis and let me know if I made a mistake.</p>
+<p>For these reasons, as Pandas is integrated with Ipython you can create a notebook and share it with the rest of the world using
+the <a href="http://nbviewer.ipython.org">Ipython Notebook viewer</a>.</p>
+<p>This integration is <strong>amazing</strong>. Now you can not only share your study, you can also get feedback and patches on your notebook,
+tweet about it, and improve it over time because you can save the notebook as a <a href="https://gist.github.com/">Github Gist</a>.</p>
+<p>In order to show how awesome is this feature, I have created a simple notebook to analyze the <a href="http://crowdcrafting.org/app/vimeo/">Crowdcrafting Video Pattern Recognition application</a>.</p>
+<p>The Gist is available <a href="https://gist.github.com/teleyinex/7991086">here</a>, and you can directly view it <a href="http://nbviewer.ipython.org/gist/teleyinex/7991086">here</a>.</p>
+
+
+
+<p>Thus, if you have a Crowdcrafting application and you need to analyze it, start using <a href="http://github.com/PyBossa/enki">Enki</a>.</p>
+<p><strong>NOTE</strong>: The picture used for this entry is from <a href="http://en.wikipedia.org/wiki/File:Chaos_Monster_and_Sun_God.png">Georgelazenby</a></p>
+<p><strong>NOTE 2</strong>: <a href="http://en.wikipedia.org/wiki/Enki">Enki is the name of a Sumerian god of the intelligence</a>.</p></div></p>
+                </div>
+                <div id="map-pybossa-enki" style="height:100px;">
+                    </div>
+                    <div class="readmore">
+                        <a href="2013/12/16/pybossa-enki.html">Read more</a>
+                    </div>
+                </div>
+                </li>
+                                <li>
+                <div class="span6 card">
                     <a href="2013/12/02/cienciaciudadana.html">
                         <span data-picture data-alt="Citizen Science hackfest in Madrid">
                             <span data-src="../static/images/blog/balloon_320.jpg"></span>
@@ -667,6 +734,28 @@ The project The Quake Catcher Network presented their results an approach in dif
             watch: true
         // configuration goes here
         });
+    });
+</script>
+<script>
+    var url = 'http://nominatim.openstreetmap.org/search?q=Madrid, Spain&format=json';
+
+    $.getJSON(url, function(output) {
+        if (output.length >= 1) {
+            var lon = output[0].lon;
+            var lat = output[0].lat;
+            var zoom = 17;
+            var map = L.map('map-pybossa-enki', { zoomControl: false, dragging: false, scrollWheelZoom: false}).setView([lat, lon], zoom);
+            // create the tile layer with correct attribution
+            var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var osmAttrib='Map data © OpenStreetMap contributors';
+            var osm = new L.TileLayer(osmUrl, {minZoom: zoom, maxZoom: zoom, attribution: osmAttrib});       
+
+            // start the map in South-East England
+            map.setView(new L.LatLng(lat, lon), zoom);
+            map.addLayer(osm);
+
+            var marker = L.marker([lat, lon]).addTo(map);
+        }
     });
 </script>
 <script>
