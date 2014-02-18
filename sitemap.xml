@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://daniellombrana.es/index.html</loc>
-<lastmod>2014-01-28T12:40:56-00:00</lastmod>
+<lastmod>2014-02-18T17:31:57-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
 <loc>http://daniellombrana.es/pages/about.html</loc>
-<lastmod>2014-01-28T12:40:56-00:00</lastmod>
+<lastmod>2014-02-18T17:31:57-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>http://daniellombrana.es/pages/contact.html</loc>
-<lastmod>2014-01-28T12:40:56-00:00</lastmod>
+<lastmod>2014-02-18T17:31:57-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>http://daniellombrana.es/pages/photography.html</loc>
-<lastmod>2014-01-28T12:40:56-00:00</lastmod>
+<lastmod>2014-02-18T17:31:57-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -99,6 +99,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <lastmod>2010-10-01T00:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
+</url>
+
+<url>
+<loc>http://daniellombrana.es/2014/02/18/interview-aventura-del-saber.html</loc>
+<lastmod>2014-02-18T00:00:00-00:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 
 <url>

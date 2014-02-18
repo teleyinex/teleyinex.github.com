@@ -89,6 +89,31 @@
                 <ul class="cards">
                                 <li>
                 <div class="span6 card">
+                    <a href="2014/02/18/interview-aventura-del-saber.html">
+                        <span data-picture data-alt="Interview">
+                            <span data-src="../static/images/blog/camera_320.jpg"></span>
+                            <span data-src="../static/images/blog/camera.jpg"     data-media="(min-width: 768px)"></span>
+                        </span>
+                    </a>
+                    <h3><a href="2014/02/18/interview-aventura-del-saber.html">Interview</a></h3>
+                    <div class="excerpt">
+                    <p><div><p>Last week I was invited by <a href="http://www.rtve.es/television/la-aventura-del-saber/">La Aventura del Saber</a>, a TV show from the <strong>Spanish National TV</strong>, 
+to talk about Citizen Science and explain it.</p>
+<p>To me it was a great surprise, one of those that make your day, and I felt really honored and proud to be part of their program.</p>
+<p>Today, the interview was aired, and thanks to their on demand service, you can now watch it here (note, only in Spanish, sorry!). Enjoy!</p>
+<div>     <div> <span><img src="http://img.irtve.es/css/rtve.commons/rtve.header.footer/i/logoRTVEes.png"></span>    <a title="La aventura del Saber. Daniel Lombraña. Ciencia ciudadana" href="http://www.rtve.es/alacarta/videos/la-aventura-del-saber/aventura-del-saber-daniel-lombrana-ciencia-ciudadana/2403790/"><strong>La aventura del Saber. Daniel Lombraña. Ciencia ciudadana</strong></a></div></div>
+
+<p>NOTE: Photo of this entry courtesy of <a href="http://www.flickr.com/photos/48698930@N04/7637177726/in/photostream/">EstatesGazzette</a> License <a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p></div></p>
+                </div>
+                <div id="map-interview-aventura-del-saber" style="height:100px;">
+                    </div>
+                    <div class="readmore">
+                        <a href="2014/02/18/interview-aventura-del-saber.html">Read more</a>
+                    </div>
+                </div>
+                </li>
+                                <li>
+                <div class="span6 card">
                     <a href="2014/01/14/la-aventura-del-saber.html">
                         <span data-picture data-alt="The adventure of knowing">
                             <span data-src="../static/images/blog/adventure_320.jpg"></span>
@@ -762,6 +787,28 @@ The project The Quake Catcher Network presented their results an approach in dif
             watch: true
         // configuration goes here
         });
+    });
+</script>
+<script>
+    var url = 'http://nominatim.openstreetmap.org/search?q=Madrid, Spain&format=json';
+
+    $.getJSON(url, function(output) {
+        if (output.length >= 1) {
+            var lon = output[0].lon;
+            var lat = output[0].lat;
+            var zoom = 17;
+            var map = L.map('map-interview-aventura-del-saber', { zoomControl: false, dragging: false, scrollWheelZoom: false}).setView([lat, lon], zoom);
+            // create the tile layer with correct attribution
+            var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var osmAttrib='Map data © OpenStreetMap contributors';
+            var osm = new L.TileLayer(osmUrl, {minZoom: zoom, maxZoom: zoom, attribution: osmAttrib});       
+
+            // start the map in South-East England
+            map.setView(new L.LatLng(lat, lon), zoom);
+            map.addLayer(osm);
+
+            var marker = L.marker([lat, lon]).addTo(map);
+        }
     });
 </script>
 <script>
