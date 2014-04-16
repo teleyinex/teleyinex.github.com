@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Photography</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Homepage of Daniel Lombraña González">
+        <meta name="AUTHOR" content="Daniel Lombraña González">
+
+        <!-- Le styles -->
+        <link href="/assets/css/bootstrap.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/assets/css/animate.min.css">
+        <link href="/assets/css/style-alt.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+        
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="/assets/js/jquery-1.8.3.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/holder.js"></script>
+        <script src="/assets/js/jquery.dotdotdot.min.js"></script>
+        <script src="/assets/js/picturefill.js"></script>
+        <script src="/assets/js/wow.min.js"></script>
+    </head>
+
+    <body>
+        <!-- NAVBAR
+    ================================================== -->
+        <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+        <div class="container navbar-wrapper">
+
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand brand-title" href="/">Daniel Lombraña</a>
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li ><a href="/index.html">Projects</a></li>
+                            <li ><a href="/blog/">Blog</a></li>
+                            <li  class="active" ><a href="/photography/">Photography</a></li>
+                            <li ><a href="/about/">About</a></li>
+                            <li ><a href="/contact/">Contact</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+        </div><!-- /.container -->
+
+        <div class="container content">
+<div class="row">
+    <div class="span12">
+        <h1>Photography</h1>
+        <p>I love photography. In my free time, I take pictures of almost everything, nature, people, places, etc.</p>
+        <p>As an amateur one of my <a href="http://www.flickr.com/photos/teleyinex/2945647308/in/set-72157618769763161">biggests successes</a> has been to win a place in the first <a href="http://www.ubuntu.com">Ubuntu</a> OS contest for desktop wallpapers. The photo was included in the default CD-ROM and distributed as part of the wallpaper package, sharing my work with hundreds of people.</p>
+        <p>More recently, the Spanish company <a href="https://twitter.com/AguaLanjaron/status/336382074833469440">Lanjarón used another photo</a> from my <a href="http://www.flickr.com/photos/teleyinex/4639737486/">portfolio</a> to promote their water.</p>
+        <p>As an open source believer, all my photos are released with a Creative Commons license (<a href="http://creativecommons.org/licenses/by-sa/2.0/">Attribution-ShareAlike 2.0 Generic</a>), so feel free to use them!</p>
+    </div>
+    <div id="container" class="span12">
+        <img id="spinner" src="/assets/img/spinner.gif"/>
+        <ul id="photos" class="thumbnails wow">
+        </ul>
+    </div>
+</div>
+</div>
+
+<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js"></script>
+<script src="/assets/js/imagesloaded.js"></script>
+<script>
+(function(){
+function shuffle(array) {
+  var currentIndex = array.length
+    , temporaryValue
+    , randomIndex
+    ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+
+    var xhr = $.ajax({
+        url: "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&",
+        dataType: "json",
+        data: {"api_key": "3a3eaf0da1caa6463ab4ce99d76dd6ff",
+               "photoset_id":  "72157618769763161",
+               "format": "json",
+               "nojsoncallback" :1}
+    });
+
+    xhr.done(function(photos){
+       var random_photos = shuffle(photos.photoset.photo);
+       var items = [];
+
+       for(var i=0;i<random_photos.length;i++){ 
+            var owner = photos.photoset.owner;
+            var photo = photos.photoset.photo[i];
+            var li = $("<li/>", {'class': 'span4 item'});
+            var a = $("<a/>");
+            var img = $("<img/>", {'class': 'img-polaroid'});
+            var url = "http://farm" + photo['farm'] + ".staticflickr.com/" + photo['server']+ "/" + photo['id']+"_"+photo['secret']+".jpg";
+            img.attr("src", url);
+            a.attr("href", "http://flickr.com/photos/" + owner + "/" + photo['id']);
+            a.append(img);
+            li.append(a);
+            items.push(li);
+       }
+
+       $("#photos").append(items);
+        imagesLoaded("#photos", function(){
+           var container = $("#photos");
+           container.masonry({
+             itemSelector: '.item',
+           });
+           });
+
+       $("#spinner").hide();
+       //$("#photos").trigger("masonryPowers");
+
+    });
+       
+
+})();
+</script>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <!--<p class="pull-right"><a href="#">Back to top</a></p>-->
+            <p><a href="http://www.shuttleworthfoundation.org/fellows/daniel-lombrana/"><img src="/assets/img/blog/shuttleworth-fellow.png"/></a></p>
+            <p>&copy; 2014 <a href="/contact/"> Daniel Lombraña González</a></p>
+        </footer>
+
+    </div><!-- /.container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <script>
+        !function ($) {
+            $(function(){
+                // carousel demo
+                $('#myCarousel').carousel()
+            })
+        }(window.jQuery)
+    </script>
+    <script>
+        $(document).ready(function() {
+            new WOW().init();
+            $("#name").dotdotdot({
+                watch: true
+            // configuration goes here
+            });
+        });
+    </script>
+</body>
+<!-- Page built using Pelican http://docs.getpelican.com -->
+</html>

@@ -1,0 +1,66 @@
+---
+layout: default
+active: projects
+---
+<div class="container content" itemscope itemtype="http://schema.org/SoftwareApplication">
+    <div class="row-fluid">
+        <div class="span12">
+            <h1><span itemprop="name">{{ page.title|striptags}}</span></h1> 
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div itemprop="about" class="span8">
+            {{content}}
+        </div>
+        <div class="span4">
+            <span data-picture data-alt="{{page.title}}">
+                <span class="picture" data-src="/assets/img/project/{{page.icon}}_320.jpg"></span>
+                <span class="picture" data-src="/assets/img/project/{{page.icon}}_768.jpg"     data-media="(min-width: 768px)"></span>
+                <span class="picture" data-src="/assets/img/project/{{page.icon}}.jpg"     data-media="(min-width: 980px)"></span>
+            </span>
+                {% if page.tags %}
+                <p><i class="fa fa-tag-o"></i> Project tagged with: </p>
+                <ul class="tag-list">
+                {% for tag in page.tags %} 
+                    <li>
+                        <a href="{{ SITEURL }}/{{tag.url}}">{{tag | lower}} </a>
+                    </li>
+                {% endfor %}
+                </ul>
+                {% endif %}
+
+        </div>
+    </div>
+    <div class="row-fluid project">
+        <div class="span4 column">
+            <h3>Project Details</h3>
+            <ul>
+                <li><strong><i class="fa fa-user"></i> Role:</strong> {{page.role }}</li>
+                <li><strong><i class="fa fa-calendar-o"></i> Started:</strong> <span itemprop="dateCreated">{{page.date.strftime('%b %Y')}}</span></li>
+                <li><strong><i class="fa fa-tag"></i> Type:</strong> <span itemprop="applicationCategory">{{page.type}}</span></li>
+                <li><i class="fa fa-home"></i> <a itemprop="url" href="{{page.home}}">{{page.title}}</a></li>
+                <li><i class="fa fa-github"></i> <a href="{{page.github}}">Source Code</a></li>
+            </ul>
+        </div>
+        <div class="span4 column">
+            {% if page.partners %}
+            <h3>Project Partners</h3>
+            {% for partner in page.partners %}
+            <ul>
+                <li><i class="fa fa-link-o"></i> {{partner}}</li>
+            </ul>
+            {% endfor %}
+            {% endif %}
+        </div>
+        <div class="span4 column">
+            {% if page.funders %}
+            <h3>Project Funders</h3>
+            {% for funder in page.funders %}
+            <ul>
+                <li><i class="fa fa-link"></i> {{funder}}</li>
+            </ul>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>

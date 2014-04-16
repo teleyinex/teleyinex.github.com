@@ -1,0 +1,81 @@
+---
+layout: default
+title: Blog
+active: blog
+---
+
+ <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+ <!--[if lte IE 8]>
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+ <![endif]-->
+<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+<div class="container content">
+    <div class="row">
+        <div class="span12">
+            <h1>Blog Entries</h1>
+            <div class="row-fluid">
+                <ul class="cards">
+            {% for post in site.categories.blog %}
+                    <li>
+                <div class="span6 card wow fadeInUp">
+                    <a href="{{post.url}}">
+                        <span data-picture data-alt="{{post.title}}">
+                            <span data-src="/assets/img/blog/{{post.icon}}_320.jpg"></span>
+                            <span data-src="/assets/img/blog/{{post.icon}}.jpg"     data-media="(min-width: 768px)"></span>
+                        </span>
+                    </a>
+                    <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+                    <div class="excerpt">
+                    <p>{{post.content | only_text}}</p>
+                </div>
+                <div id="map-{{post.slug}}" style="height:100px;">
+                    </div>
+                    <div class="readmore">
+                        <a href="{{post.url}}">Read more</a>
+                    </div>
+                </div>
+                </li>
+            {% endfor %}
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span12 rss-subscribe">
+            <a href="/blog/all.atom.xml" class="btn btn-warning">Subscribe to Blog posts <i class="icon-rss"></i></a>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $(".excerpt").dotdotdot({
+            watch: true
+        // configuration goes here
+        });
+    });
+</script>
+{% for post in site.categories.blog %}
+<script>
+    var url = 'http://nominatim.openstreetmap.org/search?q={{post.location}}&format=json';
+
+    $.getJSON(url, function(output) {
+        if (output.length >= 1) {
+            var lon = output[0].lon;
+            var lat = output[0].lat;
+            var zoom = 17;
+            var map = L.map('map-{{post.slug}}', { zoomControl: false, dragging: false, scrollWheelZoom: false}).setView([lat, lon], zoom);
+            // create the tile layer with correct attribution
+            var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var osmAttrib='Map data © OpenStreetMap contributors';
+            var osm = new L.TileLayer(osmUrl, {minZoom: zoom, maxZoom: zoom, attribution: osmAttrib});       
+
+            // start the map in South-East England
+            map.setView(new L.LatLng(lat, lon), zoom);
+            map.addLayer(osm);
+
+            var marker = L.marker([lat, lon]).addTo(map);
+        }
+    });
+</script>
+{% endfor %}
+

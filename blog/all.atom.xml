@@ -1,0 +1,32 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>Daniel Lombraña González</title>
+  <link href="http://daniellombrana.es/"/>
+  <link type="application/atom+xml" rel="self" href="http://daniellombrana.es/blog/all.atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://daniellombrana.es/</id>
+  <author>
+    <name>Daniel Lombraña González</name>
+    <email>teleyinex@gmail.com</email>
+  </author>
+
+  {% for post in site.categories.blog %}
+  <entry>
+    <id>http://daniellombrana.es{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://daniellombrana.es{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Daniel Lombraña González</name>
+      <uri>http://daniellombrana.es/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+ 
+</feed>
