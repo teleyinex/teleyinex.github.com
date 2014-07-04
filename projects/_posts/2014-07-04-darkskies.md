@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Dark Skies
-date: 2013-08-03
+date: 2014-07-04
 tags: crowdcrafting, PyBossa, science, light pollution 
 type: volunteer thinking
 home: http://crowdcrafting.org/app/darkskies/
