@@ -16,6 +16,9 @@ The second <a href="http://www.citizencyberscience.net/wiki">CERN Summer Student
 
 This year, students worked in data visualizations for the most popular scientists at CERN, an antimatter CrowdCrafting.org application, games for teaching and learning physics using different type of games: simulators, puzzles, strategy, etc., reproducible science, and more many more!
 
+
+<!--more-->
+
 The first day, the students pitched several projects and ideas. Most of the students proposed a [game](http://www.citizencyberscience.net/wiki/index.php?title=Projects#Gaming) based solution for teaching and learning physics, becoming this category the most popular with 8 games! There were other categories:
 <ul class="angle-list">
  <li>[Tools for science](http://www.citizencyberscience.net/wiki/index.php?title=Projects#Tools_for_Science)</li>

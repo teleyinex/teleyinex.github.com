@@ -5,9 +5,11 @@
 /* GLOBAL STYLES */
 /* FONT */
 /* COLORS */
+/* https://kuler.adobe.com/es/Barbecue-color-theme-3382080/ */
+/* COLORS */
 body {
   background-image: url('../img/bg.png');
-  padding-bottom: 40px;
+  padding-top: 40px;
   /* Perfect Fifth Rule (see http://modularscale.com/scale/) */
 
 }
@@ -191,7 +193,7 @@ footer {
 }
 /* Downsize the brand/project name a bit */
 .navbar .brand {
-  padding: 14px 20px 16px;
+  padding: 14px 60px 16px;
   /* Increase vertical padding to match navbar links */
 
   font-size: 30px;
@@ -204,9 +206,19 @@ footer {
     font-size: 28px;
   }
 }
+@media (max-width: 960px) {
+  .navbar .brand {
+    padding: 14px 40px 16px;
+    /* Increase vertical padding to match navbar links */
+  
+  }
+}
 /* Navbar links: increase padding for taller navbar */
 .navbar .nav > li > a {
-  padding: 15px 20px;
+  padding-top: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 20px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -294,7 +306,10 @@ footer {
   }
   .navbar-inner {
     border-radius: 0;
-    margin: -20px 0;
+    width: auto;
+    /* margin: -20px 0;*/
+  
+    padding: 20px 40px 0px !important;
   }
   .carousel .item {
     height: 500px;
@@ -541,9 +556,6 @@ footer {
 .entry {
   padding-left: 0px;
 }
-.entry p + p {
-  text-indent: 2em;
-}
 #twitter {
   position: relative;
 }
@@ -585,6 +597,14 @@ footer {
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
   font-weight: bold;
+  border-bottom: 2px solid #ffcc00;
+  background-color: transparent;
+  color: white;
+}
+@media (max-width: 960px) {
+  .nav-collapse {
+    float: left;
+  }
 }
 .picture img {
   padding: 4px;

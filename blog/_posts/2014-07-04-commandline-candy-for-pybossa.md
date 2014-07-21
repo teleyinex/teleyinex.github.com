@@ -18,6 +18,8 @@ For this reason, after providing several different scripts to create projects, a
 tasks, etc, etc. I've decided to finally create a **simple** command line tool to 
 master the PyBossa API.
 
+<!--more-->
+
 ## pbs - mastering PyBossa API
 
 As I wanted to create a powerful but simple tool to manage PyBossa projects via the 

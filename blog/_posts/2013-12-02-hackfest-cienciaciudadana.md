@@ -14,6 +14,7 @@ layout: blog
 The 29 and 30 of November of 2013 I organized with the support of [FECYT](http://fecyt.es/), [La Caixa Forum](http://obrasocial.lacaixa.es/nuestroscentros/caixaforummadrid/caixaforummadrid_es.html) and
 [Medialab-Prado](http://medialab-prado.es) the second [citizen science hackfest](http://medialab-prado.es/article/encuentrodecienciaciudadana) in Madrid, Spain.
 
+<!--more-->
 The event this time had the participation of two respected experts in the field of Citizen Science:
 
 * Francois Grey, from [Citizen Cyberscience Centre](http://citizencyberscience.net),

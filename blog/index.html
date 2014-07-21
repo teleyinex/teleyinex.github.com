@@ -26,9 +26,9 @@ active: blog
                     </a>
                     <h3><a href="{{post.url}}">{{post.title}}</a></h3>
                     <div class="excerpt">
-                    <p>{{post.content | only_text}}</p>
+                    <p>{{post.excerpt}}</p>
                 </div>
-                <div id="map-{{post.slug}}" style="height:100px;">
+                <div id="map-{{post.slug}}" style="height:1px;">
                     </div>
                     <div class="readmore">
                         <a href="{{post.url}}">Read more</a>
@@ -58,24 +58,24 @@ active: blog
 <script>
     var url = 'http://nominatim.openstreetmap.org/search?q={{post.location}}&format=json';
 
-    $.getJSON(url, function(output) {
-        if (output.length >= 1) {
-            var lon = output[0].lon;
-            var lat = output[0].lat;
-            var zoom = 17;
-            var map = L.map('map-{{post.slug}}', { zoomControl: false, dragging: false, scrollWheelZoom: false}).setView([lat, lon], zoom);
-            // create the tile layer with correct attribution
-            var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-            var osmAttrib='Map data © OpenStreetMap contributors';
-            var osm = new L.TileLayer(osmUrl, {minZoom: zoom, maxZoom: zoom, attribution: osmAttrib});       
+    //$.getJSON(url, function(output) {
+    //    if (output.length >= 1) {
+    //        var lon = output[0].lon;
+    //        var lat = output[0].lat;
+    //        var zoom = 17;
+    //        var map = L.map('map-{{post.slug}}', { zoomControl: false, dragging: false, scrollWheelZoom: false}).setView([lat, lon], zoom);
+    //        // create the tile layer with correct attribution
+    //        var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    //        var osmAttrib='Map data © OpenStreetMap contributors';
+    //        var osm = new L.TileLayer(osmUrl, {minZoom: zoom, maxZoom: zoom, attribution: osmAttrib});       
 
-            // start the map in South-East England
-            map.setView(new L.LatLng(lat, lon), zoom);
-            map.addLayer(osm);
+    //        // start the map in South-East England
+    //        map.setView(new L.LatLng(lat, lon), zoom);
+    //        map.addLayer(osm);
 
-            var marker = L.marker([lat, lon]).addTo(map);
-        }
-    });
+    //        var marker = L.marker([lat, lon]).addTo(map);
+    //    }
+    //});
 </script>
 {% endfor %}
 

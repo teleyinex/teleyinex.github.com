@@ -15,6 +15,7 @@ The first weekend of August of 2012, CERN hosted the first <a href="http://www.c
 
 <a class="pull-right" href="http://2.bp.blogspot.com/-I4qTs98qgcA/UB2YEcQg8wI/AAAAAAAABqw/_A4MgbtF2ac/s1600/2012-08-04-131646.jpg" ><img class="img-polaroid" height="133" src="http://2.bp.blogspot.com/-I4qTs98qgcA/UB2YEcQg8wI/AAAAAAAABqw/_A4MgbtF2ac/s200/2012-08-04-131646.jpg" width="200" /></a>
 
+<!--more-->
 The first day, different projects were presented so the students could decide in which one they wanted to participate. Some of the ideas were proposed by the organizers, but also some of the students came with really good suggestions. At the end the projects that were chosen to work over the 48 hours period were:<br />
 <ul class="angle-list">
 <li><a href="http://www.citizencyberscience.net/wiki/index.php?title=Create_an_open_data_website_for_CERN" target="_blank">Open Data for CERN site</a></li>

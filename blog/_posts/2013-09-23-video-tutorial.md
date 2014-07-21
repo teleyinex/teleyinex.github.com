@@ -25,6 +25,8 @@ The Fellowship program is incredible!!! Why? Because all the fellows are amazing
 <li>[Phillip Schmidt, Executive Director & Co-founder of Peer 2 Peer University](http://www.shuttleworthfoundation.org/fellows/philipp-schmidt/).</li>
 </ul>
 
+<!--more-->
+
 Amazing right!? As you can see, the level is pretty high!!! If you additionally take a look to the [current fellows](http://www.shuttleworthfoundation.org/funding/current-fellows/) then you can start to tremble.
 
 ## Fellowship Application

@@ -16,6 +16,8 @@ layout: blog
 , but one of them has done a really impressive job: [Héraðsdómar - 
 sýknað eða sakfellt](http://crowdcrafting.org/app/heradsdomar/).
 
+<!--more-->
+
 **Héraðsdómar - sýknað eða sakfellt** is an application developed by [Páll Hilmarsson](http://gogn.in/) ([@pallih](https://twitter.com/pallih), [Github](https://github.com/pallih)). The application was one of the most popular and active
 applications in CrowdCrafting.org when it was published (300 volunteers helped!), 
 so I wanted to interview the author and ask some questions about it: why he created the application, 

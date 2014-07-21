@@ -17,6 +17,8 @@ The event has been the biggest so far, and you could appreciate it not only in t
 
 After several talks and workshops you could actually see a trend: **different groups are reinventing the wheel**. Now the obligated question: **is this a good or a bad thing?**
 
+<!--more-->
+
 Before going forward, let me be clear, in my personal case I'm doing the same, I'm developing *another* citizen science framework, so to some extent I'm contributing to reinventing the wheel, right?
 
 Reinventing the wheel is not new to me. I'm a GNU/Linux user since Red Hat 5.2 and I can say that I've heard the same argument several times in the open source community: another window manager? This is the year for GNU/Linux.

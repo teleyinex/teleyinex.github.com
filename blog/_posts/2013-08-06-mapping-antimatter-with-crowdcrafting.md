@@ -15,7 +15,9 @@ This last weekend, CERN hosted a very special event: [the 2nd CERN Summer Studen
 
 ![CERN Summer Student Webfest logo](http://www.citizencyberscience.net/wiki/images/1/1b/Cernwebfest.png)
 
-The Webfest invites CERN summer students to participate in a 48 hours marathon hacking new applications, tools, games, etc. about physics. This year, I participated and worked in a very interesting one: [The Antimatter project](http://crowdcrafting.org/app/antimatter/)
+The Webfest invites CERN summer students to participate in a 48 hours marathon hacking new applications, tools, games, etc. about physics. This year, I participated and worked in a very interesting one: [The Antimatter project](http://crowdcrafting.org/app/antimatter/).
+
+<!--more-->
 
 With a team of around 8 persons, we divided the work in different areas and learned about the project and the goals for the CrowdCrafting application.
 

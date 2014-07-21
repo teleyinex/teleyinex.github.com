@@ -14,6 +14,7 @@ layout: blog
 The Asia@Home workshop started focused on earthquakes and volunteers to track them. 
 The project The Quake Catcher Network presented their results an approach in different parts of the world (Chile, Christchurch, California, etc.) and a collaboration with Taiwan for monitoring earthquakes.
 
+<!--more-->
 <ul class="thumbnails">
     <li class="span6">
         <div class="thumbnail">

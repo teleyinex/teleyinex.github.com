@@ -6,6 +6,10 @@ active: blog
     <div class="row">
         <div class="span12">
             <h1>{{ page.title|striptags}}</h1>
+                <span data-picture data-alt="{{page.title}}">
+                    <span data-src="/assets/img/blog/{{page.icon}}_320.jpg"></span>
+                    <span data-src="/assets/img/blog/{{page.icon}}.jpg"     data-media="(min-width: 768px)"></span>
+                </span>
         </div>
     </div>
     <div class="row-fluid">

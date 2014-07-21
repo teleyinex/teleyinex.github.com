@@ -23,7 +23,7 @@ active: photography
 </div>
 </div>
 
-<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js"></script>
 <script src="/assets/js/imagesloaded.js"></script>
 <script>
@@ -52,7 +52,7 @@ function shuffle(array) {
 
 
     var xhr = $.ajax({
-        url: "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&",
+        url: "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&",
         dataType: "json",
         data: {"api_key": "3a3eaf0da1caa6463ab4ce99d76dd6ff",
                "photoset_id":  "72157618769763161",

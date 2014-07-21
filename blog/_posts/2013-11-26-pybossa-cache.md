@@ -16,6 +16,8 @@ In the last days I have been working really hard to add a new cache system to Py
 Up to now, [PyBossa](http://daniellombrana.es/pybossa.html) has been using [Flask-Cache](http://pythonhosted.org/Flask-Cache/), an extension for the [Flask](http://flask.pocoo.org/) micro-framework
 that allows you to use several types of caching backends (i.e. [memcached](http://memcached.org/) or [Redis](http://redis.io)).
 
+<!--more-->
+
 [Crowdcrafting](http://crowdcrafting.org/) was using memcached, as it is a robust solution and it is really well documented.
 However in the last days due to high loads in the server, I've been thinking how I can
 improve the situation, and have a cache system that meets the following criteria:
