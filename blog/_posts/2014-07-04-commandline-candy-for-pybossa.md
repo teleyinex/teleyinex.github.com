@@ -8,6 +8,7 @@ icon_url: https://www.flickr.com/photos/gentagrafie/12723952215/
 tags: citizen science, open source, PyBossa, tools
 location: Madrid, Spain
 meta_description: Command line candy for PyBossa
+headline: "Managing a PyBossa project was never so easy."
 layout: blog
 ---
 

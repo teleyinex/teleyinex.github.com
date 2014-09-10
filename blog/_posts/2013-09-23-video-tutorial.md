@@ -3,8 +3,8 @@ title: Shooting and Editing videos in GNU/Linux
 template: entry
 slug: video-tutorial
 icon: film
-icon_author: Lenny Baker
-icon_url: http://www.flickr.com/photos/lmbaker3/5903298450/
+icon_author: Rami
+icon_url: https://www.flickr.com/photos/rhk313/4846377172
 tags: video, open source, tutorial, shuttleworth, tools, crowdcrafting, PyBossa
 location: Madrid, Spain 
 meta_description: How to make a short film using only open source tools

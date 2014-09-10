@@ -3,8 +3,8 @@ title: Adding a load balanced & high-availability cache to PyBossa
 template: entry
 slug: pybossa-cache
 icon: balance
-icon_author: Timm Nüchter
-icon_url: http://www.flickr.com/photos/t-klick/10122172655/
+icon_author: Felipe Gabaldón
+icon_url: https://www.flickr.com/photos/felipe_gabaldon/4334984556
 tags: "cache, high-availability, load balance, crowdcrafting, PyBossa"
 location: Madrid, Spain 
 meta_description: Adding a load balanced & high-availability cache to PyBossa

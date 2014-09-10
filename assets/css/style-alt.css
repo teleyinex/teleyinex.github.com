@@ -563,9 +563,7 @@ footer {
   z-index: -1;
 }
 .twitter-circle {
-  position: absolute;
-  left: 15px;
-  top: 15px;
+    margin-top:-42px;
   font-size: 30px;
   color: white;
 }
@@ -638,4 +636,12 @@ footer {
   font-family: 'FontAwesome';
   content: '\f105';
   margin: 0 5px 0 -15px;
+}
+
+.blogpost > p > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

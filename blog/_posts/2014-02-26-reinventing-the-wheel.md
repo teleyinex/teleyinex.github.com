@@ -3,8 +3,8 @@ title: Reinventing the wheel
 template: entry
 slug: reinventing-the-wheel
 icon: wheel
-icon_author: Stig Nygaard 
-icon_url: http://www.flickr.com/photos/stignygaard/4240882886/in/photostream/
+icon_author: Rego Korosi
+icon_url: https://www.flickr.com/photos/korosirego/4849943530
 tags: citizen science, open source, PyBossa, evolution, discussion
 location: London, United Kingdom 
 meta_description: Reinventing the wheel
