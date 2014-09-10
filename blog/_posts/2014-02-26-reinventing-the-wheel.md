@@ -8,6 +8,7 @@ icon_url: https://www.flickr.com/photos/korosirego/4849943530
 tags: citizen science, open source, PyBossa, evolution, discussion
 location: London, United Kingdom 
 meta_description: Reinventing the wheel
+headline: "Reinventing the wheel can be treated as a technique that will assure enough genetic diversity."
 layout: blog
 ---
 

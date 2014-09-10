@@ -8,6 +8,7 @@ icon_url: http://www.flickr.com/photos/32985084@N00/7771808714/
 tags: CERN, Webfest, hackfest, science, physics
 location: CERN, Geneva, Switzerland
 meta_description: CERN Summer Student Webfest
+headline: "CERN hosts the first webfest for building new tools with students."
 layout: blog
 ---
 

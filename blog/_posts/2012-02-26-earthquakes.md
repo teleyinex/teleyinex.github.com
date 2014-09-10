@@ -8,6 +8,7 @@ icon_url:  http://www.flickr.com/photos/32985084@N00/6930671175/
 tags: hackfest, science, citizen, earthquake, damage assessment, geology
 location: Academia Sinica, Taipei
 meta_description: Asia@Home citizen science workshop on earthquakes
+headline: "Asia@Home a workshop about citizen scientists studying earthquakes."
 layout: blog
 ---
 

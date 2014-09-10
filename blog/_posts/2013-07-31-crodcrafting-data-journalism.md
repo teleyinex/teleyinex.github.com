@@ -8,6 +8,7 @@ icon_url: http://www.flickr.com/photos/21804434@N02/6250645786/
 tags: crowdcrafting, PyBossa, data journalism, social
 location: Adalstraeti, Reykjavik, Iceland
 meta_description: Analyzing Icelandic conviction rates with PyBossa
+headline: "One single sample is not enought to draw conclusions."
 layout: blog
 ---
 

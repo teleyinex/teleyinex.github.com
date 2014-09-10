@@ -8,6 +8,7 @@ icon_url: https://www.flickr.com/photos/felipe_gabaldon/4334984556
 tags: "cache, high-availability, load balance, crowdcrafting, PyBossa"
 location: Madrid, Spain 
 meta_description: Adding a load balanced & high-availability cache to PyBossa
+headline: "Redis.io is an amazing software for building a cache system."
 layout: blog
 ---
 

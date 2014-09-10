@@ -8,6 +8,7 @@ icon_url: http://en.wikipedia.org/wiki/File:Chaos_Monster_and_Sun_God.png
 tags: "enki, science, analysis, sharing, open science, crowdcrafting, PyBossa"
 location: Madrid, Spain 
 meta_description: Sharing your PyBossa application analysis with Enki
+headline: "Analyzing your PyBossa project with Python."
 layout: blog
 ---
 

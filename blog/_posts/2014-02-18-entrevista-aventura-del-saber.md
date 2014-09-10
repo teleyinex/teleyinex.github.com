@@ -7,6 +7,7 @@ icon_url: http://www.flickr.com/photos/48698930@N04/7637177726/
 tags: citizen science, tv, interview, open science, crowdcrafting, PyBossa
 location: Madrid, Spain 
 meta_description: The adventure of knowing interview
+headline: "Citizen science means opening the doors of the labs."
 layout: blog
 ---
 

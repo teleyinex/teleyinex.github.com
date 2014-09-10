@@ -8,6 +8,7 @@ icon_author: Daniel Lombraña
 tags: CERN, Webfest, physics, science
 location: CERN, Geneva, Switzerland
 meta_description: CERN Summer Student Webfest
+headline: "Brilliant students from CERN participate in the 2nd CERN Summer Webfest."
 layout: blog
 ---
 

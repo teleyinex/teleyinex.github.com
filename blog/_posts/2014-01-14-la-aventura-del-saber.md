@@ -8,6 +8,7 @@ icon_author: Sean Kelly
 tags: "learning, tv, show, open science, crowdcrafting, PyBossa"
 location: Madrid, Spain 
 meta_description: The adventure of knowing 
+headline: "Hacking together at Medialab-Prado."
 layout: blog
 ---
 

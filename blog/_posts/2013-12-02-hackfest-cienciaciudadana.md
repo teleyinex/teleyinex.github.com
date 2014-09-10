@@ -8,6 +8,7 @@ icon_author: Daniel Lombraña
 tags: citizen, science, spectrometer, balloonmapping, epicollect, crowdcrafting, PyBossa
 location: Madrid, Spain 
 meta_description: Citizen Science hackfest in Madrid
+headline: "Madrid citizens participate in a citizen science hackfest."
 layout: blog
 ---
 

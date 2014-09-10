@@ -8,6 +8,7 @@ icon_url: https://www.flickr.com/photos/rhk313/4846377172
 tags: video, open source, tutorial, shuttleworth, tools, crowdcrafting, PyBossa
 location: Madrid, Spain 
 meta_description: How to make a short film using only open source tools
+headline: "Open source tools for video editing."
 layout: blog
 ---
 
