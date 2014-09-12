@@ -32,6 +32,12 @@ The information contributed by the users is then showed in the info page of the 
 <div class="row-fluid">
     <div id="antimatter-visualization" class="span12"></div>
 </div>
+
+
+Due to the success of the project, CERN twitted about the project:
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="es" align="center"><p>Help the AEGIS experiment at CERN to figure out how antimatter is affected by gravity. Just join the dots! <a href="http://t.co/Kg9Z5GdXB9">http://t.co/Kg9Z5GdXB9</a></p>&mdash; CERN (@CERN) <a href="https://twitter.com/CERN/status/365442111413305344">agosto 8, 2013</a></blockquote>
 <script src="https://rawgithub.com/mrdoob/three.js/master/build/three.min.js"></script>
 <script src="https://rawgithub.com/CERNSummerWebfest/antimatter/master/js/antimatter.js"></script>
 
