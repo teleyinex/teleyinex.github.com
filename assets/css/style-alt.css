@@ -228,6 +228,7 @@ footer {
 }
 /* CAROUSEL BASE CLASS */
 .carousel {
+    margin-top: -10px;
   margin-bottom: 60px;
 }
 .carousel .container {
@@ -308,8 +309,6 @@ footer {
     border-radius: 0;
     width: auto;
     /* margin: -20px 0;*/
-  
-    padding: 20px 40px 0px !important;
   }
   .carousel .item {
     height: 500px;
@@ -321,7 +320,6 @@ footer {
 }
 @media (max-width: 767px) {
   .navbar-inner {
-    margin: -20px;
   }
   .carousel {
     margin-left: -20px;
