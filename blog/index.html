@@ -17,7 +17,7 @@ active: blog
                 <ul class="cards">
             {% for post in site.categories.blog %}
                     <li>
-                <div class="span6 card wow fadeInUp">
+                <div class="span6 card wow fadeIn" data-wow-duration="2s">
                     <a href="{{post.url}}">
                         <span data-picture data-alt="{{post.title}}">
                             <span data-src="/assets/img/blog/{{post.icon}}_320.jpg"></span>
