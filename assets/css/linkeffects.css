@@ -1,3 +1,4 @@
+/* Thanks to http://tympanus.net/Development/InlineAnchorStyles/ */
 section *:after, *:before {
     box-sizing: border-box;
 }
