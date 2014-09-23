@@ -1,5 +1,5 @@
 ---
-title: Shuttleworth Fellow
+title: Year in review as a Shuttleworth Fellow 
 template: entry
 slug: shuttleworth-fellow
 icon: open
@@ -8,7 +8,7 @@ icon_url: https://www.flickr.com/photos/opensourceway/7496803264
 tags: citizen science, open source, PyBossa, tools, shuttleworth
 location: Madrid, Spain
 meta_description: Shuttleworth Fellow
-headline: "Being a Shuttleworth Fellow changed my life forever"
+headline: "Being a Shuttleworth Fellow has changed my life forever"
 layout: blog
 ---
 

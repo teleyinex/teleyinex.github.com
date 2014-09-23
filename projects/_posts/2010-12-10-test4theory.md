@@ -71,4 +71,4 @@ The project runs all the simulations within the Virtual Machine, so showing the 
 <a target="_blank" class="btn" href="http://www.citizencyberscience.net/t4t-webapp/"><i class="fa fa-cog"></i> Demo application</a>
 <a target="_blank" class="btn" href="https://github.com/citizen-cyberscience-centre/t4t-webapp"><i class="fa fa-github"></i> Source Code</a>
 
-<a target=_"blank" href="http://cern.ch/lhc" class="btn btn-large btn-primary"><i class="fa fa-globe"></i> Check the project!</a>
+<a target=_"blank" href="http://cern.ch/lhc" class="btn btn-large"><i class="fa fa-globe"></i> Check the project!</a>
