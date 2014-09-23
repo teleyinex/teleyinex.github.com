@@ -9,7 +9,7 @@ active: blog
                     <h1>{{ page.title|striptags}}</h1>
                     <p style="font-size:14px;color:
                         #5A5A5A">{{page.date | date: "%-d %B %Y"}} by
-                        <a href="/about/">Daniel Lombraña</a>. Reading time ~
+                        <a href="/about/">Daniel Lombraña</a><br/>Reading time ~
                         <span title="{{ content | number_of_words}} words"> 
                             {% include readingtime.html %}</span></p>
                     <hr>
@@ -24,7 +24,9 @@ active: blog
                     <p style="text-align:left; font-size:14px; color:#999">Photo by <a href="{{page.icon_url}}">{{page.icon_author}}</a></p>
                 </div>
                 <div class="blogpost" style="margin-top:15px;">
+                <section class="link-curtain">
                 {{content}}
+                </section>
                 </div>
                 <hr>
                 <div style="text-align:center;">
