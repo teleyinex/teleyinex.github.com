@@ -384,7 +384,7 @@ footer {
   height: 40px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #0088cc;
+  color: #F60;
 }
 .about-card hr {
   border-color: #eeeeee -moz-use-text-color #ffffff;
@@ -423,7 +423,7 @@ footer {
   }
 }
 .card {
-  background-color: white;
+  background-color: #eeeeee;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   margin-top: 10px;
   margin-right: 10px;
@@ -441,7 +441,7 @@ footer {
   height: 40px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #0088cc;
+  color: #F60;
 }
 .card hr {
   border-color: #eeeeee -moz-use-text-color #ffffff;

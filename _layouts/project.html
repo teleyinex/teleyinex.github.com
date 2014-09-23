@@ -8,7 +8,7 @@ active: projects
             <div style="text-align:center;">
             <h2><span itemprop="name">{{ page.title|striptags}}</span></h2>
                     <div style="font-style: italic; font-size:18px; padding-bottom:14px;">
-                        <p class="lead">{{ page.summary}}</p>
+                        <p>{{ page.summary}}</p>
                     </div>
                     <span data-picture data-alt="{{page.title}}">
                         <span data-src="/assets/img/project/{{page.icon}}_320.jpg"></span>
@@ -17,11 +17,11 @@ active: projects
                     </span>
                     <p style="text-align:left; font-size:14px; color:#999">Photo by <a href="{{page.icon_url}}">{{page.iconauthor}}</a></p>
             </div>
+                <section class="link-curtain">
                 <div itemprop="about" style="margin-top:15px;">
-                    <section class="link-curtain">
                 {{content}}
-                </section>
                 </div>
+                </section>
         </div>
 
     </div>

@@ -1,4 +1,4 @@
-*, *:after, *:before {
+section *:after, *:before {
     box-sizing: border-box;
 }
 
