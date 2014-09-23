@@ -6,7 +6,7 @@ active: blog
     <div class="row-fluid">
         <div class="span9 offset2 ">
                 <div style="text-align:center;">
-                    <h1>{{ page.title|striptags}}</h1>
+                    <h2>{{ page.title|striptags}}</h2>
                     <p style="font-size:14px;color:
                         #5A5A5A">{{page.date | date: "%-d %B %Y"}} by
                         <a href="/about/">Daniel Lombraña</a><br/>Reading time ~
@@ -23,11 +23,11 @@ active: blog
                     </span>
                     <p style="text-align:left; font-size:14px; color:#999">Photo by <a href="{{page.icon_url}}">{{page.icon_author}}</a></p>
                 </div>
-                <div class="blogpost" style="margin-top:15px;">
                 <section class="link-curtain">
+                <div class="blogpost" style="margin-top:15px;">
                 {{content}}
-                </section>
                 </div>
+                </section>
                 <hr>
                 <div style="text-align:center;">
                     <h3>If you like it, share it</h3>
