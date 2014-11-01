@@ -7,6 +7,48 @@
         <meta name="description" content="Homepage of Daniel Lombraña González">
         <meta name="AUTHOR" content="Daniel Lombraña González">
 
+        {% if page.active == 'blog' and page.icon != null %}
+        <!-- for Google -->
+        <meta name="description" content="{{page.title}} - Blog of Daniel Lombraña" />
+        <meta name="keywords" content="{{page.keywords}}" />
+        <meta name="author" content="Daniel Lombraña" />
+        <meta name="copyright" content="Daniel Lombraña © 2014" />
+    
+        <!-- for Facebook -->          
+        <meta property="og:title" content="{{page.title}} - Blog of Daniel Lombraña" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="http://daniellombrana.es/assets/img/blog/{{page.icon}}.jpg" />
+        <meta property="og:url" content="http://daniellombrana.es{{page.url}}" />
+        <meta property="og:description" content="{{page.headline}}" />
+    
+        <!-- for Twitter -->          
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="{{page.title - Blog of Daniel Lombraña}}" />
+        <meta name="twitter:description" content="{{page.headline}}" />
+        <meta name="twitter:image" content="http://daniellombrana.es/assets/img/blog/{{page.icon}}.jpg" />
+        {% endif %}
+
+        {% if page.active == 'projects' and page.icon != null %}
+        <!-- for Google -->
+        <meta name="description" content="{{page.title}} - Project of Daniel Lombraña" />
+        <meta name="keywords" content="{{page.keywords}}" />
+        <meta name="author" content="Daniel Lombraña" />
+        <meta name="copyright" content="Daniel Lombraña © 2014" />
+    
+        <!-- for Facebook -->          
+        <meta property="og:title" content="{{page.title}} - Project of Daniel Lombraña" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="http://daniellombrana.es/assets/img/project/{{page.icon}}.jpg" />
+        <meta property="og:url" content="http://daniellombrana.es{{page.url}}" />
+        <meta property="og:description" content="{{page.summary}}" />
+    
+        <!-- for Twitter -->          
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="{{page.title - Project of Daniel Lombraña}}" />
+        <meta name="twitter:description" content="{{page.summary}}" />
+        <meta name="twitter:image" content="http://daniellombrana.es/assets/img/project/{{page.icon}}.jpg" />
+        {% endif %}
+
         <!-- Le styles -->
         <link href="/assets/css/bootstrap.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.css" rel="stylesheet">
@@ -17,8 +59,8 @@
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
         <!-- Fav and touch icons -->
         <link rel="shortcut icon" href="../assets/ico/favicon.ico">
