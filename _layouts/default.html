@@ -4,8 +4,10 @@
         <meta charset="utf-8">
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if page.icon == null %}
         <meta name="description" content="Homepage of Daniel Lombraña González">
         <meta name="AUTHOR" content="Daniel Lombraña González">
+        {% endif %}
 
         {% if page.active == 'blog' and page.icon != null %}
         <!-- for Google -->
