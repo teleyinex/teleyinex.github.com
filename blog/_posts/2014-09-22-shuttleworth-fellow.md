@@ -8,7 +8,7 @@ icon_url: https://www.flickr.com/photos/opensourceway/7496803264
 tags: citizen science, open source, PyBossa, tools, shuttleworth
 location: Madrid, Spain
 meta_description: Shuttleworth Fellow
-headline: "Being a Shuttleworth Fellow has changed my life forever"
+headline: "Being a Shuttleworth Fellow has changed my life forever."
 layout: blog
 ---
 
