@@ -27,10 +27,12 @@
         <meta property="og:description" content="{{page.headline}}" />
     
         <!-- for Twitter -->          
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="{{page.title - Blog of Daniel Lombraña}}" />
         <meta name="twitter:description" content="{{page.headline}}" />
-        <meta name="twitter:image" content="http://daniellombrana.es/assets/img/blog/{{page.icon}}.jpg" />
+        <meta name="twitter:site" content="@teleyinex" />
+        <meta name="twitter:creator" content="@teleyinex" />
+        <meta name="twitter:image:src" content="http://daniellombrana.es/assets/img/blog/{{page.icon}}.jpg" />
         {% endif %}
 
         {% if page.active == 'projects' and page.icon != null %}
