@@ -3,3 +3,5 @@ markdown: redcarpet
 highlighter: true
 permalink: /:categories/:year/:month/:day/:title.html
 excerpt_separator: <!--more-->
+gems:
+    - jekyll-sitemap
