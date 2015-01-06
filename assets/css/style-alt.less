@@ -25,6 +25,7 @@
 .aug-fourth(@font-size) {
     /* Perfect Fifth Rule (see http://modularscale.com/scale/) */
     @line-height: 1.1em;
+    font-family: 'Poiret One', cursive;
     h1 {
         font-size: (@font-size * 2.827);
         line-height: @line-height;
@@ -53,7 +54,7 @@
     p, ul, li {
         font-size: @font-size;
         line-height: 1.5em;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Fira Sans', sans-serif;
         font-weight: 300;
     }
 
@@ -174,7 +175,7 @@ footer {
 .navbar .brand {
   padding: 14px 60px 16px; /* Increase vertical padding to match navbar links */
   font-size: 30px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Poiret One', cursive;
   color: @font-color-light;
   text-shadow: 0 -1px 0 rgba(0,0,0,.5);
 
@@ -201,6 +202,7 @@ footer {
 /* Offset the responsive button for proper vertical alignment */
 .navbar .btn-navbar {
   margin-top: 10px;
+  border: 1px solid white;
 }
 
 /* CAROUSEL BASE CLASS */
@@ -372,6 +374,9 @@ footer {
     margin-top: 10px;
     text-align: center;
     min-height: 300px;
+    p {
+        font-family:'Federo', sans-serif;
+    }
 
     img {
         height: auto;
@@ -385,7 +390,7 @@ footer {
         height: 40px;
         text-overflow: ellipsis;
         white-space: nowrap;
-        color: rgb(0, 136, 204);
+        color: #F60;
     }
 
     hr {
@@ -445,6 +450,7 @@ footer {
         text-overflow: ellipsis;
         white-space: nowrap;
         color: rgb(0, 136, 204);
+        font-family: 'Poiret One', cursive;
     }
 
     hr {
@@ -650,4 +656,10 @@ footer {
         }
     }
 
+}
+
+.subheadline {
+    font-family:'Federo', sans-serif;
+    font-style: italic; 
+    font-size:24px;
 }

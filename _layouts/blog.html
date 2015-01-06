@@ -6,7 +6,7 @@ active: blog
     <div class="row-fluid">
         <div class="span9 offset2 ">
                 <div style="text-align:center;">
-                    <h2>{{ page.title|striptags}}</h2>
+                    <h2 style="font-family:'Poiret One', cursive;">{{ page.title|striptags}}</h2>
                     <p style="font-size:14px;color:
                         #5A5A5A">{{page.date | date: "%-d %B %Y"}} by
                         <a href="/about/">Daniel Lombraña</a><br/>Reading time ~
@@ -14,7 +14,7 @@ active: blog
                             {% include readingtime.html %}</span></p>
                     <hr>
                     <div style="padding-bottom:14px;">
-                        <p style="font-style: italic; font-size:24px; ">{{ page.headline}}</p>
+                        <p class="subheadline" >{{ page.headline}}</p>
                     </div>
                     <span data-picture data-alt="{{page.title}}">
                         <span data-src="/assets/img/blog/{{page.icon}}_320.jpg"></span>

@@ -20,9 +20,9 @@ active: projects
             <div class="container">
                 <div class="carousel-caption">
                     <h1>{{ post.title | striptags}}</h1>
-                    <p class="lead">{{ post.summary }}</p>
+                    <p class="lead subheadline ">{{ post.summary }}</p>
                     {% if post.iconauthor %}
-                    <p><i class="fa fa-picture-o"></i> Photo by {{ post.iconauthor }}</p>
+                    <p style="padding-top: 10px;"><i class="fa fa-picture-o"></i> Photo by {{ post.iconauthor }}</p>
                     {% endif %}
                     <a class="btn btn-large btn-inverse" href="{{ post.url }}"> Project details <i class="fa fa-angle-double-right"></i></a>
                 </div>
@@ -55,7 +55,9 @@ active: projects
             {% for post in site.categories.projects %}
             <li class="span4 wow fadeInUp">
             <div class="card">
-                <div class="thumbnail-caption"><a href="{{post.url}}">{{post.title}}</a></div>
+                <div class="thumbnail-caption"><a href="{{post.url}}"
+                        style="font-family:'Poiret One', cursive;
+                font-weight:bold;">{{post.title}}</a></div>
 
                 <span data-picture data-alt="{{post.title}}">
                     <span data-src="/assets/img/project/{{post.icon}}_320.jpg"></span>

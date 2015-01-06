@@ -11,7 +11,7 @@ body {
   background-image: url('../img/bg.png');
   padding-top: 40px;
   /* Perfect Fifth Rule (see http://modularscale.com/scale/) */
-
+  font-family: 'Poiret One', cursive;
 }
 body p,
 body ul,
@@ -21,7 +21,7 @@ body li {
   color: #1d1d1d;
 }
 body h1 {
-  font-size: 50.885999999999996px;
+  font-size: 50.886px;
   line-height: 1.1em;
 }
 body h2,
@@ -34,11 +34,11 @@ body small {
   line-height: 1.1em;
 }
 body h3 {
-  font-size: 25.451999999999998px;
+  font-size: 25.452px;
   line-height: 1.1em;
 }
 body h4 {
-  font-size: 12.725999999999999px;
+  font-size: 12.726px;
   line-height: 1.1em;
 }
 body p,
@@ -46,7 +46,7 @@ body ul,
 body li {
   font-size: 18px;
   line-height: 1.5em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 300;
 }
 body .year {
@@ -61,7 +61,7 @@ body hr {
 @media (max-width: 360px) {
   body {
     /* Perfect Fifth Rule (see http://modularscale.com/scale/) */
-  
+    font-family: 'Poiret One', cursive;
   }
   body h1 {
     font-size: 45.232px;
@@ -89,7 +89,7 @@ body hr {
   body li {
     font-size: 16px;
     line-height: 1.5em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
   }
   body .year {
@@ -99,10 +99,10 @@ body hr {
 @media (min-width: 768px) {
   body {
     /* Perfect Fifth Rule (see http://modularscale.com/scale/) */
-  
+    font-family: 'Poiret One', cursive;
   }
   body h1 {
-    font-size: 50.885999999999996px;
+    font-size: 50.886px;
     line-height: 1.1em;
   }
   body h2,
@@ -115,11 +115,11 @@ body hr {
     line-height: 1.1em;
   }
   body h3 {
-    font-size: 25.451999999999998px;
+    font-size: 25.452px;
     line-height: 1.1em;
   }
   body h4 {
-    font-size: 12.725999999999999px;
+    font-size: 12.726px;
     line-height: 1.1em;
   }
   body p,
@@ -127,7 +127,7 @@ body hr {
   body li {
     font-size: 18px;
     line-height: 1.5em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
   }
   body .year {
@@ -182,7 +182,6 @@ footer {
   margin-top: 20px;
   margin-bottom: -90px;
   /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-
 }
 /* Remove border and change up box shadow for more contrast */
 .navbar .navbar-inner {
@@ -195,9 +194,8 @@ footer {
 .navbar .brand {
   padding: 14px 60px 16px;
   /* Increase vertical padding to match navbar links */
-
   font-size: 30px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Poiret One', cursive;
   color: #e6e6e6;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
 }
@@ -210,7 +208,6 @@ footer {
   .navbar .brand {
     padding: 14px 40px 16px;
     /* Increase vertical padding to match navbar links */
-  
   }
 }
 /* Navbar links: increase padding for taller navbar */
@@ -225,10 +222,10 @@ footer {
 /* Offset the responsive button for proper vertical alignment */
 .navbar .btn-navbar {
   margin-top: 10px;
+  border: 1px solid white;
 }
 /* CAROUSEL BASE CLASS */
 .carousel {
-    margin-top: -10px;
   margin-bottom: 60px;
 }
 .carousel .container {
@@ -258,7 +255,7 @@ footer {
   margin-bottom: 100px;
 }
 .carousel-caption .lead {
-  font-size: 29.124000000000002px;
+  font-size: 29.124px;
   font-weight: bold;
   line-height: 1.5em;
   text-transform: capitalize;
@@ -309,6 +306,7 @@ footer {
     border-radius: 0;
     width: auto;
     /* margin: -20px 0;*/
+    padding: 20px 40px 0px !important;
   }
   .carousel .item {
     height: 500px;
@@ -320,6 +318,7 @@ footer {
 }
 @media (max-width: 767px) {
   .navbar-inner {
+    margin: -20px;
   }
   .carousel {
     margin-left: -20px;
@@ -373,6 +372,9 @@ footer {
   text-align: center;
   min-height: 300px;
 }
+.about-card p {
+  font-family: 'Federo', sans-serif;
+}
 .about-card img {
   height: auto;
   overflow: hidden;
@@ -384,6 +386,7 @@ footer {
   height: 40px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: #0088cc;
   color: #F60;
 }
 .about-card hr {
@@ -423,7 +426,7 @@ footer {
   }
 }
 .card {
-  background-color: #eeeeee;
+  background-color: white;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   margin-top: 10px;
   margin-right: 10px;
@@ -441,7 +444,8 @@ footer {
   height: 40px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #F60;
+  color: #0088cc;
+  font-family: 'Poiret One', cursive;
 }
 .card hr {
   border-color: #eeeeee -moz-use-text-color #ffffff;
@@ -561,7 +565,9 @@ footer {
   z-index: -1;
 }
 .twitter-circle {
-    margin-top:-42px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
   font-size: 30px;
   color: white;
 }
@@ -578,7 +584,6 @@ footer {
   position: relative;
   padding-bottom: 56.25%;
   /* 16:9 */
-
   padding-top: 25px;
   height: 0;
 }
@@ -635,11 +640,8 @@ footer {
   content: '\f105';
   margin: 0 5px 0 -15px;
 }
-
-.blogpost > p > img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.subheadline {
+  font-family: 'Federo', sans-serif;
+  font-style: italic;
+  font-size: 24px;
 }
