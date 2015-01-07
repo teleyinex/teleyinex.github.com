@@ -386,7 +386,6 @@ footer {
   height: 40px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #0088cc;
   color: #F60;
 }
 .about-card hr {
@@ -565,9 +564,8 @@ footer {
   z-index: -1;
 }
 .twitter-circle {
-  position: absolute;
-  left: 15px;
-  top: 15px;
+  position: relative;
+  top: -45px;
   font-size: 30px;
   color: white;
 }
