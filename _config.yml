@@ -1,6 +1,6 @@
 name: Daniel Lombraña González
 markdown: redcarpet
-highlighter: true
+highlighter: pygments
 permalink: /:categories/:year/:month/:day/:title.html
 excerpt_separator: <!--more-->
 gems:
