@@ -8,7 +8,7 @@ icon_url: https://www.flickr.com/photos/limerick6/14038228238
 tags: Crowdcrafting, architecture, infrastructure
 location: Madrid, Spain
 meta_description: 
-headline: "Whenever someone creates something with all of their heart, <br/>then that creation is given a soul"
+headline: "Whenever someone creates something with all of their heart, then that creation is given a soul"
 layout: blog
 ---
 
