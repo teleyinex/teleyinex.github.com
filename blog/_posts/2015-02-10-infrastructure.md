@@ -20,7 +20,7 @@ soul.
 <!--more-->
 
 On December 4 of 2014, we got the very wonderful news that
-[Crowdcrafting](http://crowdcrafing.org) was recognized as [one of the social
+[Crowdcrafting](http://crowdcrafting.org) was recognized as [one of the social
 technological companies of the year](http://socialtech.org.uk/nominet-trust-100/).
 
 Wining this price has been amazing, a recognition to our really hard to make our 
