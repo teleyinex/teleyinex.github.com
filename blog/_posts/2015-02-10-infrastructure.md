@@ -173,11 +173,11 @@ src="/assets/img/blog/infrastructurediagram.png"></p>
 
 **UPDATE**: Some people have asked about our numbers. The truth is that
 the current setup can serve up to 2.5k rpm in less than 200ms for 1500
-users browsing the site at the same time (We've 2 PyBossa servers with 2GB of RAM
+users browsing the site at the same time (we've 2 PyBossa servers with 2GB of RAM
 and 2 cores each, while the DBs have 4GB of RAM and 4 cores -master and slave). 
 
 In August 2014 we managed to store in our servers more than 1.5 datum per second 
-one day. At that moment the servers DB servers have only 1GB of RAM, 
+one day. At that moment the DB servers have only 1GB of RAM, 
 and taking into account that the OS takes around 200MB of it, 
 the DBs were using only 800MB of RAM.
 
