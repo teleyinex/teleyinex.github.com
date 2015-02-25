@@ -209,7 +209,9 @@ it's really simple to adapt it and fix it. Moreover, it runs in the same
 services that we are currently using: [Nginx](http://nginx.org) + [uWSGI](https://uwsgi-docs.readthedocs.org), so we don't have to add
 anything different to our stack.
 
-*NOTE*: I'll write a blog post about the deployments solution :-)
+*NOTE*: I'll write a blog post about the [deployments](http://daniellombrana.es/blog/2015/02/25/autodeployments.html) solution :-)
+**EDIT**: You can read about the deployment solution
+[here](http://daniellombrana.es/blog/2015/02/25/autodeployments.html).
 
 ## Continuous integration and code quality
 
