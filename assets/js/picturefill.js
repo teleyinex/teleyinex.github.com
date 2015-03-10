@@ -32,7 +32,7 @@
 				if( !picImg || picImg.parentNode.nodeName === "NOSCRIPT" ){
 					picImg = w.document.createElement( "img" );
 					picImg.alt = ps[ i ].getAttribute( "data-alt" );
-                    picImg.setAttribute("itemprop", "img");
+                    picImg.setAttribute("itemprop", "image");
 				}
 
 				picImg.src =  matchedEl.getAttribute( "data-src" );
