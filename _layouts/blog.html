@@ -4,12 +4,13 @@ active: blog
 ---
 <div class="container content">
     <div class="row-fluid">
-        <div class="span9 offset2 ">
+        <div itemscope itemtype="http://schema.org/Article" class="span9 offset2">
                 <div style="text-align:center;">
-                    <h2 style="font-family:'Poiret One', cursive;">{{ page.title|striptags}}</h2>
-                    <p style="font-size:14px;color:
-                        #5A5A5A">{{page.date | date: "%-d %B %Y"}} by
-                        <a href="/about/">Daniel Lombraña</a><br/>Reading time ~
+                    <h2 itemprop="name" style="font-family:'Poiret One', cursive;">{{ page.title|striptags}}</h2>
+                    <p style="font-size:14px;color:#5A5A5A"><span
+                        itemprop="datePublished" content="{{page.date | date:"%Y-%m-%d"}}">{{page.date | date: "%-d %B %Y"}}</span> by
+                        <a href="/about/"><span itemprop="author" itemscope
+                                itemtype="http://schema.org/Person"><span itemprop="name">Daniel Lombraña</span></span></a><br/>Reading time ~
                         <span title="{{ content | number_of_words}} words"> 
                             {% include readingtime.html %}</span></p>
                     <hr>
@@ -24,7 +25,7 @@ active: blog
                     <p style="text-align:left; font-size:14px; color:#999">Photo by <a href="{{page.icon_url}}">{{page.icon_author}}</a></p>
                 </div>
                 <section class="link-curtain">
-                <div class="blogpost" style="margin-top:15px;">
+                <div itemprop="articleBody" class="blogpost" style="margin-top:15px;">
                 {{content}}
                 </div>
                 </section>
