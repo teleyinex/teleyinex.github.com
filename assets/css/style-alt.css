@@ -622,18 +622,18 @@ footer {
   content: '\f0c1';
   margin: 0 5px 0 -15px;
 }
-.angle-list {
+.projectbody {
   list-style: none;
 }
-.angle-list li:before {
+.projectbody li:before {
   font-family: 'FontAwesome';
-  content: '\f101';
+  content: '\f102';
   margin: 0 5px 0 -15px;
 }
-.angle-list ul {
+.projectbody ul {
   list-style: none;
 }
-.angle-list ul li:before {
+.projectbody ul li:before {
   font-family: 'FontAwesome';
   content: '\f105';
   margin: 0 5px 0 -15px;

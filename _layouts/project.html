@@ -15,10 +15,12 @@ active: projects
                         <span data-src="/assets/img/project/{{page.icon}}.jpg"     data-media="(min-width: 768px)"></span>
                         <span data-src="/assets/img/project/{{page.icon}}.jpg"     data-media="(min-width: 980px)"></span>
                     </span>
+                    {% if page.iconauthor != 'NoAuthor'%}
                     <p style="text-align:left; font-size:14px; color:#999">Photo by <a href="{{page.icon_url}}">{{page.iconauthor}}</a></p>
+                    {% endif %}
             </div>
                 <section class="link-curtain">
-                <div itemprop="about" style="margin-top:15px;">
+                <div class="projectbody" itemprop="about" style="margin-top:15px;">
                 {{content}}
                 </div>
                 </section>
@@ -30,7 +32,8 @@ active: projects
             <h3>Project Details</h3>
             <ul>
                 <li><strong><i class="fa fa-user"></i> Role:</strong> {{page.role }}</li>
-                <li><strong><i class="fa fa-calendar-o"></i> Started:</strong> <span itemprop="dateCreated">{{page.date.strftime('%b %Y')}}</span></li>
+                <li><strong><i class="fa fa-calendar-o"></i> Started:</strong>
+                <span itemprop="dateCreated">{{page.date | date:"%Y")}}</span></li>
                 <li><strong><i class="fa fa-tag"></i> Type:</strong> <span itemprop="applicationCategory">{{page.type}}</span></li>
                 <li><i class="fa fa-home"></i> <a itemprop="url" href="{{page.home}}">{{page.title}}</a></li>
                 <li><i class="fa fa-github"></i> <a href="{{page.github}}">Source Code</a></li>

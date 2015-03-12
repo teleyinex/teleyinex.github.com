@@ -21,7 +21,7 @@ active: projects
                 <div class="carousel-caption">
                     <h1>{{ post.title | striptags}}</h1>
                     <p class="lead subheadline ">{{ post.summary }}</p>
-                    {% if post.iconauthor %}
+                    {% if post.iconauthor != 'NoAuthor'%}
                     <p style="padding-top: 10px;"><i class="fa fa-picture-o"></i> Photo by {{ post.iconauthor }}</p>
                     {% endif %}
                     <a class="btn btn-large btn-inverse" href="{{ post.url }}"> Project details <i class="fa fa-angle-double-right"></i></a>

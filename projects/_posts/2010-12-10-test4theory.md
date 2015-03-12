@@ -49,26 +49,34 @@ The project provides an alternative *credit* system for the volunteers based on 
 
 Based on this ranking system, a [Billionaires Club](http://www.citizencyberscience.net/t4t-webapp/stats/club.html) was created as a time line adding the users that have simulated more than 1 Billion events thanks to their contributions.
 
-<a target="_blank" class="btn" href="https://github.com/citizen-cyberscience-centre/t4t-stats"><i class="fa fa-github"></i> Source Code</a>
+<a target="_blank"
+href="https://github.com/citizen-cyberscience-centre/t4t-stats">Source
+Code</a>.
 
 ### Mozilla Firefox Add-on
 
 In order to help the volunteers to monitor their contributions, a [Firefox Addon](https://addons.mozilla.org/firefox/addon/test4theory-stats-checker) has been created. This add-on allows the users to get their latest contributions to the project via the MCPLOTs API.
 
-<a target="_blank" class="btn" href="https://github.com/citizen-cyberscience-centre/t4t-firefox-addon"><i class="fa fa-github"></i> Source Code</a>
+<a target="_blank"
+href="https://github.com/citizen-cyberscience-centre/t4t-firefox-addon">Source
+Code</a>.
 
 ### Mozilla Firefox Marketplace Application
 
 This app stills in the review mode but can be fully tested in the [Android Firefox Nightly version](http://nightly.mozilla.org/). The web application allows the users to monitor from their Android tablet or smartphone their contributions to the project. This application uses also the MCPLOTs API and it works also in the desktop version (even in Chrome).
 
-<a target="_blank" class="btn" href="http://daniellombrana.es/t4t-app/"><i class="fa fa-cog"></i> Demo application</a>
-<a target="_blank" class="btn" href="http://github.com/teleyinex/t4t-app/"><i class="fa fa-github"></i> Source Code</a>
+<a target="_blank" href="http://daniellombrana.es/t4t-app/">Demo
+application</a>.
+
+<a target="_blank" href="http://github.com/teleyinex/t4t-app/"> Source Code</a>.
 
 ### Test4Theory simulations Web Graphical User Interface
 
 The project runs all the simulations within the Virtual Machine, so showing the progress to the users using the standard BOINC screensaver, it is not possible unless a server is run in the Virtual Machine. For this purpose, a web server was installed in the Virtual Machine and a simple web application is served and shows the progress and simulations carried out by Virtual Machine in any modern web browser. 
 
-<a target="_blank" class="btn" href="http://www.citizencyberscience.net/t4t-webapp/"><i class="fa fa-cog"></i> Demo application</a>
-<a target="_blank" class="btn" href="https://github.com/citizen-cyberscience-centre/t4t-webapp"><i class="fa fa-github"></i> Source Code</a>
+<a target="_blank" href="http://www.citizencyberscience.net/t4t-webapp/">Demo
+application</a>.
 
-<a target=_"blank" href="http://cern.ch/lhc" class="btn btn-large"><i class="fa fa-globe"></i> Check the project!</a>
+<a target="_blank"
+href="https://github.com/citizen-cyberscience-centre/t4t-webapp"> Source
+Code</a>.
