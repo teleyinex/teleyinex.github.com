@@ -2,7 +2,7 @@
 date: 2013-04-09
 title: EpiCollect + PyBossa
 tags: epicollect, volunteer thinking, crowdcrafting, biology, PyBossa, air quality, science
-type: volunter sensing, volunteer thinking
+type: volunter sensing, crowdsourcing
 github: https://github.com/PyBossa/app-epicollect
 home: http://crowdcrafting.org/app/airquality/
 state: production
@@ -29,7 +29,7 @@ As a result of this integration, we have created a PyBossa application that allo
 <p>Lichens are informally classified by growth form into:</p>
 <div class="row-fluid">
 <div class="span12">
-<ul class="thumbnails">
+<ul class="thumbnails" style="list-style: none; !important;">
     <li class="span4">
         <div class="thumbnail">
             <img src="http://farm1.staticflickr.com/47/134314157_b17f465dfc.jpg">
@@ -87,8 +87,3 @@ As a result of this integration, we have created a PyBossa application that allo
         </tr>
     </tbody>
 </table>
-
-
-
-<a target="_blank" class="btn" href="http://crowdcrafting.org/app/airquality/"><i class="fa fa-cog"></i> Check the application</a>
-<a target="_blank" class="btn" href="https://github.com/PyBossa/app-epicollec"><i class="fa fa-github"></i> Source Code</a>

@@ -2,7 +2,7 @@
 date: 2013-09-13
 title: PDF Tables transcription
 tags: volunteer thinking, PyBossa, crowdcrafting, transcription
-type: volunteer thinking
+type: crowdsourcing
 github: https://github.com/PyBossa/app-pdf-table-transcribe
 home: http://crowdcrafting.org/app/pdftabletranscribe
 state: production
@@ -25,6 +25,3 @@ The next video shows how simple it is to extract the data and save it in a struc
 <div class="videoWrapper">
     <iframe src="//www.youtube.com/embed/yfnJHALzlZc?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
-
-<a target="_blank" class="btn" href="http://crowdcrafting.org/app/pdftabletranscribe"><i class="fa fa-cog"></i> Check the application</a>
-<a target="_blank" class="btn" href="https://github.com/PyBossa/app-pdf-table-transcribe"><i class="fa fa-github"></i> Source Code</a>

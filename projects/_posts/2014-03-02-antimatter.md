@@ -3,7 +3,7 @@ layout: project
 title: Antimatter
 date: 2013-08-03
 tags: crowdcrafting, PyBossa, CERN, science, antimatter, physics
-type: volunteer thinking
+type: crowdsourcing
 github: https://github.com/PyBossa/app-tweetclassification
 home: http://crowdcrafting.org/app/antimatter
 state: alpha
@@ -40,6 +40,3 @@ Due to the success of the project, CERN twitted about the project:
 <blockquote class="twitter-tweet" lang="es" align="center"><p>Help the AEGIS experiment at CERN to figure out how antimatter is affected by gravity. Just join the dots! <a href="http://t.co/Kg9Z5GdXB9">http://t.co/Kg9Z5GdXB9</a></p>&mdash; CERN (@CERN) <a href="https://twitter.com/CERN/status/365442111413305344">agosto 8, 2013</a></blockquote>
 <script src="https://rawgithub.com/mrdoob/three.js/master/build/three.min.js"></script>
 <script src="https://rawgithub.com/CERNSummerWebfest/antimatter/master/js/antimatter.js"></script>
-
-<a target="_blank" class="btn" href="http://crowdcrafting.org/app/antimatter"><i class="fa fa-cog"></i> Check the application</a>
-<a target="_blank" class="btn" href="https://github.com/CERNSummerWebfest/antimatter"><i class="fa fa-github"></i> Source Code</a>

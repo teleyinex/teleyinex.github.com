@@ -201,7 +201,7 @@ footer {
 }
 @media (max-width: 320px) {
   .navbar .brand {
-    font-size: 28px;
+    font-size: 25px;
   }
 }
 @media (max-width: 960px) {
@@ -223,6 +223,16 @@ footer {
 .navbar .btn-navbar {
   margin-top: 10px;
   border: 1px solid white;
+}
+@media (max-width: 320px) {
+  .navbar .btn-navbar {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .navbar .btn-navbar {
+    margin-right: 20px;
+  }
 }
 /* CAROUSEL BASE CLASS */
 .carousel {
@@ -306,7 +316,7 @@ footer {
     border-radius: 0;
     width: auto;
     /* margin: -20px 0;*/
-    padding: 20px 40px 0px !important;
+    padding: 5px 40px 5px !important;
   }
   .carousel .item {
     height: 500px;
@@ -341,6 +351,16 @@ footer {
   .carousel-caption .lead,
   .carousel-caption .btn {
     font-size: 18px;
+  }
+}
+@media (max-width: 360px) {
+  .navbar-inner {
+    border-radius: 0;
+    width: auto;
+    /* margin: -20px 0;*/
+    padding-top: 20px !important;
+    padding-left: 25px !important;
+    padding-bottom: 5px !important;
   }
 }
 .thumbnail {
@@ -603,6 +623,7 @@ footer {
 @media (max-width: 960px) {
   .nav-collapse {
     float: left;
+    margin-left: 35px;
   }
 }
 .picture img {

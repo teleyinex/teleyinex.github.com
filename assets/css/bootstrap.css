@@ -2829,7 +2829,7 @@ input[type="submit"].btn.btn-mini {
   border: 1px solid #d4d4d4;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  border-radius: 4px;
+  border-radius: 0px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
@@ -3551,12 +3551,12 @@ a.thumbnail:hover {
 .alert {
   padding: 8px 35px 8px 14px;
   margin-bottom: 20px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  /* text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);*/
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  border-radius: 4px;
+  border-radius: 0px;
   color: #c09853;
 }
 .alert h4 {
@@ -3580,9 +3580,9 @@ a.thumbnail:hover {
   color: #b94a48;
 }
 .alert-info {
-  background-color: #d9edf7;
-  border-color: #bce8f1;
-  color: #3a87ad;
+  background-color: #1B1B1B;
+  border-color: #1B1B1B;
+  color: white;
 }
 .alert-block {
   padding-top: 14px;

@@ -4,7 +4,7 @@ title: ForestWatchers.net
 github: http://github.com/ForestWatchers
 github: http://forestwatchers.net
 tags: volunteer thinking, PyBossa, deforestation, damage assessment, biology
-type: volunteer thinking
+type: crowdsourcing
 state: alpha
 slug: forestwatchers
 summary: a citizen project for forest monitoring
@@ -29,9 +29,6 @@ The project uses the open source [PyBossa](http://daniellombrana.es/pybossa.html
 
 This application was developed to help the researchers to clean satellite images from clouds. Basically, the application shows pictures of the same area but taken on different days, so the users can actually select the best tile, or in other words, the tile with less clouds.
 
-<a target="_blank" class="btn" href="http://forestwatchers.net/pybossa/app/besttile"><i class="fa fa-cog"></i> Check the application</a>
-<a target="_blank" class="btn" href="https://github.com/ForestWatchers/timeline"><i class="fa fa-github"></i> Source Code</a>
-
 ## Deforested Areas
 
 This application builds on top of the previous one, using the cleaned images, to allow the users to mark deforested areas by drawing polygons on top of the deforested areas. This application shows also information in different layers regarding:
@@ -41,13 +38,8 @@ This application builds on top of the previous one, using the cleaned images, to
  <li>**Hydrography**</li>
 </ul>
 
-<a target="_blank" class="btn" href="http://forestwatchers.net/pybossa/app/deforestedareas"><i class="icon-cog"></i> Check the application</a>
-<a target="_blank" class="btn" href="https://github.com/ForestWatchers/deforestation"><i class="icon-github"></i> Source Code</a>
-
 ### Video
 
 <div class="videoWrapper">
     <iframe src="http://www.youtube.com/embed/syyJ_bEbAtI?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
-
-<a target="_blank" href="http://forestwatchers.net" class="btn btn-large btn-primary"><i class="icon-globe"></i> Check the project!</a>

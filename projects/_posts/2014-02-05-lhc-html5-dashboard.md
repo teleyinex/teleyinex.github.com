@@ -34,10 +34,10 @@ The [demo](http://cernsummerwebfest.github.io/LHC-HTML5-Dashboard/) shows how it
 
 <div class="row-fluid">
     <div class="span6">
-    <img src="static/images/project/lhcdashboard.png" class="img-polaroid">
+    <img src="/assets/img/project/lhcdashboard.png" class="img-polaroid">
     </div>
     <div class="span6">
-    <img src="static/images/project/dashboard.png" class="img-polaroid">
+    <img src="/assets/img/project/dashboard.png" class="img-polaroid">
     </div>
 </div>
 
@@ -46,6 +46,3 @@ The [demo](http://cernsummerwebfest.github.io/LHC-HTML5-Dashboard/) uses a predi
 Finally, as one of the goals of the CERN Summer Webfest was to promote science, I asked the collaboration of a student, [Francesca Day](http://cambridge.academia.edu/FrancescaDay), to help me to explain in a short video what is luminosity and why is important. 
 
 As the application uses the HTML5 technology, the video is played automatically by the web browser without using any third party plugins like Adobe Flash. The web application uses the popular [Mozilla Popcorn.JS](http://popcornjs.org/) library to play and pause the video.
-
-<a target="_blank" class="btn" href="http://cernsummerwebfest.github.io/LHC-HTML5-Dashboard/"><i class="fa fa-cog"></i> Check the application</a>
-<a target="_blank" class="btn" href="https://github.com/CERNSummerWebfest/LHC-HTML5-Dashboard"><i class="fa fa-github"></i> Source Code</a>

@@ -97,7 +97,9 @@
             <div class="navbar navbar-fixed-top navbar-inverse">
                 <div class="navbar-inner" style="width:auto; padding: 0 20px;">
                     <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <a class="btn btn-navbar" data-toggle="collapse"
+                        data-target=".nav-collapse" style="border-radius:0px
+                        !important;">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -106,7 +108,7 @@
                     <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
                     <div class="nav-collapse collapse pull-right">
                         <ul class="nav">
-                            <li {% if page.active == 'projects' %} class="active" {% endif %}><a href="/index.html">Projects</a></li>
+                            <li {% if page.active == 'portfolio' %} class="active" {% endif %}><a href="/index.html">Portfolio</a></li>
                             <!--<li {% if page.active == 'press' %} class="active" {% endif %}><a href="/press/">Press</a></li>-->
                             <li {% if page.active == 'blog'%} class="active" {% endif %}><a href="/blog/">Blog</a></li>
                             <li {% if page.active == 'photography' %} class="active" {% endif %}><a href="/photography/">Photography</a></li>

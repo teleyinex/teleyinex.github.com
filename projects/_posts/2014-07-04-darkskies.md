@@ -3,7 +3,7 @@ layout: project
 title: Dark Skies
 date: 2014-07-04
 tags: crowdcrafting, PyBossa, science, light pollution 
-type: volunteer thinking
+type: crowdsourcing
 home: http://crowdcrafting.org/app/darkskies/
 state: beta
 permalink: /projects/darkskies
@@ -47,4 +47,5 @@ The project has official support from NASA, ESA, ISS, etc. and has been featured
 
 For more information, visit the [offial project page](http://www.citiesatnight.org/).
 
-<a target="_blank" class="btn" href="http://crowdcrafting.org/app/darkskies/"><i class="fa fa-cog"></i> Check the project</a>
+<a target="_blank" href="http://crowdcrafting.org/app/darkskies/">Check the
+project</a>.

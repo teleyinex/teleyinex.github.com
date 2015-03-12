@@ -180,7 +180,7 @@ footer {
   text-shadow: 0 -1px 0 rgba(0,0,0,.5);
 
   @media (max-width: 320px) {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   @media (max-width: 960px) {
@@ -203,6 +203,13 @@ footer {
 .navbar .btn-navbar {
   margin-top: 10px;
   border: 1px solid white;
+  @media (max-width: 320px) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 360px) {
+    margin-right: 20px;
+  }
 }
 
 /* CAROUSEL BASE CLASS */
@@ -287,6 +294,7 @@ footer {
 
 /* RESPONSIVE */
 
+
 @media (max-width: 979px) {
 
   .container.navbar-wrapper {
@@ -297,7 +305,7 @@ footer {
     border-radius: 0;
     width: auto;
     /* margin: -20px 0;*/
-    padding: 20px 40px 0px !important;
+    padding: 5px 40px 5px !important;
   }
 
   .carousel .item {
@@ -341,6 +349,19 @@ footer {
     font-size: 18px;
   }
 }
+
+@media (max-width: 360px) {
+  .navbar-inner {
+    border-radius: 0;
+    width: auto;
+    /* margin: -20px 0;*/
+    padding-top: 20px !important;
+    padding-left: 25px !important;
+    padding-bottom: 5px !important;
+  }
+
+}
+
 
 .thumbnail {
     position: relative;
@@ -618,6 +639,7 @@ footer {
 
     .nav-collapse {
         float: left; 
+        margin-left: 35px;
     }
 }
 
