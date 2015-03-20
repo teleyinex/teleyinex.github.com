@@ -12,13 +12,14 @@ body {
   padding-top: 40px;
   /* Perfect Fifth Rule (see http://modularscale.com/scale/) */
   font-family: 'Poiret One', cursive;
+  color: white;
 }
 body p,
 body ul,
 body li {
   font-size: 18px;
   line-height: 1.1em;
-  color: #1d1d1d;
+  color: #e6e6e6;
 }
 body h1 {
   font-size: 50.886px;
@@ -56,12 +57,13 @@ body abbr {
   font-variant: small-caps;
 }
 body hr {
-  border-color: #e6e6e6;
+  border-color: #ff6200;
 }
 @media (max-width: 360px) {
   body {
     /* Perfect Fifth Rule (see http://modularscale.com/scale/) */
     font-family: 'Poiret One', cursive;
+    color: white;
   }
   body h1 {
     font-size: 45.232px;
@@ -100,6 +102,7 @@ body hr {
   body {
     /* Perfect Fifth Rule (see http://modularscale.com/scale/) */
     font-family: 'Poiret One', cursive;
+    color: white;
   }
   body h1 {
     font-size: 50.886px;
@@ -147,7 +150,7 @@ body hr {
   margin-top: 20px;
   color: #e6e6e6;
   background: none repeat scroll 0% 0% #1b1b1b;
-  border-radius: 4px;
+  border: 1px solid rgba(255, 98, 0, 0.37);
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 14px;
@@ -189,6 +192,7 @@ footer {
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid #F60;
 }
 /* Downsize the brand/project name a bit */
 .navbar .brand {
@@ -386,7 +390,7 @@ footer {
   margin-left: 0px;
 }
 .about-card {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.78);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   margin-top: 10px;
   text-align: center;
@@ -445,7 +449,7 @@ footer {
   }
 }
 .card {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.78);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   margin-top: 10px;
   margin-right: 10px;
@@ -616,7 +620,7 @@ footer {
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
   font-weight: bold;
-  border-bottom: 2px solid #ffcc00;
+  border-bottom: 5px solid #ff6200;
   background-color: transparent;
   color: white;
 }

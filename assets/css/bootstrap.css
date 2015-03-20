@@ -3583,6 +3583,7 @@ a.thumbnail:hover {
   background-color: #1B1B1B;
   border-color: #1B1B1B;
   color: white;
+  border: 1px solid rgba(255, 98, 0, 0.37);
 }
 .alert-block {
   padding-top: 14px;
