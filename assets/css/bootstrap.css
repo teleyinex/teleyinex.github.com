@@ -5482,7 +5482,7 @@ button.close {
   .navbar-inverse .nav-collapse .nav > li > a:hover,
   .navbar-inverse .nav-collapse .dropdown-menu a:hover {
     // background-color: #111111;
-    border-bottom: 2px solid rgb(255, 204, 0);
+    border-bottom: 2px solid rgb(255, 98, 0);
   }
   .nav-collapse.in .btn-group {
     margin-top: 5px;
