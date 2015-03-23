@@ -149,7 +149,8 @@ body hr {
 .project {
   margin-top: 20px;
   color: #e6e6e6;
-  background: none repeat scroll 0% 0% #1b1b1b;
+  /* background: none repeat scroll 0% 0% rgb(27, 27, 27);*/
+  background-color: rgba(0, 0, 0, 0.78);
   border: 1px solid rgba(255, 98, 0, 0.37);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -467,7 +468,7 @@ footer {
   height: 40px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #0088cc;
+  color: #ff6200;
   font-family: 'Poiret One', cursive;
 }
 .card hr {
