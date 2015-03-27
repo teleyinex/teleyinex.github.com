@@ -11,7 +11,8 @@ body {
   background-image: url('../img/bg.png');
   padding-top: 40px;
   /* Perfect Fifth Rule (see http://modularscale.com/scale/) */
-  font-family: 'Poiret One', cursive;
+  /* font-family: 'Poiret One', cursive;*/
+  font-family: "Raleway";
   color: white;
 }
 body p,
@@ -24,11 +25,13 @@ body li {
 body h1 {
   font-size: 50.886px;
   line-height: 1.1em;
+  font-weight: 300;
 }
 body h2,
 body small {
   font-size: 35.982px;
   line-height: 1.1em;
+  font-weight: 300;
 }
 body small {
   color: #cdcdcd;
@@ -37,6 +40,7 @@ body small {
 body h3 {
   font-size: 25.452px;
   line-height: 1.1em;
+  font-weight: 300;
 }
 body h4 {
   font-size: 12.726px;
@@ -62,17 +66,20 @@ body hr {
 @media (max-width: 360px) {
   body {
     /* Perfect Fifth Rule (see http://modularscale.com/scale/) */
-    font-family: 'Poiret One', cursive;
+    /* font-family: 'Poiret One', cursive;*/
+    font-family: "Raleway";
     color: white;
   }
   body h1 {
     font-size: 45.232px;
     line-height: 1.1em;
+    font-weight: 300;
   }
   body h2,
   body small {
     font-size: 31.984px;
     line-height: 1.1em;
+    font-weight: 300;
   }
   body small {
     color: #cdcdcd;
@@ -81,6 +88,7 @@ body hr {
   body h3 {
     font-size: 22.624px;
     line-height: 1.1em;
+    font-weight: 300;
   }
   body h4 {
     font-size: 11.312px;
@@ -101,17 +109,20 @@ body hr {
 @media (min-width: 768px) {
   body {
     /* Perfect Fifth Rule (see http://modularscale.com/scale/) */
-    font-family: 'Poiret One', cursive;
+    /* font-family: 'Poiret One', cursive;*/
+    font-family: "Raleway";
     color: white;
   }
   body h1 {
     font-size: 50.886px;
     line-height: 1.1em;
+    font-weight: 300;
   }
   body h2,
   body small {
     font-size: 35.982px;
     line-height: 1.1em;
+    font-weight: 300;
   }
   body small {
     color: #cdcdcd;
@@ -120,6 +131,7 @@ body hr {
   body h3 {
     font-size: 25.452px;
     line-height: 1.1em;
+    font-weight: 300;
   }
   body h4 {
     font-size: 12.726px;
@@ -200,7 +212,7 @@ footer {
   padding: 14px 60px 16px;
   /* Increase vertical padding to match navbar links */
   font-size: 30px;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Raleway';
   color: #e6e6e6;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
 }
@@ -398,7 +410,7 @@ footer {
   min-height: 300px;
 }
 .about-card p {
-  font-family: 'Federo', sans-serif;
+  font-family: 'Raleway';
 }
 .about-card img {
   height: auto;
@@ -469,7 +481,7 @@ footer {
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #ff6200;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Raleway';
 }
 .card hr {
   border-color: #eeeeee -moz-use-text-color #ffffff;
@@ -665,7 +677,7 @@ footer {
   margin: 0 5px 0 -15px;
 }
 .subheadline {
-  font-family: 'Federo', sans-serif;
+  font-family: 'Raleway';
   font-style: italic;
   font-size: 24px;
 }
