@@ -556,10 +556,10 @@ footer {
   font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid #ff6200;
 }
 .readmore a {
-  color: white;
+  color: #ff6200;
 }
 .column-right {
   background-color: rgba(0, 0, 0, 0.1);
