@@ -65,3 +65,7 @@ Crowdcrafting. All projects start with a simple tutorial explaining how they
 work and providing all the information required to participate. There is thus
 no specific knowledge or experience required to complete proposed tasks. All
 volunteers need is a keen attitude to learn and share science with everyone. 
+
+## Talk with the team
+You can talk directly with the team and other members of Crowdcrafting in our
+[public chat room](http://slackin.crowdcrafting.org). 
