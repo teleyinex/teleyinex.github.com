@@ -702,3 +702,12 @@ footer {
   border-radius: 0px !important;
   border: 0px !important;
 }
+.carnival-body {
+  padding: 5px !important;
+}
+.carnival input {
+  border-radius: 0px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ff6200;
+}
