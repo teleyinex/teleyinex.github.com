@@ -6,7 +6,7 @@ section *:after, *:before {
 section {
 	position: relative;
 	z-index: 1; /* needed for setting pseudo-element z-index */
-	overflow: hidden;
+	/* overflow: hidden; to support Carnival comments */
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }

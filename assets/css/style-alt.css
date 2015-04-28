@@ -682,3 +682,23 @@ footer {
   font-style: italic;
   font-size: 24px;
 }
+.carnival-comment-indicator svg path {
+  fill: #ff6200 !important;
+}
+.carnival-count {
+  font-size: 18px !important;
+  line-height: 22px !important;
+}
+.carnival {
+  background-image: url('../img/bg.png') !important;
+  border-top: 1px solid #ff6200 !important;
+}
+.carnival-comments li:first-child {
+  border-top: 0px !important;
+  padding-top: 10px !important;
+}
+.carnival-comments li {
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  border: 0px !important;
+}
