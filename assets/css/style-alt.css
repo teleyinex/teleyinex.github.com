@@ -711,3 +711,15 @@ footer {
   color: white;
   border: 1px solid #ff6200;
 }
+pre {
+  border: 0px;
+}
+pre,
+code {
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #E6E6E6;
+  font-family: 'Inconsolata';
+  font-size: 14px;
+  border-left: 3px solid #ff6200;
+}
