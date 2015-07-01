@@ -46,7 +46,7 @@ master = true
 zerg-pool = /tmp/zerg_pool_1:/tmp/zerg_master.sock
 ```
 
-Then, you configure your web app to use the zerg server:
+Then, you configure your web application to use the zerg server:
 
 ```
 [uwsgi]
@@ -73,10 +73,10 @@ in case you broke something. Nice, right?
 To achieve this situation all you have to do is use 3 different FIFOs in uWSGI. Why?
 Because uWSGI can have as many master FIFOs as you want allowing you to pause zerg servers
 and move between them. This feature allows us to keep a binary copy of previously deployed code
-on the server, that you can pause/unpause and use it when something goes wrong.
+on the server, that you can pause/resume and use it when something goes wrong.
 
 This is really fast. The only issue is that you'll need more memory on your server, but I 
-think it's workthy as you'll be able to rollback a deployment with just two commands (we'll see
+think it's worthy as you'll be able to rollback a deployment with just two commands (we'll see
 that in a moment).
 
 ### Configuring the 3 FIFOs
@@ -113,7 +113,7 @@ hook-accepting1-once = writefifo:/var/run/new.fifo 1
 After the FIFOs there is a section where we declare some hooks. These hooks will handle
 automatically which FIFO has to be used in case of a server is started again. 
 
-The usual workflow will be the following:
+The usual work flow will be the following:
 
  - You start the server.
  - There is not sleeping or running fifo, so those conditions fail
@@ -142,7 +142,7 @@ echo 2p > /tmp/sleeping.fifo
 
 ## Our setup
 
-With our [auto deployments]() solution, we needed to find a simple way to integrate
+With our [auto deployments](/blog/2015/02/25/autodeployments.html) solution, we needed to find a simple way to integrate
 this feature with supervisor. In the previous example you do the deployment manually,
 but we want to have everything automated.
 
@@ -160,9 +160,9 @@ applies patches, etc. and restarts the default server. This procedure triggers t
  - Then, it restarts the default PyBossa server (note: for supervisor the paused PyBossa server is running).
  - This restart moves the previous backup server to the pause fifo (it has the old code running), and boots the new code into production.
 
-If something goes wrong with the new changes, all we have to do is pause the current server and unpause the previous one.
+If something goes wrong with the new changes, all we have to do is pause the current server and resume the previous one.
 
-This is done by hand, as we want to have control over this specifi issue, but overall we are always covered
+This is done by hand, as we want to have control over this specific issue, but overall we are always covered
 when doing deployments automatically. We only have to click in the Merge Button of Github to do a deployment
 and we know a backup binary copy is hold on memory in case that we commit an error.
 
@@ -170,7 +170,7 @@ Moreover, the whole process of having uWSGI moving the requests of users from on
 
 We've seen some users getting a 502, but that's because they ask for a request when the file descriptor is being
 moved to the new server. Obviously, this is not 100% bullet proof, but much better than showing to *all* your users
-a mantainance page while you do the upgrade.
+a maintenance page while you do the upgrade.
 
 We've been using this new work flow for a few weeks now, and all our production deployments
 are done automatically. Since we adopted this approach we've not have any issues, and we are more
