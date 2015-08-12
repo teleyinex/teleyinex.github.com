@@ -35,9 +35,7 @@ active: blog
                 <div style="text-align:center;">
                     <h3>If you like it, share it</h3>
                     <div id="twitter" >
-                        <a
-                            href="javascript:window.open(&quot;https://twitter.com/intent/tweet?text={{page.headline |uri_escape}}&url=http://daniellombrana.es{{page.url}}&via=teleyinex&quot;,
-                            '_blank', 'width=500,height=450');void(0);">
+                        <a href="https://twitter.com/intent/tweet?text={{page.headline| truncate:100 | uri_escape}}&url=http://daniellombrana.es{{page.url}}&via=teleyinex">
                         <img class="img-circle" src="/assets/js/holder.js/60x60/text: /social"/>
                         <div class="twitter-circle" style="display:block;">
                             <i class="fa fa-twitter"></i>
