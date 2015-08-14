@@ -723,3 +723,18 @@ code {
   font-size: 14px;
   border-left: 3px solid #ff6200;
 }
+.cc_container .cc_btn,
+.cc_container .cc_btn:visited {
+  background-color: #ff6200 !important;
+  color: #FFF !important;
+}
+.cc_container a,
+.cc_container a:visited {
+  text-decoration: none;
+  color: #ff6200;
+  transition: color 200ms ease 0s;
+}
+.cc_container a,
+.cc_container a:visited {
+  color: #ff6200 !important;
+}
