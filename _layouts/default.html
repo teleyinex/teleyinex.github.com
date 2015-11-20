@@ -2,13 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>{{ page.title }}</title>
+        <title>{{ page.title }} - Daniel Lombraña González</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#1B1B1B">
-        {% if page.icon == null %}
-        <meta name="description" content="Homepage of Daniel Lombraña González">
+        <meta name="description" content="{% if page.meta_description %}{{page.meta_description}}{%else%}{{page.title}}{%endif%}">
         <meta name="AUTHOR" content="Daniel Lombraña González">
-        {% endif %}
         <!-- Pinterest -->
         <meta name="p:domain_verify" content="71c8e4a3bc558a27ca56ac6104d68e2e"/>
         <!-- Google -->
@@ -122,7 +120,7 @@
                     <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
                     <div class="nav-collapse collapse pull-right">
                         <ul class="nav">
-                            <li {% if page.active == 'portfolio' %} class="active" {% endif %}><a href="/index.html">Portfolio</a></li>
+                            <li {% if page.active == 'projects' %} class="active" {% endif %}><a href="/index.html">Projects</a></li>
                             <!--<li {% if page.active == 'press' %} class="active" {% endif %}><a href="/press/">Press</a></li>-->
                             <li {% if page.active == 'blog'%} class="active" {% endif %}><a href="/blog/">Blog</a></li>
                             <li {% if page.active == 'photography' %} class="active" {% endif %}><a href="/photography/">Photography</a></li>
