@@ -7,7 +7,7 @@ type: crowdsourcing
 home: http://crowdcrafting.org/app/darkskies/
 state: beta
 permalink: /projects/darkskies
-featured: yes
+featured: no
 summary: "Analyzing light pollution from space"
 partners: ['<a href="http://guaix.fis.ucm.es/"><span itemprop="creator">UCM group of Extragalactic Astrophysics and Astronomical Instrumentation</span></a>', '<a href="http://medialab-prado.es/"><span itemprop="creator"> Medialab-Prado</span>', '<a href="http://crowdcrafting.org/"><span itemprop="creator">Crowdcrafting</span></a>']
 icon: space

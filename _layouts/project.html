@@ -36,7 +36,9 @@ active: portfolio
                 <span itemprop="dateCreated">{{page.date | date:"%Y")}}</span></li>
                 <li><strong><i class="fa fa-tag"></i> Type:</strong> <span itemprop="applicationCategory">{{page.type}}</span></li>
                 <li><i class="fa fa-home"></i> <a itemprop="url" href="{{page.home}}">{{page.title}}</a></li>
+                {% if page.github %}
                 <li><i class="fa fa-github"></i> <a href="{{page.github}}">Source Code</a></li>
+                {% endif %}
             </ul>
         </div>
         <div class="span4 column">
