@@ -2,3 +2,4 @@ _site
 *.un~
 *.swp
 _build
+js/node_modules/*
