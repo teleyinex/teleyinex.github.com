@@ -58,17 +58,9 @@
 
     <link rel="stylesheet" href="{{ "/css/animate.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <! -- page.active {{page.active}} -->
-    <! -- page.section {{page.section}} -->
-    <! -- post.active {{post.active}} -->
-    <! -- post.section {{post.section}} -->
 
-    {% if page.active == 'blog' or page.section == 'blogpost' %}
     <link rel="stylesheet" href="{{ "/css/blog-covers.css" | prepend: site.baseurl }}">
-    {% endif %}
-    {% if page.active == 'project' or page.active == 'project-info' %}
     <link rel="stylesheet" href="{{ "/css/project-covers.css" | prepend: site.baseurl }}">
-    {% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
     <script src="/js/jquery-3.1.0.min.js"></script>
