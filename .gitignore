@@ -1,5 +1,6 @@
 _site
 *.un~
 *.swp
+.sass-cache/*
 _build
 js/node_modules/*
