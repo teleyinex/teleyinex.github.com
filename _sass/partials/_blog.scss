@@ -1,0 +1,24 @@
+.jumbotron-full.section.blog{
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0,0,0,0.45)), url(/assets/img/blog/blogheader.jpg) no-repeat center top/ cover;
+
+}
+.blogpost {
+    margin-top: 15px;
+}
+
+.blog a {
+    color: $blog-color;
+}
+
+.blogpost a {
+    color: $blogpost-color;
+    text-decoration: underline;
+}
+
+.blogpost li:before {
+    color: $blogpost-color;
+}
+
+.blogpost strong {
+    color: $blogpost-color;
+}

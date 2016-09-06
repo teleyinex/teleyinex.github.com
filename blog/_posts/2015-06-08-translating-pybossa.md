@@ -1,11 +1,11 @@
 ---
-title: Auto-translating PyBossa using PyBossa
+title: Auto-translating PYBOSSA using PYBOSSA
 template: entry
 slug: translating-pybossa
 icon: lostintranslation
 icon_author: Alfonso
 icon_url: https://www.flickr.com/photos/tochis/3081093838/
-tags: Crowdcrafting, PyBossa, translation
+tags: Crowdcrafting, PYBOSSA, translation
 location: Madrid, Spain
 meta_description: "" 
 headline: "If you talk to a man in a language he understands, that goes to his head. If you talk to him in his own language, that goes to his heart. -Nelson Mandela." 
@@ -14,17 +14,17 @@ layout: blog
 
 How do you translate properly your product into different languages? More importantly, how do you do it involving your own community?
 
-The answer is easy: using a crowdsourcing solution like PyBossa.
+The answer is easy: using a crowdsourcing solution like PYBOSSA.
 
-# Translating PyBossa using PyBossa
+# Translating PYBOSSA using PYBOSSA
 
-Since the creation of PyBossa, I've translated it to Spanish. Other languages, like French, were added by a volunteer. However, these translations usually
-get outdated as PyBossa was updated with new strings. These solo efforts, usually end up in a translation that's not updated, and you end up with a mix of translated strings.
+Since the creation of PYBOSSA, I've translated it to Spanish. Other languages, like French, were added by a volunteer. However, these translations usually
+get outdated as PYBOSSA was updated with new strings. These solo efforts, usually end up in a translation that's not updated, and you end up with a mix of translated strings.
 
 For these reasons we decided to eat our own dog food, and I created a [crowdsourcing 
-project](http://crowdcrafting.org/project/pybossaitalian) to translate PyBossa using PyBossa. Why? Because PyBossa uses the open 
+project](http://crowdcrafting.org/project/pybossaitalian) to translate PYBOSSA using PYBOSSA. Why? Because PYBOSSA uses the open 
 standard [Gettext](https://www.gnu.org/software/gettext/) for its translations, and each string could become a task in a 
-PyBossa project. 
+PYBOSSA project. 
 
 Also **I loved the idea that anyone, even without an account, can help in the translation.**
 The current platforms usually need an account to just translate a few strings, and that's usually too much
@@ -32,18 +32,18 @@ for users who want to see the product they use in their own language. Obviously 
 people will add fake translations, but that's not an issue as the crowd will help to clean the bad ones
 and keep the best one.
 
-As I started working on it, I realized this could be very useful not only for me and PyBossa
-but also to anyone using the Gettext technology in their projects. Thus, I created a PyBossa template 
-[project](https://github.com/PyBossa/app-translations) that anyone can re-use and adapt today to translate their own projects.
+As I started working on it, I realized this could be very useful not only for me and PYBOSSA
+but also to anyone using the Gettext technology in their projects. Thus, I created a PYBOSSA template 
+[project](https://github.com/PYBOSSA/app-translations) that anyone can re-use and adapt today to translate their own projects.
 
 
 # The Translation Template Project
 
-The template can be used in any PyBossa server, so if you don't have one, don't 
+The template can be used in any PYBOSSA server, so if you don't have one, don't 
 hesitate and go to [Crowdcrafting](http://crowdcrafting.org) to create an account and 
 start using it. 
 
-The [ translation template ](https://github.com/PyBossa/app-translations) is very simple. It has been designed to have two phases:
+The [ translation template ](https://github.com/PYBOSSA/app-translations) is very simple. It has been designed to have two phases:
 
 * The Translation: 3 people translate the same string.
 * The Voting: 5 people vote for the best translation of the 3 translations.
@@ -57,19 +57,19 @@ have a better understanding about the text you write, leading to better results 
 ## 1. The Translation phase
 
 The first thing you need to do is to download the template. Then, install the required
-tools (see the [README](https://github.com/PyBossa/app-translations) file for more information), and you will be ready to start translating
+tools (see the [README](https://github.com/PYBOSSA/app-translations) file for more information), and you will be ready to start translating
 your project.
 
 Then, all you have to do is get your PO file (it's a text file with the string 
 to get translated from for example English to Spanish). Once you have it, you will pass it
-to [PBS](https://github.com/PyBossa/pbs) -our PyBossa command line tool- that will 
-convert untranslated strings to tasks for your PyBossa project:
+to [PBS](https://github.com/PYBOSSA/pbs) -our PYBOSSA command line tool- that will 
+convert untranslated strings to tasks for your PYBOSSA project:
 
 ```
 pbs add_tasks --task-file=messages.pot --tasks-type=po --redundancy=3
 ```
 
-This will add the untranslated strings as tasks to your PyBossa project. Each string will be shown to 3 different people, so you get
+This will add the untranslated strings as tasks to your PYBOSSA project. Each string will be shown to 3 different people, so you get
 3 translation for your own project. You can increase or reduce it as much as you want. It's up to you to decide.
 
 When all the strings have been translated, you can move to the next phase if you want: the voting phase. 
@@ -104,20 +104,22 @@ Copy the new created file into your translations project, and you'll be done! As
 
 ## Firefox extensions
 
-Yes, PyBossa also supports Firefox extensions. Thus, if you are writing a Firefox 
+Yes, PYBOSSA also supports Firefox extensions. Thus, if you are writing a Firefox 
 extension and you want to translate it to different languages, you can use
-PyBossa too. It's pretty similar and you have all the documentation about it 
-[here](https://github.com/PyBossa/app-translations).
+PYBOSSA too. It's pretty similar and you have all the documentation about it 
+[here](https://github.com/PYBOSSA/app-translations).
 
 
 # Summary
 
-With our PyBossa translation template anyone can translate their open source project
+With our PYBOSSA translation template anyone can translate their open source project
 with their community, involving them not only in the translation but also curating which
 is the best translation for every string.
 
 Thus, don't get lost in translation anymore!
 
+<div class="embed-responsive embed-responsive-16by9">
 <video autoplay loop>
 <source src="http://media.giphy.com/media/ZCnP8OtmVRbPi/giphy.mp4">
 </video>
+</div>

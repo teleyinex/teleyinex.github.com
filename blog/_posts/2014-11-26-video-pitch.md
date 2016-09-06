@@ -5,7 +5,7 @@ slug: video-pitching-my-life
 icon: 8mm
 icon_author: Kevin Stanchfield
 icon_url: https://www.flickr.com/photos/sgt_spanky/3970722137
-tags: video, science, Crowdcrafting, PyBossa, application 
+tags: video, science, Crowdcrafting, PYBOSSA, application 
 location: Madrid, Spain
 meta_description: Video Pitching
 headline: "Filming one day of my life to pitch why it matters to support me."
@@ -69,14 +69,14 @@ decided to create my own following some [tutorials on the web](https://www.youtu
 Next photo shows the front side of the rig. The white plate is where you attach
 your camera. You can also see the two handles to do some panning shots:
 
-![shoulder rig](/assets/img/blog/IMG_20141126_112836.jpg)
+![shoulder rig](/assets/img/blog/IMG_20141126_112836.jpg){: .img-responsive}
 
 The best part of this design is that I can add weight to the back, so it gives
 you a nice balance for the camera while you walk with it, or when you do a
 panning shots. The next photo shows how I've added to the back some weight to
 give me a more steady movement of the camera:
 
-![shoulder rig](/assets/img/blog/IMG_20141126_112844.jpg)
+![shoulder rig](/assets/img/blog/IMG_20141126_112844.jpg){: .img-responsive}
 
 Once I built my own rig (lots of fun!), I needed to work in the microphone of the camera.
 The problem was that I was going to be shooting in the streets, so lots of
@@ -92,15 +92,15 @@ will get all the ambient noise in your movie, and what you really want is to lis
 to the speakers. Hence I needed a way to disable AGC hacking the camera. My
 reaction:
 
-![Yes to all](http://i.giphy.com/aCrRttmzK1jKo.gif)
+![Yes to all](http://i.giphy.com/aCrRttmzK1jKo.gif){: .img-responsive}
 
 Luckily Internet has the knowledge, and I found several people with the same
 issue, and they shared how you could build a small gadget to disable AGC and
 record sound without problems. After following one of the tutorials I built my
 anti-AGC gadget:
 
-![hacking AGC](/assets/img/blog/IMG_20140502_203554.jpg)
-![hacking AGC](/assets/img/blog/IMG_20140502_210400.jpg)
+![hacking AGC](/assets/img/blog/IMG_20140502_203554.jpg){: .img-responsive}
+![hacking AGC](/assets/img/blog/IMG_20140502_210400.jpg){: .img-responsive}
 
 
 While the gadget worked, sometimes failed, and nothing was recorded which was
@@ -111,7 +111,7 @@ While my last hack didn't work out, I really loved what I learned just for
 preparing to shoot my video. At this moment, I've not shot anything yet, but I've
 written the script and built my own gear to start filming.
 
-![dr. evil](http://i.giphy.com/2XfswSLHgkXXa.gif)
+![dr. evil](http://i.giphy.com/2XfswSLHgkXXa.gif){: .img-responsive}
 
 ## Editing the video
 
@@ -123,7 +123,7 @@ this was very painful as every change involved a crash, restart, wait to load
 all the video and sound clips, check the changes, do a modification and again a
 crash.
 
-![frustrated](http://i.giphy.com/6xgslyYQCyLa8.gif)
+![frustrated](http://i.giphy.com/6xgslyYQCyLa8.gif){: .img-responsive}
 
 To me this was the most stressful part, as I remembered quite vividly all the
 frustration of going through that loop with every change, so I decided to try a
@@ -138,7 +138,7 @@ this employed time was priceless as I could modify the video without a crash,
 do fancy filtering (even color correction), and in the future if I want, many
 more advance techniques.
 
-![I'm so happy](http://i.giphy.com/YFIn0ICJFwGNa.gif)
+![I'm so happy](http://i.giphy.com/YFIn0ICJFwGNa.gif){: .img-responsive}
 
 ## Making it personal
 
@@ -147,4 +147,5 @@ video. Where I could, I tried to control light, objects shown in the frame,
 etc, etc. I wanted to tell a story not just with my words but also with the
 items that are shown in it. The result, judge it yourself:
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/rQ3yLqdEhvc' frameborder='0' allowfullscreen></iframe></div>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src='http://www.youtube.com/embed/rQ3yLqdEhvc' frameborder='0' allowfullscreen></iframe></div>

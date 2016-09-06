@@ -2,13 +2,13 @@
 layout: project
 title: Dark Skies
 date: 2014-07-04
-tags: crowdcrafting, PyBossa, science, light pollution 
+tags: crowdcrafting, PYBOSSA, science, light pollution 
 type: crowdsourcing
 home: http://crowdcrafting.org/app/darkskies/
 state: beta
 permalink: /projects/darkskies
 featured: no
-summary: "Analyzing light pollution from space"
+meta_description: "Analyzing light pollution from space"
 partners: ['<a href="http://guaix.fis.ucm.es/"><span itemprop="creator">UCM group of Extragalactic Astrophysics and Astronomical Instrumentation</span></a>', '<a href="http://medialab-prado.es/"><span itemprop="creator"> Medialab-Prado</span>', '<a href="http://crowdcrafting.org/"><span itemprop="creator">Crowdcrafting</span></a>']
 icon: space
 iconauthor: <a href="http://earth.jsc.nasa.gov/sseop/images/ESC/large/ISS030/ISS030-E-21177.jpg">NASA</a>

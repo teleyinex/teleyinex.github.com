@@ -1,7 +1,15 @@
-name: Daniel Lombraña González
-markdown: redcarpet
-highlighter: pygments
-permalink: /:categories/:year/:month/:day/:title.html
-excerpt_separator: <!--more-->
-gems:
-    - jekyll-sitemap
+# Site settings
+title: Daniel Lombraña Blog
+email: teleyinex@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+    Dad, husband, geek, computer engineer, crowdsourcing expert, 
+    citizen science researcher, comics reader, pilates practitioner, 
+    runner & Founder at Scifabric
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://daniellombrana.es" # the base hostname & protocol for your site
+twitter_username: teleyinex
+github_username:  teleyinex
+
+# Build settings
+markdown: kramdown
+exclude: ['js/node_modules']

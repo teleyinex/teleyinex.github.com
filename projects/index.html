@@ -1,76 +1,46 @@
 ---
-layout: default
+layout: page
 title: Projects
-active: projects
+active: project
 meta_description: "My crowsourcing, citizen science and open source projects."
 ---
-
-<div id="myCarousel" class="carousel slide hidden-phone">
-    <div class="carousel-inner">
-        {% for post in site.categories.projects %} 
-        {% if post.featured %}
-        <div class="item active">
-        {% else %}
-        <div class="item">
+<div class="container content">
+    <div class="row project">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-md-offset-2" data-wow-delay="0.3s">
+                <h1>Latest projects</h1>
+            </div>
+        </div>
+        {% for item in site.categories.projects %}
+        {% assign loopindex = forloop.index | modulo: 2 %}
+        {% if loopindex == 1 %}
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-md-offset-2" data-wow-delay="0.3s">
+                <div class="thumbnail card wow fadeInUp">
+                    <div class="post-pic cover-{{item.icon}}"></div>
+                    <div class="caption">
+                        <h2 class="hidden-xs hidden-sm">{{item.title | truncate: 45 }}</h2>
+                        <h2 class="hidden-md hidden-lg">{{item.title | truncate: 30 }}</h2>
+                        <p class="excerpt">{{item.excerpt | strip_html | truncate: 100 }}</p>
+                        <p class="readmore"><a href="{{item.url}}">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="col-sm-12 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="thumbnail card">
+                    <div class="post-pic cover-{{item.icon}}"></div>
+                    <div class="caption">
+                        <h2 class="hidden-xs hidden-sm">{{item.title | truncate: 45 }}</h2>
+                        <h2 class="hidden-md hidden-lg">{{item.title | truncate: 30 }}</h2>
+                        <p class="excerpt">{{item.excerpt | strip_html | truncate: 100}}</p>
+                        <p class="readmore"><a href="{{item.url}}">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
         {% endif %}
-            <span data-picture data-alt="{{post.title}}">
-                <span data-src="/assets/img/project/{{post.icon}}_320.jpg"></span>
-                <span data-src="/assets/img/project/{{post.icon}}_768.jpg"     data-media="(min-width: 768px)"></span>
-                <span data-src="/assets/img/project/{{post.icon}}.jpg"     data-media="(min-width: 980px)"></span>
-            </span>
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>{{ post.title | striptags}}</h1>
-                    <p class="lead">{{ post.summary }}</p>
-                    {% if post.iconauthor %}
-                    <p><i class="fa fa-picture-o"></i> Photo by {{ post.iconauthor }}</p>
-                    {% endif %}
-                    <a class="btn btn-large btn-inverse" href="{{ post.url }}"> Project details <i class="fa fa-angle-double-right"></i></a>
-                </div>
-            </div>
-        </div>
         {% endfor %}
-    </div>
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-</div><!-- /.carousel -->
 
-<div class="container">
-<div class="row">
-    <div class="span12">
-        <div class="navbar navbar-inverse hidden-phone">
-                <div class="navbar-inner">
-                    <a class="brand" href="blog">Last Blog Post</a>
-                    <ul class="nav">
-                        <li>
-                            <a href="blog/{{entries[0].url}}">{{entries[0].title}}</a>
-                        </li>
-                    </ul>
-                </div>
-        </div>
-        <div class="span12 alert alert-info hidden-desktop" style="margin-top:15px;">
-            <div id="prueba" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><strong><i class="fa fa-bullhorn"></i> Last Blog Post: </strong> <a href="blog/{{entries[0].url}}">{{entries[0].title}}</a></div>
-        </div>
-        <h2>Projects</h2>
-        <ul class="thumbnails">
-            {% for post in site.categories.projects %}
-            <li class="span4">
-            <div class="thumbnail">
-                <div class="thumbnail-caption"><a href="{{post.url}}">{{post.title}}</a></div>
-
-                <span data-picture data-alt="{{post.title}}">
-                    <span data-src="/assets/img/project/{{post.icon}}_320.jpg"></span>
-                    <span data-src="/assets/img/project/{{post.icon}}_768.jpg"     data-media="(min-width: 768px)"></span>
-                    <span data-src="/assets/img/project/{{post.icon}}.jpg"     data-media="(min-width: 980px)"></span>
-                </span>
-                <noscript>
-                    <img src="/static/images/project/{{post.icon}}_320.jpg" alt="{{post.title}}">
-                </noscript>
-            </div>
-            </li>
-            {% endfor %}
-        </ul>
-        </div>
     </div>
-</div>
 </div>

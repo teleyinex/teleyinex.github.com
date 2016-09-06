@@ -1,0 +1,163 @@
+$font-size: 30px;
+$line-height: 1.4;
+$lines-to-show: 2;
+
+.thumbnail.card {
+    border-radius: 2px;
+    padding: 0px;
+ 
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    img,
+    div {
+        border-radius: 2px 2px 0px 0px;
+    }
+
+    .excerpt {
+        min-height: 3*$line-height*1em;
+    }
+    .caption {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+
+        p {
+            display: block;
+            
+        }
+
+        br{display: block;}
+
+        span {
+            text-decoration: underline;
+        }
+
+    }
+}
+
+
+.card {
+    background-color: white;
+    h2 {
+        display: flex;
+        align-items: center;
+        min-height: 45px;
+        height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+        font-size: $font-size;
+        line-height: $line-height;
+        -webkit-line-clamp: $lines-to-show;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    h2.small-space {
+        min-height: 23px;
+    }
+
+}
+
+.readmore {
+    
+
+    a {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+}
+
+
+
+
+/* XS devices */
+.post-pic{
+    height: 195px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {     
+        .post-pic{
+        height: 253px;
+        }
+
+        .card-fix-p{
+        margin-bottom: 32px;
+        }
+}
+
+
+/* Medium devices (992px and up) */
+@media (min-width: 992px) {     
+       .col-md-6 .post-pic{
+        height: 202px;
+        }
+
+        .col-md-4 .post-pic{
+        height: 202px;
+        }
+}
+
+/* Large devices (992px and up) */
+@media (min-width: 1200px) {     
+       .col-md-6 .post-pic{
+        height: 250px;
+        }
+
+        .col-md-4 .post-pic{
+        height: 160px;
+        }
+}
+
+
+.post-pic {
+    height: 195px;
+}
+.cover-baby {
+    background: black url(/assets/img/about/baby.jpg) no-repeat center top/ cover;
+}
+
+.cover-madrid {
+
+    background: black url(/assets/img/about/madrid.jpg) no-repeat center top/ cover;
+}
+
+.cover-leon {
+    background: black url(/assets/img/about/catedral.jpg) no-repeat center top/ cover;
+}
+
+.cover-computer {
+
+    background: black url(/assets/img/about/computer.jpg) no-repeat center top/ cover;
+}
+
+.cover-crowd {
+    background: black url(/assets/img/about/crowd.jpg) no-repeat center top/ cover;
+}
+
+.cover-geneva {
+    background: black url(/assets/img/about/geneva.jpg) no-repeat center top/ cover;
+}
+
+.cover-web {
+    background: black url(/assets/img/about/web.jpg) no-repeat center top/ cover;
+}
+
+.cover-jeans {
+    background: black url(/assets/img/about/jeans.jpg) no-repeat center top/ cover;
+}
+
+.cover-hiphop {
+    background: black url(/assets/img/about/hiphop.jpg) no-repeat center top/ cover;
+}
+
+.cover-matrix {
+    background: black url(/assets/img/about/matrix.png) no-repeat center top/ cover;
+}
+
+.cover-feynman {
+    background: black url(/assets/img/about/feynman.jpg) no-repeat center top/ cover;
+}
+
+.cover-happy {
+    background: black url(/assets/img/about/happy.jpg) no-repeat center top/ cover;
+}

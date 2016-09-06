@@ -1,0 +1,26 @@
+.jumbotron-full.project{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0,0,0,0.45)), url(/assets/img/blog/avatar.jpeg);*/
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0,0,0,0.45)), url(/assets/img/project/projectheader.jpg) no-repeat center top/ cover;
+}
+
+
+.project a {
+    color: $project-color;
+    text-decoration: underline;
+}
+
+.project-info {
+    margin-top: 15px;
+}
+
+.project-info a {
+    color: $project-info-color;
+}
+
+.project-info li:before {
+    color: $project-color;
+}
+
+.project-info strong {
+    color: $project-color;
+}

@@ -1,33 +1,33 @@
 ---
-title: Sharing your PyBossa application analysis with Enki
+title: Sharing your PYBOSSA application analysis with Enki
 template: entry
 slug: pybossa-enki
 icon: enki
 icon_author: Georgelazenby
 icon_url: http://en.wikipedia.org/wiki/File:Chaos_Monster_and_Sun_God.png
-tags: "enki, science, analysis, sharing, open science, crowdcrafting, PyBossa"
+tags: "enki, science, analysis, sharing, open science, crowdcrafting, PYBOSSA"
 location: Madrid, Spain 
-meta_description: Sharing your PyBossa application analysis with Enki
-headline: "Analyzing your PyBossa project with Python."
+meta_description: Sharing your PYBOSSA application analysis with Enki
+headline: "Analyzing your PYBOSSA project with Python."
 layout: blog
 ---
 
-Up to now if you have created your own application in your [PyBossa server](http://daniellombrana.es/pybossa.html) or
+Up to now if you have created your own application in your [PYBOSSA server](http://daniellombrana.es/pybossa.html) or
 in [Crowdcrafting](http://crowdcrafting.org) you have to create your own library or script to download the results
 from the server and process them.
 
-PyBossa provides links for every application to download the tasks and task runs in a CSV file or in JSON (if you want
+PYBOSSA provides links for every application to download the tasks and task runs in a CSV file or in JSON (if you want
 to hack around it more easily), however doing the analysis usually involved some work that could be tedious.
 
 In order to solve this problem, I decided to creat a very simple to use Python package that downloads all the completed tasks
 and its associated answers and gives you the right tools for doing the analysis without having to write none of the usual tests.
 
-The result: [Enki](http://github.com/PyBossa/enki)
+The result: [Enki](http://github.com/PYBOSSA/enki)
 
 
 ## Enki
 
-Enki is a very simple package that uses the [PyBossa-Client](http://github.com/PyBossa/pybossa-client) and [Pandas](http://pandas.pydata.org/)
+Enki is a very simple package that uses the [PYBOSSA-Client](http://github.com/PYBOSSA/pybossa-client) and [Pandas](http://pandas.pydata.org/)
 package to achieve the following two items:
 
 * Get all the tasks and task_runs,
@@ -57,7 +57,7 @@ will get the mean, avg, std, etc. as a result of the output. Handy, right?
 
 ## Ipython + Enki = sharing the analysis 
 
-Therefore, Enki is the right tool for doing the analysis of any of your PyBossa applications. However, I wanted to provide a more
+Therefore, Enki is the right tool for doing the analysis of any of your PYBOSSA applications. However, I wanted to provide a more
 interesting tool. I wanted to easily share the analysis in order to embrace **open science**, so other researchers and citizens could
 replicate my analysis and let me know if I made a mistake.
 
@@ -71,9 +71,11 @@ In order to show how awesome is this feature, I have created a simple notebook t
 
 The Gist is available [here](https://gist.github.com/teleyinex/7991086), and you can directly view it [here](http://nbviewer.ipython.org/gist/teleyinex/7991086).
 
+<div class="embed-responsive embed-responsive-16by9">
 <iframe class="hidden-phone" src="http://nbviewer.ipython.org/gist/teleyinex/7991086" style="width:100%; height:500px;">
 </iframe>
+</div>
 
-Thus, if you have a Crowdcrafting application and you need to analyze it, start using [Enki](http://github.com/PyBossa/enki).
+Thus, if you have a Crowdcrafting application and you need to analyze it, start using [Enki](http://github.com/PYBOSSA/enki).
 
 **NOTE**: [Enki is the name of a Sumerian god of the intelligence](http://en.wikipedia.org/wiki/Enki).

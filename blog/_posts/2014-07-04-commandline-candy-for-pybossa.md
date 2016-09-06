@@ -1,36 +1,36 @@
 ---
-title: Command line candy for PyBossa
+title: Command line candy for PYBOSSA
 template: entry
 slug: command-line-candy-for-pybossa
 icon: candy
 icon_author: Lost in space
 icon_url: https://www.flickr.com/photos/gentagrafie/12723952215/
-tags: citizen science, open source, PyBossa, tools
+tags: citizen science, open source, PYBOSSA, tools
 location: Madrid, Spain
-meta_description: Command line candy for PyBossa
-headline: "Managing a PyBossa project was never so easy."
+meta_description: Command line candy for PYBOSSA
+headline: "Managing a PYBOSSA project was never so easy."
 layout: blog
 ---
 
-PyBossa is a great framework, however we were lacking a nice command line tool to 
+PYBOSSA is a great framework, however we were lacking a nice command line tool to 
 interact with it.
 
 For this reason, after providing several different scripts to create projects, add 
 tasks, etc, etc. I've decided to finally create a **simple** command line tool to 
-master the PyBossa API.
+master the PYBOSSA API.
 
 <!--more-->
 
-## pbs - mastering PyBossa API
+## pbs - mastering PYBOSSA API
 
-As I wanted to create a powerful but simple tool to manage PyBossa projects via the 
+As I wanted to create a powerful but simple tool to manage PYBOSSA projects via the 
 command line, I looked for different solutions: argparse, docopt, etc. From all the
 available solutions I found [Click](http://click.pocoo.org/) from 
 [Armin Ronacher](http://lucumr.pocoo.org/) and after trying it I was simply AMAZED.
 
 *Click is really powerful, simple and its feature for nesting commands is incredible.*
 
-Thanks to Click I've managed to develop a command line tool for PyBossa in two days, 
+Thanks to Click I've managed to develop a command line tool for PYBOSSA in two days, 
 that behaves more or less like *git* with commands, sub-commands and --help options 
 to make your life much simpler!
 
@@ -42,7 +42,7 @@ Installing *pbs* is very simple. Just install it with **pip** with the following
  pip install pybossa-pbs
 {% endhighlight %}
 
-Then all the magic happens ;-)
+Then all the magic happens <i class="twa twa-wink"></i>.
 
 ## Configuring pbs
 
@@ -50,7 +50,7 @@ I've designed pbs to be very flexible, so all the options can be passed as argum
 giving you all the flexibility that you could need.
 
 One of the key aspects that I love from pbs is the possibility of having a config file 
-for storing my credentials for different PyBossa servers. This simplifies my life, 
+for storing my credentials for different PYBOSSA servers. This simplifies my life, 
 reduces the ammount of typing and I don't have to check all the time my API-KEY in the 
 servers that I'm using :-)
 
@@ -71,7 +71,7 @@ By default, pbs will use the *default* section, but if you want to authenticate 
 another server, all you've to do is to pass the following command line option: **--credentials anotherserver**.
 Done!
 
-You don't actually need that file, but if you are working a lot with PyBossa I would 
+You don't actually need that file, but if you are working a lot with PYBOSSA I would 
 recommend you to create it. It's really amazing.
 
 ## Creating a project
@@ -99,9 +99,9 @@ Two words, and your project is created!
 ## Adding tasks
 
 Now that we've our project available in the server, we can add tasks to it. With pbs
-I wanted to allow users to import tasks from PyBossa servers without having to do 
+I wanted to allow users to import tasks from PYBOSSA servers without having to do 
 nothing special. If you visit a project in [Crowdcrafting](http://crowdcrafting.org)
-you will see that right now PyBossa allows you to download tasks as files in two 
+you will see that right now PYBOSSA allows you to download tasks as files in two 
 different formats: CSV and JSON.
 
 Once you've downloaded one set of tasks from Crowdcrafting, pbs allows you to **re-use** 
@@ -115,7 +115,7 @@ pbs add_tasks --tasks-file file --tasks-type=csv
 {% endhighlight%}
 
 Done! **You've even a progress bar and if you have more than 300 tasks, pbs will auto
-enable the throttling to respect the PyBossa limits of the server.** I love this ;-)
+enable the throttling to respect the PYBOSSA limits of the server.** I love this ;-)
 
 ## Adding the task presenter, long description and tutorial
 
@@ -146,17 +146,21 @@ pbs update_project --task-template /path/to/template.html
 ## An example
 
 In the following video you can see how quickly you can create a project in 
-Crowdcrafting (or any PyBossa server) using pbs with the [Flickr Person Finder template](https://github.com/PyBossa/app-flickrperson/).
+Crowdcrafting (or any PYBOSSA server) using pbs with the [Flickr Person Finder template](https://github.com/PYBOSSA/app-flickrperson/).
 
 Enjoy!
 
 ### Installing pbs
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://player.vimeo.com/video/99921525' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src='http://player.vimeo.com/video/99921525' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
 
 ### Creating a project and adding tasks
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://player.vimeo.com/video/99921526' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src='http://player.vimeo.com/video/99921526' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
 PS: I almost forgot to mention it: everything is open source and you can check the 
-source code [here](https://github.com/PyBossa/pbs/).
+source code [here](https://github.com/PYBOSSA/pbs/).

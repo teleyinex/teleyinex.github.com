@@ -1,0 +1,38 @@
+---
+layout: css
+---
+@media (max-width: 400px) {
+{% for post in site.categories.blog %}
+    .cover-{{post.icon}} {
+        background: #2980b9 url(/assets/img/blog/{{post.icon}}-phone.jpg) no-repeat center top/ cover;
+    }
+    .cover-dark-{{post.icon}} {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0,0,0,0.45)), url(/assets/img/blog/{{post.icon}}-phone.jpg) no-repeat center top/ cover;
+    }
+
+{% endfor %}
+}
+
+@media (min-width: 401px) and (max-width: 780px){
+{% for post in site.categories.blog %}
+    .cover-{{post.icon}} {
+        background: #2980b9 url(/assets/img/blog/{{post.icon}}-tablet.jpg) no-repeat center top/ cover;
+    }
+    .cover-dark-{{post.icon}} {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0,0,0,0.45)), url(/assets/img/blog/{{post.icon}}-tablet.jpg) no-repeat center top/ cover;
+    }
+
+{% endfor %}
+}
+
+@media (min-width: 781px) {
+{% for post in site.categories.blog %}
+    .cover-{{post.icon}} {
+        background: #2980b9 url(/assets/img/blog/{{post.icon}}.jpg) no-repeat center top/ cover;
+    }
+    .cover-dark-{{post.icon}} {
+        background:  linear-gradient(rgba(0, 0, 0, 0.45), rgba(0,0,0,0.45)), url(/assets/img/blog/{{post.icon}}.jpg) no-repeat center top/ cover;
+    }
+
+{% endfor %}
+}

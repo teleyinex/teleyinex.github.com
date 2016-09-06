@@ -1,0 +1,32 @@
+.footer {
+    padding-top: 5px;
+    display: none;
+}
+
+.footer.about {
+    background: $about-color;
+}
+
+.footer.blog {
+    background: $blog-color;
+}
+
+.footer.blogpost {
+    background: $blogpost-color;
+}
+
+.footer.project {
+    background: $project-color;
+}
+
+.footer.project-info {
+    background: $project-info-color;
+}
+
+.footer.photography {
+    background: $photography-color;
+}
+
+
+
+

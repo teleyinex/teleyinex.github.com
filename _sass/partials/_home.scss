@@ -1,0 +1,105 @@
+.black {
+}
+
+.background-home {
+    background: green;
+    height: 100vh;
+    color: white;
+    font-family: 'Text Me One', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    transition: background 2s;
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    height: 50px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.top {
+    margin-top: 35px;
+}
+
+.line-left-right {
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+
+.line-top-bottom{
+    position: absolute;
+    left: 0;
+    top: -35px;
+}
+
+.line-bottom-top {
+    position: absolute;
+    right: auto;
+    left: 110px;
+    top: 0;
+}
+
+.line-right-left {
+    position: absolute;
+    top: -15px;
+}
+
+#about, #blog,
+#projects, #photography {
+    visibility: hidden;
+}
+
+.menulink {
+    color: white;
+}
+
+.menulink:hover,
+.menulink:active,
+.menulink:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.logo > div {
+    height: 264px;
+    width: 236px;
+}
+
+// Desktop 
+@media(min-width: 768px) {
+    .line-left-right {
+        top: 12px;
+    }
+    .line-top-bottom {
+        left: auto;
+        right: 56px;
+        top: -39px;
+    }
+    .line-right-left {
+        left: auto;
+        right: -4px;
+        top: -8px;
+    }
+    .line-bottom-top {
+        right: auto;
+        left: 110px;
+    }
+
+}

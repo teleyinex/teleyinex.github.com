@@ -39,7 +39,7 @@ infrastructure without adding any extra layer.
 
 ## Our deployments solution (or our robot)
 
-[The web server](https://github.com/PyBossa/deployments) has less than 250 lines of 
+[The web server](https://github.com/PYBOSSA/deployments) has less than 250 lines of 
 code. It's 100% tested, covered and with a code health quality of 100% according to 
 Landscape.io. Oh, it's also open source!
 
@@ -93,7 +93,7 @@ you a URL that you only have to copy and paste into the config file. Once you
 have done it the server will post messages about the status of
 the deployment. The messages are like this:
 
-![Deployment screenshot](/assets/img/blog/deployments.png)
+![Deployment screenshot](/assets/img/blog/deployments.png){: .img-responsive}
 
 The message includes the following information:
 
@@ -117,7 +117,7 @@ into the master branch, the service will deploy the changes into production
 (or the machines that you want). As simple as that! The system takes care of
 itself! Batteries included!!
 
-![BMO gif changing its batteries](http://i.giphy.com/AMqCTHuCMFpM4.gif)
+![BMO gif changing its batteries](http://i.giphy.com/AMqCTHuCMFpM4.gif){: .img-responsive}
 
 Thanks to this solution now every member of my team can actually do deployments
 into production. This has been a significant change in our work flow as

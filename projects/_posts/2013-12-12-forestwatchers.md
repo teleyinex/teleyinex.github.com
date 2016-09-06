@@ -3,11 +3,11 @@ date: 2012-01-01
 title: ForestWatchers.net
 github: http://github.com/ForestWatchers
 github: http://forestwatchers.net
-tags: volunteer thinking, PyBossa, deforestation, damage assessment, biology
+tags: volunteer thinking, PYBOSSA, deforestation, damage assessment, biology
 type: crowdsourcing
 state: alpha
 slug: forestwatchers
-summary: a citizen project for forest monitoring
+meta_description: a citizen project for forest monitoring
 partners: ['<a href="http://www.inpe.br"><span itemprop="creator">Brazil National Institute for Space Research</span></a>', '<a href="http://citizencyberscience.net"><span itemprop="creator">Citizen Cyberscience Centre</span></a>']
 funders: '<a href="http://soros.org"><span itemprop="contributor">Open Society Foundation</span></a>'
 icon: forest
@@ -18,11 +18,9 @@ layout: project
 ---
 
 ForestWatchers.net is a citizen cyberscience project where volunteers from all over the world can help in assessing deforestation from satellite images.
-The project uses the open source [PyBossa](http://daniellombrana.es/pybossa.html) framework and has currently two running web applications:
-<ul class="angle-list">
-<li>**Best Tile**. Volunteers help selecting the less cloudy image for the same are from satellite images.</li>
-<li>**Deforested Areas**. Volunteers help to identify deforested areas (even in indigenous or federal protected areas) by drawing polygons.</li>
- </ul>
+The project uses the open source [PYBOSSA](http://daniellombrana.es/pybossa.html) framework and has currently two running web applications:
+ * **Best Tile**. Volunteers help selecting the less cloudy image for the same are from satellite images.
+ * **Deforested Areas**. Volunteers help to identify deforested areas (even in indigenous or federal protected areas) by drawing polygons.
 
 
 ## Best Tile
@@ -32,14 +30,12 @@ This application was developed to help the researchers to clean satellite images
 ## Deforested Areas
 
 This application builds on top of the previous one, using the cleaned images, to allow the users to mark deforested areas by drawing polygons on top of the deforested areas. This application shows also information in different layers regarding:
-<ul class="angle-list">
- <li>**Indigenous areas**</li>
- <li>**Federal protected areas**</li>
- <li>**Hydrography**</li>
-</ul>
+  * **Indigenous areas**
+  * **Federal protected areas**
+  * **Hydrography**
 
 ### Video
 
-<div class="videoWrapper">
+<div class="embed-responsive embed-responsive-16by9">
     <iframe src="http://www.youtube.com/embed/syyJ_bEbAtI?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>

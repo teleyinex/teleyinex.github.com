@@ -5,7 +5,7 @@ slug: video-tutorial
 icon: film
 icon_author: Rami
 icon_url: https://www.flickr.com/photos/rhk313/4846377172
-tags: video, open source, tutorial, shuttleworth, tools, crowdcrafting, PyBossa
+tags: video, open source, tutorial, shuttleworth, tools, crowdcrafting, PYBOSSA
 location: Madrid, Spain 
 meta_description: How to make a short film using only open source tools
 headline: "Open source tools for video editing."
@@ -14,17 +14,16 @@ layout: blog
 
 This year, in summer, I decided to apply for the prestigious [Shuttleworth Fellowship program](http://www.shuttleworthfoundation.org/fellowship-model/).
 
-<div class="videoWrapper">
+<div class="embed-responsive embed-responsive-16by9">
     <iframe src="//player.vimeo.com/video/33213160?title=0&amp;byline=0&amp;portrait=0&amp;color=8cbd01" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
 The Fellowship program is incredible!!! Why? Because all the fellows are amazing and their projects and ideas are mind blowing :-) Just to give you an idea, here is a *short* list of their Alumni:
-<ul class="angle-list">
-<li>[Mark Surman, Executive Director of Mozilla](http://www.shuttleworthfoundation.org/fellows/mark-surman/)</li>
-<li>[Francois Grey, Coordinator of Citizen Cyberscience Centre](http://www.shuttleworthfoundation.org/fellows/francois-grey/)</li>
-<li>[Rufus Pollock, co-founder & director of Open Knowledge Foundation](http://www.shuttleworthfoundation.org/fellows/dr-rufus-pollock/), or </li>
-<li>[Phillip Schmidt, Executive Director & Co-founder of Peer 2 Peer University](http://www.shuttleworthfoundation.org/fellows/philipp-schmidt/).</li>
-</ul>
+
+ * [Mark Surman, Executive Director of Mozilla](http://www.shuttleworthfoundation.org/fellows/mark-surman/)
+ * [Francois Grey, Coordinator of Citizen Cyberscience Centre](http://www.shuttleworthfoundation.org/fellows/francois-grey/)
+ * [Rufus Pollock, co-founder & director of Open Knowledge Foundation](http://www.shuttleworthfoundation.org/fellows/dr-rufus-pollock/), or 
+ * [Phillip Schmidt, Executive Director & Co-founder of Peer 2 Peer University](http://www.shuttleworthfoundation.org/fellows/philipp-schmidt/).
 
 <!--more-->
 
@@ -33,10 +32,8 @@ Amazing right!? As you can see, the level is pretty high!!! If you additionally 
 ## Fellowship Application
 
 [Applying for the fellowship](http://www.shuttleworthfoundation.org/funding/fellowship-programme/) has two steps: 
-<ul class="angle-list">
-<li>the regular paperwork, plus</li>
-<li>*a short video* pitching why they should fund you and your idea that would change the world.</li>
-</ul>
+ * the regular paperwork, plus
+ * *a short video* pitching why they should fund you and your idea that would change the world.
 
 **Pitching a project or idea is always hard**. *Really hard*.
 
@@ -54,7 +51,7 @@ OK, so I do not know how to shot a video, and I only have 2 weeks to write the a
 
 Well, as I didn't have any idea about how to shoot a video with my DSLR camera *I decided to learn about it*. I love films, art, etc. so I usually visit the video website [Vimeo](http://vimeo.com). Vimeo is like the playground for artists, where they show their creations. Just to give you an idea how creative are the users, check this video:
 
-<div class="videoWrapper">
+<div class="embed-responsive embed-responsive-16by9">
     <iframe src="//player.vimeo.com/video/67809013?title=0&amp;byline=0&amp;portrait=0&amp;color=0094f0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
@@ -71,21 +68,21 @@ Once I had the proper configuration for the camera, I had to actually shoot the 
 While I was watching them I knew that I had to do something different, if I wanted to get the attention of the Shuttleworth judges. Hence, I decided to create several cuts and reduce the video length as much as possible. Why? Because I didn't want to get them bored :-)
 
 Now that I knew the initial structure, it was time to learn a bit more about how to tell a story with a film. 
+
 ## The Art of Storytelling
 
 Again, I went back to the school of video for more resources and I found this amazing video:
 
-<div class="videoWrapper">
+<div class="embed-responsive embed-responsive-16by9">
     <iframe src="//player.vimeo.com/video/64207362?title=0&amp;byline=0&amp;portrait=0&amp;color=0094f0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
 The video explains perfectly well how your script has to look like. Basically you need to answer the following questions or points:
-<ul class="angle-list">
-<li>**People: Who is in the story?** This one was easy to answer: me!</li>
-<li>**Place: Where does the story take place?** Easy: Madrid, Spain.</li>
-<li>**Plot: What is the conflict and the journey?** This is the tough one! Basically pitching my project.</li>
-<li>**Purpose: Why should anyone care about this?** Another complicated one. Here I explained why I'm pitching my project and why is important.</li>
-</ul>
+
+ * **People: Who is in the story?** This one was easy to answer: me!
+ * **Place: Where does the story take place?** Easy: Madrid, Spain.
+ * **Plot: What is the conflict and the journey?** This is the tough one! Basically pitching my project.
+ * **Purpose: Why should anyone care about this?** Another complicated one. Here I explained why I'm pitching my project and why is important.
 
 After watching the video I started to write down my script answering those questions. The process helped me a lot to focus on what I wanted to tell, and more importantly: how I wanted to tell it. 
 
@@ -128,16 +125,15 @@ The first thing I worked on were the titles. I used [Inkscape](http://inkscape.o
 The next step was to sync the audio files with the videos. To my surprise *I discovered that OpenShot doesn't have that feature*, so I started to freak out. Literally. Two breaths later, I did some *Googling* and fortunately I found another open source video editor that actually can do the sync "automatically": [PiTiVi](http://www.pitivi.org/).
 
 I installed the software, and I tried out. The first time it worked, so I was really happy (later I discovered that for some video and audio clips, it never synchronized the audio tracks; as I filmed several times the same cut, I'd always a pair of clips that worked). Thus, my current work flow was the following:
-<ul class="angle-list">
-<li>Import video and sound clip in PiTiVi,</li>
-<li>Sync the sound in both items,</li>
-<li>Export the final video with the synchronized audio,</li>
-<li>Import the video in OpenShot to do the final editing.</li>
-</ul>
+
+ * Import video and sound clip in PiTiVi,
+ * Sync the sound in both items,
+ * Export the final video with the synchronized audio,
+ * Import the video in OpenShot to do the final editing.
 
 Did you say: painful? Yes, really painful. Add also that every time I changed something in OpenShot it crashed, so you can have an idea how painful it was. However, I wanted to create the video using only open software tools so I forced myself, and the result was this:
 
-<div class="videoWrapper">
+<div class="embed-responsive embed-responsive-16by9">
     <iframe src="//player.vimeo.com/video/66246703?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
@@ -145,6 +141,4 @@ After all, the experience was really beautiful because I learned a lot. Some peo
 
 When I finished my video, I checked the OpenShot web site to see if there is a new version that fixes all the problems I had,  and luckily it seems like a new version is in the oven. Thus, in the future it should be much easier to do it in GNU/Linux.
 
-Final note: I want to try the popular [Lightworks](http://libregraphicsworld.org/blog/entry/first-look-at-lightworks-beta-for-linux) and see how good it is, but as usual, I do not have enough time :-) 
-
-
+Final note: I want to try the popular [Lightworks](http://libregraphicsworld.org/blog/entry/first-look-at-lightworks-beta-for-linux) and see how good it is, but as usual, I do not have enough time <i class="twa twa-smile"></i>.

@@ -5,7 +5,7 @@ slug: cienciaciudadana
 icon: balloon
 icon_url: http://www.flickr.com/photos/32985084@N00/11170324726/
 icon_author: Daniel Lombraña
-tags: citizen, science, spectrometer, balloonmapping, epicollect, crowdcrafting, PyBossa
+tags: citizen, science, spectrometer, balloonmapping, epicollect, crowdcrafting, PYBOSSA
 location: Madrid, Spain 
 meta_description: Citizen Science hackfest in Madrid
 headline: "Madrid citizens participate in a citizen science hackfest."
@@ -54,23 +54,18 @@ that we will be having along the day:
 We started with the balloon mapping workshop. Shannon explained step by step how to 
 build the balloon mapping using one of the kits they shell (but that you can build yourself if you want).
 
+<div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" style="max-width:100%;min-width:200px;" src="https://mixbit.com/embed/119uFaWsCf3DVXsxoWYFg3" frameborder="0" scrolling="no" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
 
 We had a very good weather in terms of wind: the balloon was really stable as well as the
 camera, however it was really cold!
 
-<ul class="thumbnails">
-    <li class="span6"><a class="thumbnail" href="http://www.flickr.com/photos/teleyinex/11170358894/"><img src="http://farm4.staticflickr.com/3828/11170358894_71a24eceba_n.jpg"></a></li>
-    <li class="span6"><a class="thumbnail" href="http://www.flickr.com/photos/teleyinex/11170361244/"><img src="http://farm6.staticflickr.com/5521/11170361244_5450e88ff0_n.jpg"></a></li>
-</ul>
-<ul class="thumbnails">
-    <li class="span6"><a class="thumbnail" href="http://www.flickr.com/photos/teleyinex/11170298505/"><img src="http://farm8.staticflickr.com/7423/11170298505_2132d78c77_n.jpg"></a></li>
-    <li class="span6"><a class="thumbnail" href="http://www.flickr.com/photos/teleyinex/11170337646/"><img src="http://farm3.staticflickr.com/2855/11170337646_1992357961_n.jpg"></a></li>
-</ul>
-<ul class="thumbnails">
-    <li class="span6"><a class="thumbnail" href="http://www.flickr.com/photos/teleyinex/11170369864/"><img src="http://farm6.staticflickr.com/5535/11170369864_77c8c93fb3_n.jpg"></a></li>
-    <li class="span6"><a class="thumbnail" href="http://www.flickr.com/photos/teleyinex/11170326676/"><img src="http://farm6.staticflickr.com/5523/11170326676_8654a3f170_n.jpg"></a></li>
-</ul>
+![The materials](https://farm4.staticflickr.com/3828/11170358894_7e6d1d8a4c_k_d.jpg){: .img-responsive}
+<p class="post-caption">The materials</p>
+
+![Filling in the ballon](https://farm6.staticflickr.com/5521/11170361244_c6c44c51f2_k_d.jpg){: .img-responsive}
+<p class="post-caption">Filling in the ballon</p>
 
 ## EpiCollect+
 
@@ -94,9 +89,11 @@ with the help of the volunteers.
 For example, after taking the pictures of the balloon mapping workshop, a group of the participants
 ortho-referenced the pictures for creating the following map:
 
+<div class="embed-responsive embed-responsive-16by9">
 <iframe style="border:none;" width="500" height="375" src="http://archive.publiclab.org/leaflet/?tms=http://mapknitter.org/tms/plant-wall-in-madrid/&lat=40.4110814393&lon=-3.6931872467"></iframe>
+</div>
 
-That was imported into a [Crowdcrafting application](http://crowdcrafting.org/app/balloonmappingmadrid/), using this [template](http://github.com/PyBossa/app-mapknitter). 
+That was imported into a [Crowdcrafting application](http://crowdcrafting.org/app/balloonmappingmadrid/), using this [template](http://github.com/PYBOSSA/app-mapknitter). 
 The result, people can help you to count the number of participants in the workshop really easily. 
 
 The template provides also an example for measuring areas within the map, and this was the clue to 
@@ -110,7 +107,9 @@ We ended the hackfest with the last workshop: build your own spectrometer. This 
 of the Medialab-Prado Origami team, as this spectrometer is built using a sheet of paper. In the following
 video you can see how we built several spectrometers and play with them.
 
+<div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" style="max-width:100%;min-width:200px;" src="https://mixbit.com/embed/_37DiF9IzVhbfd908kPeKzi" frameborder="0" scrolling="no" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
 
 As you can see, we learned a lot, we produced several prototypes along the day, and
 above all: *we had a lot of fun while learning*. If you want to participate in the next

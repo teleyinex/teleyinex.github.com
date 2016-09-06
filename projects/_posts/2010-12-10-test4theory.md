@@ -8,7 +8,7 @@ home: "http://lhcathome2.cern.ch"
 state: production
 slug: test4theory 
 role: "core developer, researcher, community manager"
-summary: "a virtual atom smasher"
+meta_description: "A virtual atom smasher"
 partners: ['<a href="http://citizencyberscience.net"><span itemprop="creator">Citizen Cyberscience Centre</span></a>', '<a href="http://cern.ch"><span itemprop="creator">CERN</span></a>']
 funders: ['<a href="http://lpcc.web.cern.ch/LPCC/"><span itemprop="contributor">LHC Physics Centre at CERN</span></a>', '<a href="http://www.shuttleworthfoundation.org/"><span itemprop="contributor">Shuttleworth Foundation</span></a>']
 icon: lhc
@@ -23,21 +23,17 @@ layout: project
 By contributing spare processing capacity on their home and laptop computers, volunteers may run simulations of beam dynamics and particle collisions in the LHC’s giant detectors.
 
 The platform has two active projects:
-<ul class="angle-list">
-<li>**Sixtrack**: studies the LHC machine and its upgrade to understand the fundamental laws of the universe.</li>
-<li>**Test4Theory**: researches about the elusive Higgs particle with a virtual atom smasher.</li>
-</ul>
+ * **Sixtrack**: studies the LHC machine and its upgrade to understand the fundamental laws of the universe.
+ * **Test4Theory**: researches about the elusive Higgs particle with a virtual atom smasher.
 
 The Test4Theory project is innovative because it has been the first BOINC project using the virtualization technology to run CERN simulations in commodity computers. The project uses the open source VirtualBox hypervisor to run an instance of the [CernVM virtual appliance](http://cernvm.cern.ch/) that connects to the CERN servers to download the required libraries and dependencies in order to run the simulations.
 
 The project has been featured in popular [news sites](http://lhcathome2.cern.ch/media) like:
-<ul class="angle-list">
-<li>[BBC](http://www.bbc.co.uk/news/science-environment-14488797), </li>
-<li>[Discovery Channel](http://news.discovery.com/space/hunting-the-higgs-boson-from-home-110811.html), </li>
-<li>[ZDNet](http://www.zdnet.co.uk/news/emerging-tech/2011/08/09/cern-taps-home-pcs-for-virtual-atom-smashing-40093652/), </li>
-<li>[Ars Technica](http://arstechnica.com/science/news/2011/08/virtual-particles-cern-updates-lhchome.ars), </li>
-<li>[etc](http://lhcathome2.cern.ch/media).
-</ul>
+ * [BBC](http://www.bbc.co.uk/news/science-environment-14488797), 
+ * [Discovery Channel](http://news.discovery.com/space/hunting-the-higgs-boson-from-home-110811.html), 
+ * [ZDNet](http://www.zdnet.co.uk/news/emerging-tech/2011/08/09/cern-taps-home-pcs-for-virtual-atom-smashing-40093652/), 
+ * [Ars Technica](http://arstechnica.com/science/news/2011/08/virtual-particles-cern-updates-lhchome.ars), 
+ * [etc](http://lhcathome2.cern.ch/media).
 
 ## Web tools for the project
 

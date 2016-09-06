@@ -8,7 +8,7 @@ github: https://github.com/CERNSummerWebfest/LHC-HTML5-Dashboard
 home: http://cernsummerwebfest.github.io/LHC-HTML5-Dashboard/ 
 state: prototype
 slug: lhcdashboard
-summary: LHC Luminosity dashboard prototype 
+meta_description: LHC Luminosity dashboard prototype 
 partners: <a href="http://citizencyberscience.net"><span itemprop="creator">Citizen Cyberscience Centre</span></a> 
 icon: lhcdashboard
 lang: en
@@ -22,9 +22,9 @@ people to learn more about science, and in particular about [CERN](http://cern.c
 
 The event was hosted during two days of really active [CERN summer students](http://hr-recruit.web.cern.ch/hr-recruit/summies/default%20page/) that worked in really amazing projects.
 
-The following video shows a summary of all the projects explained by the students.
+The following video shows a meta_description of all the projects explained by the students.
 
-<div class="videoWrapper">
+<div class="embed-responsive embed-responsive-16by9">
     <iframe src="https://www.youtube-nocookie.com/embed/cky9OFcoIsI?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
@@ -33,11 +33,11 @@ In the event I participated as a coordinator and organizer, and as I love to dev
 The [demo](http://cernsummerwebfest.github.io/LHC-HTML5-Dashboard/) shows how it will be possible to create a modern dashboard for the LHC experiments. The [current CERN dashboard](http://lhcdashboard.web.cern.ch/lhcdashboard/) renders a static PNG image that it is updated by a back-end server. The proposal of the [demo](http://cernsummerwebfest.github.io/LHC-HTML5-Dashboard/) is to use HTML5 and JavaScript to render in real time the data that the LHC experiment is showing in the dashboard.
 
 <div class="row-fluid">
-    <div class="span6">
-    <img src="/assets/img/project/lhcdashboard.png" class="img-polaroid">
+    <div class="col-md-6">
+    <img src="/assets/img/project/lhcdashboard.png" class="img-responsive">
     </div>
-    <div class="span6">
-    <img src="/assets/img/project/dashboard.png" class="img-polaroid">
+    <div class="col-md-6">
+    <img src="/assets/img/project/dashboard.png" class="img-responsive">
     </div>
 </div>
 

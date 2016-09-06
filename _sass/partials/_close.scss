@@ -1,0 +1,62 @@
+$height:60px;
+
+.navbar-close {
+    background: black;
+    color: white;
+    height: $height;
+    width: 0px;
+    transition: width 1s;
+}
+
+.navbar-close a {
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.top50 {
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.close-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: $height;
+}
+
+.close-items i {
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+}
+
+
+.navbar-about {
+    background: $about-color;
+}
+
+.navbar-blog {
+    background: $blog-color;
+}
+
+.navbar-blogpost {
+    background: $blogpost-color;
+}
+
+
+.navbar-photography{
+    background: $photography-color;
+}
+
+.navbar-project {
+    background: $project-color;
+}
+
+.navbar-project-info {
+    background: $project-info-color;
+}

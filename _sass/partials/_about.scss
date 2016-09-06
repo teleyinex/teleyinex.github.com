@@ -1,0 +1,73 @@
+.jumbotron-full {
+    margin-top: 60px;
+    width: 100vw;
+    height: 330px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    h1, p {
+        color: white;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    p.post-caption {
+        font-size: 14px;
+    }
+
+    .post-caption a {
+        color: white;
+        text-decoration: underline;
+    }
+
+}
+
+.jumbotron-full.section, 
+.jumbotron-full .headlines{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.jumbotron-full.about{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0,0,0,0.45)), url(/assets/img/blog/avatar.jpeg);*/
+    background: $about-color url(/assets/img/blog/avatar.jpg) no-repeat center top/ cover;
+}
+
+
+.about a {
+    color: $about-color;
+    text-decoration: underline;
+}
+
+.about li:before {
+    color: $about-color;
+}
+
+.about strong {
+    color: $about-color;
+}
+
+
+
+@media (min-width:768px) and (max-width: 1024px) {
+    .jumbotron-full {
+        height: 475px;
+    }
+}
+
+@media(min-width: 1024px){
+
+    .jumbotron-full {
+        height: 475px;
+    }
+}

@@ -1,0 +1,20 @@
+.jumbotron-full.section.photography{
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0,0,0,0.45)), url(/assets/img/photography/photographyheader.jpg) no-repeat center top/ cover;
+
+}
+.photography p.readmore a {
+    text-decoration: none;
+}
+
+.photography a {
+    color: $photography-color;
+    text-decoration: underline;
+}
+
+.photography li:before {
+    color: $photography-color;
+}
+
+.photography strong {
+    color: $photography-color;
+}

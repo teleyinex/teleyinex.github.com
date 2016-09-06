@@ -1,65 +1,67 @@
 ---
 layout: default
-active: portfolio
+active: project-info
 ---
-<div class="container content" itemscope itemtype="http://schema.org/SoftwareApplication">
-    <div class="row-fluid">
-        <div class="span10 offset1">
-            <div style="text-align:center;">
-            <h2><span itemprop="name">{{ page.title|striptags}}</span></h2>
-                    <div style="padding-bottom:14px;">
-                        <p class="subheadline">{{ page.summary}}</p>
+<div id="page" class="hideonload">
+    <div class="container">
+        <nav class="navbar navbar-fixed-top navbar-close navbar-{{page.active}}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 close-items">
+                        <i id="closebtn" class="fa fa-arrow-left fa-fw" data-link="/projects/"></i>
+                        <a href='javascript:window.open("https://twitter.com/intent/tweet?text={{page.meta_description|escape}}&url=http://daniellombrana.es{{page.url}}&via=teleyinex","_blank","width=500,height=450");void(0);'><i class="fa fa-twitter fa-fw"></i></a>
+                        <a href="javascript:window.open('http://www.facebook.com/sharer/sharer.php?u=http://daniellombrana.es{{ page.url }}', '_blank', 'width=500,height=450');void(0);"><i class="fa fa-facebook fa-fw"></i></a>
+                        <a href="javascript:window.open('https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fdaniellombrana.es{{ page.url }}', '_blank', 'width=500,height=450');void(0);"><i class="fa fa-linkedin fa-fw"></i></a>
                     </div>
-                    <span data-picture data-alt="{{page.title}}">
-                        <span data-src="/assets/img/project/{{page.icon}}_320.jpg"></span>
-                        <span data-src="/assets/img/project/{{page.icon}}.jpg"     data-media="(min-width: 768px)"></span>
-                        <span data-src="/assets/img/project/{{page.icon}}.jpg"     data-media="(min-width: 980px)"></span>
-                    </span>
-                    {% if page.iconauthor != 'NoAuthor'%}
-                    <p style="text-align:left; font-size:14px; color:#999">Photo by <a href="{{page.icon_url}}">{{page.iconauthor}}</a></p>
-                    {% endif %}
-            </div>
-                <section class="link-curtain">
-                <div class="projectbody" itemprop="about" style="margin-top:15px;">
-                {{content}}
                 </div>
-                </section>
-        </div>
-
+            </div>
+        </nav>
     </div>
-    <div class="row-fluid project">
-        <div class="span4 column">
-            <h3>Project Details</h3>
-            <ul>
-                <li><strong><i class="fa fa-user"></i> Role:</strong> {{page.role }}</li>
-                <li><strong><i class="fa fa-calendar-o"></i> Started:</strong>
-                <span itemprop="dateCreated">{{page.date | date:"%Y")}}</span></li>
-                <li><strong><i class="fa fa-tag"></i> Type:</strong> <span itemprop="applicationCategory">{{page.type}}</span></li>
-                <li><i class="fa fa-home"></i> <a itemprop="url" href="{{page.home}}">{{page.title}}</a></li>
-                {% if page.github %}
-                <li><i class="fa fa-github"></i> <a href="{{page.github}}">Source Code</a></li>
+    <div class="jumbotron-full section cover-dark-{{page.icon}}">
+        {% if page.iconauthor %}
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 col-md-offset-2 headlines">
+                    <h1 class="text-center">{{page.title}}</h1>
+                    <p class="text-center">{{page.meta_description}}</p>
+                    <p class="post-caption">Photo by {{page.iconauthor}}</p>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="container">
+        <div class="row top50">
+            <div class="col-sm-12 col-md-8 col-md-offset-2 project-info">
+                {{ content }}
+                <h2>Project Summary</h2>
+                <ul>
+                    <li>My Role: {{page.role }}.</li>
+                    <li>Date:  <span itemprop="dateCreated">{{page.date | date:"%Y")}}.</li>
+                    <li>Type: <span itemprop="applicationCategory">{{page.type}}</span>.</li>
+                    <li>Project URL: <a itemprop="url" href="{{page.home}}">{{page.title}}</a>.</li>
+                    {% if page.github %}
+                    <li>Source Code <a href="{{page.github}}">Github</a>.</li>
+                    {% endif %}
+                </ul>
+                {% if page.partners %}
+                <h2>Project Partners</h2>
+                {% for partner in page.partners %}
+                <ul>
+                    <li>{{partner}}.</li>
+                </ul>
+                {% endfor %}
                 {% endif %}
-            </ul>
-        </div>
-        <div class="span4 column">
-            {% if page.partners %}
-            <h3>Project Partners</h3>
-            {% for partner in page.partners %}
-            <ul>
-                <li><i class="fa fa-link-o"></i> {{partner}}</li>
-            </ul>
-            {% endfor %}
-            {% endif %}
-        </div>
-        <div class="span4 column">
-            {% if page.funders %}
-            <h3>Project Funders</h3>
-            {% for funder in page.funders %}
-            <ul>
-                <li><i class="fa fa-link"></i> {{funder}}</li>
-            </ul>
-            {% endfor %}
-            {% endif %}
+                {% if page.funders %}
+                <h2>Project Funders</h2>
+                {% for funder in page.funders %}
+                <ul>
+                    <li>{{funder}}.</li>
+                </ul>
+                {% endfor %}
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>

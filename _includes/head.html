@@ -1,0 +1,72 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.meta_description %}{{ page.meta_description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <meta name="AUTHOR" content="Daniel Lombraña González">
+    <meta name="copyright" content="Daniel Lombraña González © 2016" />
+    <!-- Pinterest -->
+    <meta name="p:domain_verify" content="71c8e4a3bc558a27ca56ac6104d68e2e"/>
+    <!-- Google -->
+    <meta name="google-site-verification" content="5fuwhSzekyn7gflFoUk-p5OtV8KmiKIszVt3WQ3xljI" />
+
+    {% if page.active == 'blog' and page.icon != null %}
+    <!-- for Google -->
+    <meta name="description" content="{{page.headline}}" />
+    <meta name="author" content="Daniel Lombraña" />
+    <meta name="copyright" content="Daniel Lombraña © 2015" />
+
+    <!-- for Facebook -->          
+    <meta property="og:title" content="{{page.title}} - Blog of Daniel Lombraña" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="http://daniellombrana.es/assets/img/blog/{{page.icon}}.jpg" />
+    <meta property="og:url" content="http://daniellombrana.es{{page.url}}" />
+    <meta property="og:description" content="{{page.headline}}" />
+
+    <!-- for Twitter -->          
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{page.title - Blog of Daniel Lombraña}}" />
+    <meta name="twitter:description" content="{{page.headline}}" />
+    <meta name="twitter:site" content="@teleyinex" />
+    <meta name="twitter:creator" content="@teleyinex" />
+    <meta name="twitter:image:src" content="http://daniellombrana.es/assets/img/blog/{{page.icon}}.jpg" />
+    {% endif %}
+
+    {% if page.active == 'projects' and page.icon != null %}
+    <!-- for Google -->
+    <meta name="description" content="{{page.title}} - Project of Daniel Lombraña" />
+    <meta name="author" content="Daniel Lombraña" />
+    <meta name="copyright" content="Daniel Lombraña © 2015" />
+
+    <!-- for Facebook -->          
+    <meta property="og:title" content="{{page.title}} - Project of Daniel Lombraña" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="http://daniellombrana.es/assets/img/project/{{page.icon}}.jpg" />
+    <meta property="og:url" content="http://daniellombrana.es{{page.url}}" />
+    <meta property="og:description" content="{{page.summary}}" />
+
+    <!-- for Twitter -->          
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{page.title - Project of Daniel Lombraña}}" />
+    <meta name="twitter:description" content="{{page.summary}}" />
+    <meta name="twitter:image" content="http://daniellombrana.es/assets/img/project/{{page.icon}}.jpg" />
+    {% endif %}
+
+
+    <link rel="stylesheet" href="{{ "/css/animate.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    {% if page.active == 'blog' or page.active == 'blogpost' %}
+    <link rel="stylesheet" href="{{ "/css/blog-covers.css" | prepend: site.baseurl }}">
+    {% endif %}
+    {% if page.active == 'project' or page.active == 'project-info' %}
+    <link rel="stylesheet" href="{{ "/css/project-covers.css" | prepend: site.baseurl }}">
+    {% endif %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <script src="/js/jquery-3.1.0.min.js"></script>
+    <script src="/js/vivus.min.js"></script>
+    <script src="/js/snap.svg-min.js"></script>
+</head>

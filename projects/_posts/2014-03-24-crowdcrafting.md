@@ -1,14 +1,14 @@
 ---
 date: 2011-11-02
 title: Crowdcrafting
-tags: crowdsourcing, PyBossa, crowdcrafting
+tags: crowdsourcing, PYBOSSA, crowdcrafting
 type: crowdsourcing
-github: http://github.com/PyBossa
+github: http://github.com/PYBOSSA
 home: http://crowdcrafting.org
 state: production
 slug: crowdcrafting
 role: Co-Founder and Project Lead
-summary: Science affects all of us, Science needs all of us
+meta_description: Science affects all of us, Science needs all of us
 partners: ['<a href="http://citizencyberscience.net"><span itemprop="creator">Citizen Cyberscience Centre</span></a>', '<a href="http://okf.org"><span itemprop="creator">Open Knowledge Foundation</span></a>']
 funders: ['<a href="http://www.shuttleworthfoundation.org"><span itemprop="contributor">Shuttleworth Foundation</span></a>', '<a href="http://www.sloan.org"><span itemprop="contributor">Alfred P. Sloan Foundation</span></a>', '<a href="http://soros.org">Open Society Foundation</a>']
 icon: crowdcrafting
@@ -41,9 +41,9 @@ can’t be done by machines alone, but require human intelligence. The platform
 is 100% open source – that is its software is developed and distributed freely
 – and 100% open-science, making scientific research accessible to everyone. 
 
-Crowdcrafting uses PyBossa software: Our open source framework for
+Crowdcrafting uses PYBOSSA software: Our open source framework for
 crowdsourcing projects. Institutions, such as the British Museum, CERN and
-United Nations (UNITAR), are also PyBossa users.
+United Nations (UNITAR), are also PYBOSSA users.
 
 
 ## What is citizen science?

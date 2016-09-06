@@ -1,6 +1,6 @@
 ---
 layout: project
-title: SciFabric LTD
+title: Scifabric LTD
 date: 2015-03-20
 tags: crowdsourcing, citizen science, startup
 type: crowdsourcing
@@ -8,17 +8,17 @@ home: http://scifabric.com
 state: production
 permalink: /projects/scifabric
 featured: yes
-summary: "Crowdsourcing for research"
+meta_description: "We develop easy-to-use technologies to collect, <br/> analyse and enrich (your) data with the crowd."
 partners: ['<a href="http://shuttleworthfoundation.org/"><span itemprop="creator">Shuttleworth Foundation</span></a>']
 icon: scifabric
-iconauthor: SciFabric
+iconauthor: Scifabric
 lang: en
 role: "founder"
 ---
 
-After running several years the development of Crowdcrafting and PyBossa, I decided to create a company that will provide services around those two products as well as teaching about citizen science.
+After running several years the development of Crowdcrafting and PYBOSSA, I decided to create a company that will provide services around those two products as well as teaching about citizen science.
 
-SciFabric develops open source software for crowdsourcing research.
+Scifabric develops open source software for crowdsourcing research.
 
 We work with institutions on scientific research, the humanities, data journalism, medicine, education and much more.
 
@@ -33,5 +33,4 @@ Clients like the British Museum, University College of London, CERN, Unitated Na
 
  * [Crowdsourcing the Bronze Age](http://scifabric.com/success-stories/micropasts/)
  * [Crowdsourcing the analysis of light pollution from space](http://scifabric.com/success-stories/citiesatnight/)
-
 

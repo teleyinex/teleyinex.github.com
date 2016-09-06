@@ -1,0 +1,128 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+//Custom fonts
+
+@font-face {
+    font-family: Bebas;
+    src: url('/assets/fonts/bebas.ttf');
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Text Me One';
+  src: url('/assets/fonts/TextMeOne-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('/assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('/assets/fonts/Lato/Lato-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('/assets/fonts/Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('/assets/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('/assets/fonts/Raleway/Raleway-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('/assets/fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url('/assets/fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url('/assets/fonts/Merriweather/Merriweather-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url('/assets/fonts/Merriweather/Merriweather-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// Our variables
+$base-font-family: 'Raleway', sans-serif;
+$base-font-size:   16px;
+
+$head-font-family: 'Text Me One', sans-serif;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$about-color: #8e44ad;
+$blog-color: #2980b9;
+$blogpost-color: #3498db;
+$project-color: #f39c12;
+$project-info-color: #f39c32;
+$photography-color: #27ae60;
+
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "bootstrap",
+        "fontawesome/font-awesome",
+        "twemoji-awesome",
+        "partials/typo",
+        "partials/lists",
+        "partials/loading",
+        "partials/home",
+        "partials/close",
+        "partials/curtain",
+        "partials/about",
+        "partials/blog",
+        "partials/projects",
+        "partials/photography",
+        "partials/card",
+        "partials/footer"
+
+;

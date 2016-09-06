@@ -5,7 +5,7 @@ slug: reinventing-the-wheel
 icon: wheel
 icon_author: Rego Korosi
 icon_url: https://www.flickr.com/photos/korosirego/4849943530
-tags: citizen science, open source, PyBossa, evolution, discussion
+tags: citizen science, open source, PYBOSSA, evolution, discussion
 location: London, United Kingdom 
 meta_description: Reinventing the wheel
 headline: "Reinventing the wheel can be treated as a technique that will assure enough genetic diversity."
@@ -24,7 +24,7 @@ Before going forward, let me be clear, in my personal case I'm doing the same, I
 
 Reinventing the wheel is not new to me. I'm a GNU/Linux user since Red Hat 5.2 and I can say that I've heard the same argument several times in the open source community: another window manager? This is the year for GNU/Linux.
 
-![meme](http://i.imgur.com/JBYFSxa.png)
+![meme](http://i.imgur.com/JBYFSxa.png){: .img-responsive}
 
 If you want to check what I'm saying, all you have to do is the following: search in Google the name of an open source project, go to its e-mail list and your chances of finding a heated discussion about this specific issue are high, quite high (just check the last controversy about SystemD vs Upstart [here](http://www.reddit.com/r/linux/comments/1w9qtv/the_design_flaws_of_upstart/) and [here](http://ewontfix.com/14/) as two different points of view).
 
@@ -46,7 +46,7 @@ Developing the best possible and imaginable citizen science framework is challen
 
 Let's imagine that the perfect framework exists. However, we do not know where it is, or how it looks like. For this reason we have a huge search space. Really big (deep space). Even though it looks like it is almost impossible to find a solution, some people will try and start building their own solution.
 
-![meme](http://i.imgur.com/tn0NZMx.png)
+![meme](http://i.imgur.com/tn0NZMx.png){: .img-responsive}
 
 As with every new born, the very first version is not going to be the best one, it lacks a lot of features, fails a lot, and has a very small community (generation zero). While this team is developing their solution, another group starts something similar without even knowing anything about the previous work. Interestingly, they are focused on the same goals, and therefore they will build similar solutions: they share some [building blocks](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=4983245&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D4983245). In other words, they are reinventing the wheel.
 

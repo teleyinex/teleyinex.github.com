@@ -40,25 +40,27 @@ This is really great, as you only need to enable a Zerg server and then you are 
 
 As we use Supervisor, configuring uWSGI to run as a Zerg server is really simple:
 
-```
+{% highlight bash %}
 [uwsgi]
 master = true
 zerg-pool = /tmp/zerg_pool_1:/tmp/zerg_master.sock
-```
+{% endhighlight %}
 
 Then, you configure your web application to use the zerg server:
 
-```
+{% highlight bash %}
 [uwsgi]
 zerg = /tmp/zerg_master.sock
-```
+{% endhighlight %}
 
 And you are done! That will configure your server to run in Zerg mode. However,
 we can configure it to handle reloading in a more useful way: keeping a binary copy of 
 the previous running instance, pausing it, and deploying the new code on a new Zerg.
 This is known as Zerg Dance, so let's dance!
 
+<div class="embed-responsive embed-responsive-16by9">
 <iframe src="//giphy.com/embed/GFBME4lzPVwxW" width="480" height="270" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
 
 ## Zerg Dance
 
@@ -84,7 +86,7 @@ that in a moment).
 The documentation has a really good example. All you have to do is to add 3 FIFOs to
 your web application uWSGI config file:
 
-```
+{% highlight bash %}
 [uwsgi]
 ; fifo '0'
 master-fifo = /var/run/new.fifo
@@ -108,7 +110,7 @@ if-exists = /var/run/running.fifo
 endif =
 ; force this instance to became the running one (slot 1)
 hook-accepting1-once = writefifo:/var/run/new.fifo 1
-```
+{% endhighlight %}
 
 After the FIFOs there is a section where we declare some hooks. These hooks will handle
 automatically which FIFO has to be used in case of a server is started again. 
@@ -135,10 +137,10 @@ Imagine now you realize that you have a bug in your new deployed code. How do yo
 
 You just pause the new server and unpause the previous one. How do you do it? Like this:
 
-```
+{% highlight bash %}
 echo 1p > /tmp/running.fifo
 echo 2p > /tmp/sleeping.fifo
-```
+{% endhighlight %}
 
 ## Our setup
 
@@ -146,18 +148,18 @@ With our [auto deployments](/blog/2015/02/25/autodeployments.html) solution, we 
 this feature with supervisor. In the previous example you do the deployment manually,
 but we want to have everything automated.
 
-How we have achieved this? Simple! Using two PyBossa servers within Supervisor.
+How we have achieved this? Simple! Using two PYBOSSA servers within Supervisor.
 
-We have the default PyBossa server, and another one named pybossabak in Supervisor.
+We have the default PYBOSSA server, and another one named pybossabak in Supervisor.
 
 When a new deployment is done, the auto deployments solution boots the pybossa Backup server
 just to have a copy of the running state of the server. Then, it gets all the new changes,
 applies patches, etc. and restarts the default server. This procedure triggers the following:
 
- - Start backup server: this moves the current running PyBossa server to the pause fifo, so we've a copy of it.
+ - Start backup server: this moves the current running PYBOSSA server to the pause fifo, so we've a copy of it.
  - The backup server accepts the requests, so users don't see anything wrong.
  - Autodeployments applies changes to the source code, updates libraries, etc.
- - Then, it restarts the default PyBossa server (note: for supervisor the paused PyBossa server is running).
+ - Then, it restarts the default PYBOSSA server (note: for supervisor the paused PYBOSSA server is running).
  - This restart moves the previous backup server to the pause fifo (it has the old code running), and boots the new code into production.
 
 If something goes wrong with the new changes, all we have to do is pause the current server and resume the previous one.
@@ -178,4 +180,6 @@ focused only on developing more code. We employ less time handling deployments, 
 
 In summary: if you are using uWSGI, use the Zerg Dance, and enjoy the dance!
 
+<div class="embed-responsive embed-responsive-16by9">
 <iframe src="//giphy.com/embed/2tDQZuljhwHTi" width="480" height="182" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>

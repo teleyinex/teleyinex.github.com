@@ -5,7 +5,7 @@ slug: shuttleworth-fellow
 icon: open
 icon_author: Open Source
 icon_url: https://www.flickr.com/photos/opensourceway/7496803264
-tags: citizen science, open source, PyBossa, tools, shuttleworth
+tags: citizen science, open source, PYBOSSA, tools, shuttleworth
 location: Madrid, Spain
 meta_description: Shuttleworth Fellow
 headline: "Being a Shuttleworth Fellow has changed my life forever."
@@ -39,7 +39,8 @@ I wanted to show *how much I love my work*,
 who am I, and what do I do thanks to the foundation's support. The result?
 Well, judge it yourself (please leave me a comment about the video): 
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/rQ3yLqdEhvc' frameborder='0' allowfullscreen></iframe></div>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src='http://www.youtube.com/embed/rQ3yLqdEhvc' frameborder='0' allowfullscreen></iframe></div>
 
 *I'll write another blog post about the video and its creation. I promise.*
 
@@ -55,7 +56,7 @@ really hard and love what they do), and a young communications person (who write
 awesome blog posts about our work) -don't be shy and check our [team
 page](http://pybossa.com/about/).
 
-Now, with a team behind [PyBossa](http://pybossa.com) and
+Now, with a team behind [PYBOSSA](http://pybossa.com) and
 [Crowdcrafting](http://Crowdcrafting.org), I could move quickly, learn from the
 team, attend more meatings, develope new features and make Crowdcrafting a place 
 to hang out for citizen scientists.
@@ -64,10 +65,10 @@ to hang out for citizen scientists.
 
 While we were working, we got a great opportunity: the [British
 Museum](http://www.britishmuseum.org/) and the [UCL](http://www.ucl.ac.uk/)
-were interested in [PyBossa](http://pybossa.com) and more importantly: *they
+were interested in [PYBOSSA](http://pybossa.com) and more importantly: *they
 wanted to use it for their [own citizen science project](http://micropasts.org/).*
 
-![Happy animated gif](http://i.giphy.com/13k4VSc3ngLPUY.gif)
+![Happy animated gif](http://i.giphy.com/13k4VSc3ngLPUY.gif){: .img-responsive}
 
 In April of 2014, the project was launched with great [coverage](http://www.ucl.ac.uk/news/news-articles/0414/160414-crowdsourcing-bronze-age) 
 from the
@@ -84,7 +85,7 @@ the 18 projects:
      archaeological artefact via process known as photo-masking.
 
 I'm really proud of the work done for this project and its successthe work done
-for this. This achievement has proved that PyBossa is mature to be used as a
+for this. This achievement has proved that PYBOSSA is mature to be used as a
 tool for doing citizen science, and more importantly that international
 institutions trust our software, tools and methodologies.
 
@@ -106,7 +107,7 @@ from the International Space Station by astronauts!
 Cool, right? And best of all: *they wanted to use Crowdcrafting for developing
 the project!!!*
 
-![Oh My God GIF](http://i.giphy.com/QMcamps7Gzj2g.gif)
+![Oh My God GIF](http://i.giphy.com/QMcamps7Gzj2g.gif){: .img-responsive}
 
 The project was accepted and left beta in July. In this month the research
 group sent out a [press release about the
@@ -142,14 +143,15 @@ August, FOX News TV showed on prime time
 [Crowdcrafting](http://crowdcrafting.org) and how to contribute to the
 project:
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://video.foxnews.com/v/video-embed.html?video_id=3742323090001' style='border:0'></iframe></div>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src='https://video.foxnews.com/v/video-embed.html?video_id=3742323090001' style='border:0'></iframe></div>
 
 Thanks to this *amazing coverage* **Crowdcrafting stored in one single day more than one
 answer per second**, with thousands of new volunteers registering in the site
 and thousands of tasks completed in hours! (check the
 [statistics](http://crowdcrafting.org/app/darkskies/stats)).
 
-![Despicable Me Minion OMG](http://i.giphy.com/CHyxN9bNkMc3S.gif)
+![Despicable Me Minion OMG](http://i.giphy.com/CHyxN9bNkMc3S.gif){: .img-responsive}
 
 Since then, we have had new users registering every day, tasks completed every
 day, and lots of contributions from volunteers. Amazing!
