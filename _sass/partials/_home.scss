@@ -22,38 +22,65 @@
     margin: 0;
 }
 
-.top {
-    margin-top: 35px;
+.top, .bottom {
+    // margin-top: 35px;
+    display: flex;
 }
 
 .line-left-right {
     position: absolute;
     left: 0;
-    top: 20px;
+    right: auto;
+    top: 60px;
 }
 
 
 .line-top-bottom{
     position: absolute;
     left: 0;
-    top: -35px;
+    right: auto;
+    top: 0px;
 }
 
 .line-bottom-top {
     position: absolute;
     right: auto;
-    left: 110px;
+    left: 100px;
     top: 0;
 }
 
 .line-right-left {
     position: absolute;
-    top: -15px;
+    top: -3px;
 }
 
 #about, #blog,
 #projects, #photography {
     visibility: hidden;
+}
+
+#about, #blog,
+#projects, #photography {
+    width: 100px;
+    height: 60px;
+}
+
+#about, #blog,
+#projects, #photography {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#about,
+#photography {
+    align-self: flex-start;
+}
+
+#blog,
+#projects {
+    margin-left: auto;
 }
 
 .menulink {
@@ -80,26 +107,4 @@
 .logo > div {
     height: 264px;
     width: 236px;
-}
-
-// Desktop 
-@media(min-width: 768px) {
-    .line-left-right {
-        top: 12px;
-    }
-    .line-top-bottom {
-        left: auto;
-        right: 56px;
-        top: -39px;
-    }
-    .line-right-left {
-        left: auto;
-        right: -4px;
-        top: -8px;
-    }
-    .line-bottom-top {
-        right: auto;
-        left: 110px;
-    }
-
 }

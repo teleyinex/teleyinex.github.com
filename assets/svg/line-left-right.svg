@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="82"
-   height="21"
-   viewBox="0 0 82.000001 21"
+   width="100"
+   height="3"
+   viewBox="0 0 100 3"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9195959"
-     inkscape:cx="116.22597"
-     inkscape:cy="33.456169"
+     inkscape:zoom="14.890244"
+     inkscape:cx="41"
+     inkscape:cy="10.5"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,10 +53,10 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-1031.3622)">
+     transform="translate(0,-1049.3622)">
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#8e44ad;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 1.8124999e-8,1041.8622 82,1041.8622"
+       style="fill:none;fill-rule:evenodd;stroke:#8e44ad;stroke-width:3.31294584;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 0,1050.8622 100,0"
        id="path4136"
        inkscape:connector-curvature="0" />
   </g>
