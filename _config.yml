@@ -13,3 +13,5 @@ github_username:  teleyinex
 # Build settings
 markdown: kramdown
 exclude: ['js/node_modules']
+gems:
+  - jekyll-sitemap
