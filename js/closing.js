@@ -22,6 +22,7 @@ $(document).on('pageLoaded',  function(){
 
         $("#closebtn").click(function(evt){
             evt.preventDefault();
+            $(".close-items").css("opacity", "0");
             $(".navbar-close").css("width", "0px");
             $(".top50").css("opacity", "0");
             $(".jumbotron-full").css("opacity", "0");

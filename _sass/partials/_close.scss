@@ -27,6 +27,7 @@ $height:60px;
     align-items: center;
     flex-direction: row;
     height: $height;
+    transition: 0.5s opacity;
 }
 
 .close-items i {
@@ -60,4 +61,9 @@ $height:60px;
 
 .navbar-project-info {
     background: $project-info-color;
+}
+
+#closebtn:hover {
+    cursor: pointer;
+    cursor: hand;
 }
