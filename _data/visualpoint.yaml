@@ -6,11 +6,15 @@
   text: PhD. Computer Engineer
   cover: leon
 
+- title: Based
+  text: Madrid, Spain
+  cover: sol
+
 - title: Career
   text: CEO & Founder of Scifabric
   cover: computer
 
-- title: Other Ocupations
+- title: Other Occupations
   text: Senior researcher at Citizen Cyberlab
   cover: geneva
 
@@ -30,9 +34,14 @@
   text: Matrix
   cover: matrix
 
-- title: Greates influence
+- title: Greatest influence
   text: Richard P. Feynman
   cover: feynman
+
+- title: Sport
+  text: Running & Pilates
+  cover: sport
+
 
 - title: Greatest Ambition
   text: Be happy
