@@ -38,7 +38,7 @@ active: project-info
                 <h2>Project Summary</h2>
                 <ul>
                     <li>My Role: {{page.role }}.</li>
-                    <li>Date:  <span itemprop="dateCreated">{{page.date | date:"%Y")}}.</li>
+                    <li>Date:  <span itemprop="dateCreated">{{page.date | date:"%Y"}}.</li>
                     <li>Type: <span itemprop="applicationCategory">{{page.type}}</span>.</li>
                     <li>Project URL: <a itemprop="url" href="{{page.home}}">{{page.title}}</a>.</li>
                     {% if page.github %}
