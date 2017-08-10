@@ -1,7 +1,7 @@
 <template>
         <div class="container">
-            <div class="columns">
-                <div class="column is-centered">
+            <div class="columns is-centered">
+                <div class="column is-5">
                     <div v-for="link in links" class="card">
                         <header class="card-header">
                             <p class="card-header-title">
