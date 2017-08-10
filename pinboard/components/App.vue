@@ -59,7 +59,7 @@ export default {
         return {
             links: [],
             offset: 0,
-            limit: 20
+            limit: 5
             
         }
     },
