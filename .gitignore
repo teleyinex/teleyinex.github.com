@@ -4,3 +4,4 @@ _site
 .sass-cache/*
 _build
 js/node_modules/*
+*/node_modules/*
