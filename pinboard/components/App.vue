@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="columns is-centered">
-            <div class="column is-5">
+            <div class="column is-5-desktop">
                 <b-tabs position="is-centered">
                     <b-tab-item label="Popular">
                         <div style="padding:5px;">
@@ -25,11 +25,11 @@
                                 <div class="card-content">
                                     <div class="media">
                                         <div class="media-content">
-                                            <p class="title is-6">{{link.n}}</p>
+                                            <p class="title is-5">{{link.n}}</p>
                                         </div>
                                     </div>
                                     <div class="content">
-                                        <p class="subtitle is-6">Pin saved by: {{link.a}} on {{link.dt}}</p>
+                                        <p class="subtitle is-6">Updated: {{beautyDate(link.dt)}}</p>
                                         <p v-if="tags(link.t)">
                                         <span class="has-text-primary" v-for="tag in link.t">#{{tag}} </span> 
                                         </p>
@@ -75,11 +75,10 @@
                                 <div class="card-content">
                                     <div class="media">
                                         <div class="media-content">
-                                            <p class="title is-6">{{link.n}}</p>
+                                            <p class="title is-5">{{link.n}}</p>
                                         </div>
                                     </div>
                                     <div class="content">
-                                        <p class="subtitle is-6">Pin saved by: {{link.a}} on {{link.dt}}</p>
                                         <p v-if="tags(link.t)">
                                         <span class="has-text-primary" v-for="tag in link.t">#{{tag}} </span> 
                                         </p>
@@ -115,6 +114,7 @@ import share from "social-share"
 import ellipsis from "text-ellipsis"
 import InfiniteLoading from "vue-infinite-loading"
 import _ from 'lodash'
+import prettydate from 'pretty-date'
 
 // localStorage persistence
 var STORAGE_KEY = 'pinboard'
@@ -148,6 +148,9 @@ export default {
         this.links = window.pins.slice(this.offset, this.limit - 1)
     },
     methods: {
+        beautyDate(date){
+            return prettydate.format(new Date(date))
+        },
         notSaved(link){
             var found = _.find(this.savedLinks, {'u': link.u})
             if (found === undefined) return true
