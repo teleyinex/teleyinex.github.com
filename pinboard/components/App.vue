@@ -53,9 +53,9 @@
                         </div>
                     </b-tab-item>
 
-                    <b-tab-item label="Hearted">
+                    <b-tab-item icon="favorite">
                         <div style="padding:5px;">
-                            <div v-for="link in savedLinks" class="card">
+                            <div v-if="savedLinks.length > 0" v-for="link in savedLinks" class="card">
                                 <header class="card-header">
                                     <p class="card-header-title">
                                     <a class="is-size-5" :href="link.u">{{shortTitle(link.d)}}</a>
@@ -98,6 +98,9 @@
                                         <i class="material-icons has-text-primary">favorite</i>
                                     </p>
                                 </footer>
+                            </div>
+                            <div v-if="savedLinks.length === 0" class="has-text-centered">
+                                Add some favorites, and they will be shown here.
                             </div>
                         </div>
                     </b-tab-item>
