@@ -175,3 +175,7 @@ We use SaSS to style our Jekyll sites; I guess you do it too. If this is the cas
 While this is an excellent **hack** it's not the best solution. It would be much much better to use only a static website generator built with Node.JS or just something like [nuxt.js](https://nuxtjs.org/), but we needed to re-use our Jekyll infrastructure and therefore the hack.
 
 In any case, this hack has space for improvement. The most noticeable one would be to not include the CSS from Jekyll where we only use VueJS to avoid downloading the same stuff twice. If you like it, let us know and share this article with your colleagues and friends!
+
+### Final notes
+
+This was originally posted in our [Scifabric](https://scifabric.com) site.
