@@ -168,14 +168,6 @@ export default {
             }
             else return false
         },
-        meta(link){
-            Metascraper
-                .scrapeUrl(link)
-                .then((metadata) => {
-                    console.log(metadata)  
-                })
-
-        },
         ssnn(network, link) {
             return share(network, {title: link.d, url: link.u})
         },
