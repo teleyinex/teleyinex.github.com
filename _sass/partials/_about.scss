@@ -43,6 +43,12 @@
     background: $about-color url(/assets/img/blog/avatar.jpg) no-repeat center top/ cover;
 }
 
+@media(min-width: 1024px) {
+    .jumbotron-full.about {
+        height: 650px;
+    }
+}
+
 
 .about a {
     color: $about-color;
